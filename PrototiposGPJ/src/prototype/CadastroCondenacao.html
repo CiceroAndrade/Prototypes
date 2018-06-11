@@ -1,0 +1,1545 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+
+
+
+<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+
+<script language="JavaScript" type="text/javascript">
+
+
+
+
+  
+    addmenu(
+    menu=["Movimentação",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Tela de Entrada", "./Entrada.html",,,1
+    
+      ,"Cadastro de Pessoas", "./pesquisaPessoa.do?act=init",,,1
+    
+      ,"Pesquisa de Ação", "./montaPesquisaSimplesAcaoJudicial.do",,,1
+    
+      ,"Pesquisa de Ação Avançada", "./montaPesquisaAcaoJudicial.do",,,1
+    
+      ,"Cadastro de Ação", "./montaInclusaoAcaoJudicial.do?act=init",,,1
+    
+      ,"Pesquisa de Processo - CAP", "./montaPesquisaAcaoCap.do",,,1
+    
+      ,"Novo Processo - CAP", "./cadastroAcaoCap.do?registroNovo=S",,,1
+    
+      ,"Pesquisa de Processo Administrativo", "./montaPesquisaProcessoAdmin.do",,,1
+    
+      ,"Cadastro de Processo Administrativo", "./montaInclusaoProcessoAdmin.do?act=init",,,1
+    
+      ,"Publicações", "./montaPesquisaPublicacao.do",,,1
+    
+      ,"Tramitações em Lote", "./montaDadosTramitacaoEmLote.do?act=novoLote",,,1
+    
+      ,"Atualiza Valor Ação", "./montaAtualizacaoValorAcaoJudicial.do",,,1
+    
+      ,"Andamentos em Lote", "./montaDadosAndamentoEmLote.do?act=init",,,1
+    
+      ,"Cadastro de Ação Simplificado", "./montaDadosAcaoJudicialSimplificada.do?act=init",,,1
+    
+      ,"Pesquisa de Ação Simplificada", "./montaPesquisaAcaoJudicialSimplificada.do?act=init",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Pagamentos",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Pesquisa de Solicitação Autônoma", "./pesquisaSolicitacaoAutonoma.do",,,1
+    
+      ,"Pesquisa Despesas e Honorários", "./pesquisaDespesasHonorarios.do",,,1
+    
+      ,"Pesquisa de Solicitações de Pagamento/Reembolso", "./pesquisaSolicitacaoPagamento.do",,,1
+    
+      ,"Pendências Para Conferência", "./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Manutenção",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"CAP Contratados", "./listaContratadosCap.do",,,1
+    
+      ,"Despesas/Honorários", "./despesaHonorarios.do",,,1
+    
+      ,"Escritório Contratado", "./pesquisaSociedadeCredenciada.do",,,1
+    
+      ,"Usuários de Escritório Contratado", "./pesquisaUsuarioSociedadeCredenciada.do",,,1
+    
+      ,"Parâmetros", "./listaParametro.do",,,1
+    
+      ,"Parâmetros de Memória de Cálculo", "./listaParametroMemoriaCalculo.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Parâmetros de Integração TOTVS", "./parametroIntegracao.do?acao=init",,,1
+    
+      ,"Empreendimento", "./montaPesquisaEmpreendimento.do",,,1
+    
+      ,"Valor Índice", "./montaPesquisaValorIndice.do",,,1
+    
+      ,"Tipo de Andamento", "./montaPesquisaTipoAndamento.do",,,1
+    
+      ,"Classificação/Distribuição de Processos", "./montaClassificacaoDistribuicao.do",,,1
+    
+      ,"TESTE", "",,,1
+    
+      ,"Pedidos", "./pesquisaPedido.do",,,1
+    
+    ])
+  
+
+  
+
+  
+    addmenu(
+    menu=["Relatórios",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Empreendimento", "./prepareFiltroRelatorioEmpreendimento.do",,,1
+    
+      ,"Importar Planilha", "./importacaoPlanilha.do",,,1
+    
+      ,"Histórico de Importações", "./historicoImportacaoPlanilha.do",,,1
+    
+      ,"Geral de Provisionamento", "./relatorioProvisionamento.do?acao=init",,,1
+    
+      ,"Histórico de Provisões", "./relatorioProvisionamento.do?acao=initHistorico",,,1
+    
+      ,"Emissão de Relatórios Gerenciais", "./montaDadosRelatorioGerencial.do",,,1
+    
+      ,"Histórico de Planilha de Processos", "./montaRelatorioProcessosHistorico.do?acao=init",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Segurança",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Altera Senha", "./novaTrocaSenha.do",,,1
+    
+    ])
+  
+
+
+    addmenu(
+    menu=["Versão",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+      ,"Info", "./showVersion.do",,,1
+    ])
+
+addmenu(menu=["mainmenu",90,0,120,1,"left",style1,1,"center",,,1,,,,,,,,,,
+
+  ,"Movimentação","show-menu=Movimentação",,"",1
+
+  ,"Pagamentos","show-menu=Pagamentos",,"",1
+
+  ,"Manutenção","show-menu=Manutenção",,"",1
+
+  ,"Estatísticas","show-menu=Estatísticas",,"",1
+
+  ,"Relatórios","show-menu=Relatórios",,"",1
+
+  ,"Segurança","show-menu=Segurança",,"",1
+
+  ,"Sair","sair.do",,"",1
+  
+  ,"Ajuda","./helpNovo/HTML/index.html",,"",1
+  
+  ,"Versão","show-menu=Versão",,"",1
+])
+
+
+dumpmenus()
+
+
+
+
+
+</script>
+
+
+<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+
+<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript" >
+
+	 
+	 $('form').ready(function(){		 
+		 $( "input:text" ).each(function() {
+			 $(this).bind('blur', function (e) {
+				    if (e.which >= 97 && e.which <= 122) {
+				        var newKey = e.which - 32;
+				        // I have tried setting those
+				        e.keyCode = newKey;
+				        e.charCode = newKey;
+				    }
+
+				    $(this).val(($(this).val()).toUpperCase());
+				});
+		 });
+
+	});
+	 
+	$("a[href='./help/index.html']").attr("target","_blank"); 
+	$("a[href='./help/SC/index.html']").attr("target","_blank"); 
+	
+      function redirect(url){    	      	  
+        document.location='/gpja-web/'+url;
+      }
+      function alternateRowColors() {
+        styleTitTabla = "tit_lista";
+        styleAltRow   = "texto_lista";
+        styleRow      = "texto_lista_1";
+        styleButton   = "td_botao";
+        tableStyle    = "alternate";
+        tableStyleNew = "tabelas";
+        tables = document.getElementsByTagName("table");
+        for(var i=0;i<tables.length;i++) {
+          atable = tables.item(i);
+          if(atable.className==tableStyle){
+            rows = atable.rows;
+            for(var j=0;j<rows.length;j++) {
+              arow = rows.item(j);
+              if (j == 0){
+                arow.className = styleTitTabla;
+              }else if (j == rows.length-1) {
+                arow.className = styleButton;
+              }else if (j%2==0){
+                arow.className = styleRow;
+              }else {
+                arow.className = styleAltRow;
+              }
+            }
+            atable.className=tableStyleNew;
+          }
+        }
+      }
+
+   function MM_goToURL() {	   
+        var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+       for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+  }
+
+</script>
+
+<script type="text/javascript">
+var formularioAlteradoField;
+
+function verificaAlteracao() {
+  if(formularioAlteradoField) {
+    formularioAlteradoField.value = 'S';
+  }
+}
+
+for(i=0;i<document.forms.length;i++) {
+  var form = document.forms[i];
+  for(j=0;j<form.elements.length;j++) {
+    var field = form.elements[j];
+    if(field.type == 'hidden' && field.name == 'formularioAlterado') {
+      formularioAlteradoField = field;
+    }
+  }
+}
+
+if(formularioAlteradoField) {
+  for(i=0;i<document.forms.length;i++) {
+    var form = document.forms[i];
+    for(j=0;j<form.elements.length;j++) {
+      var field = form.elements[j];
+      if(field.type != 'hidden') {
+        if(field.onchange) {
+          var onchangeOriginal = field.onchange;
+          field.onchange = verificaAlteracao;
+          addListener(field, 'change', onchangeOriginal);
+        } else {
+          field.onchange = verificaAlteracao;
+        }
+      }
+    }
+  }
+}
+
+function addListener(element, event, listener, bubble) {
+  if(element.addEventListener) {
+    if(typeof(bubble) == "undefined") bubble = false;
+    element.addEventListener(event, listener, bubble);
+  } else if(this.attachEvent) {
+    element.attachEvent("on" + event, listener);
+  }
+}
+</script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="header_fundo">
+      <img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+    </td>
+  </tr>
+  <tr>
+    <td class="menu_fundo">&nbsp;</td>
+  </tr>
+<!-- Código das Abas - Inicio -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function enviar(action) {
+  if(formularioAlteradoField && formularioAlteradoField.value == 'S' && !confirm("Os dados alterados não foram salvos e serão perdidos, deseja continuar ?")) {
+    return;
+  }
+  location.href = action;
+}
+
+function construcao() {
+  alert("Em construção.");
+}
+</script>
+
+
+
+
+  
+
+  
+  <tr>
+    <td valign="top" class="abas_fundo">
+      
+        <div id="abas">
+      
+      
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            
+            
+            
+
+            <!-- Inicio aba ACAO CAP-->
+            
+
+             
+
+            
+
+            <!-- TELA DE ENTRADA CAP -->
+            
+            <!-- FIM DA TELA DE ENTRADA CAP -->
+
+            <!-- Fim aba ACAO CAP -->
+
+            <!--Inicio Alteração Ação Judicial-->
+                            <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+                  
+                  
+                    <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./montaAlteracaoAcaoJudicialAntigaAba.do?idAcaoJudicialAtual=37412');" class="aba_link">Processo</a></td>
+                  
+                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+
+              
+              
+                
+                <td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="aba_off_L" nowrap="nowrap"><a href="javascript:enviar('./listaParteAcaoJudicialPoloAtivoInicioAba.do?idAcaoJudicialAtual=37412');" class="aba_link_L">Partes</a></td>
+                <td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+	              
+	              
+	                
+	                <td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off_L" nowrap="nowrap">
+	                  <a href="javascript:enviar('./listaLembreteAcaoJudicialAssuntoInicioAba.do?idAcaoJudicialAtual=37412');" class="aba_link_L">Lembretes</a>
+	                </td>
+	                <td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+	              
+			  
+              
+                <td><img src="./imagens/aba_onl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="aba_on" nowrap="nowrap">Acompanhamento</td>
+                <td><img src="./imagens/aba_onr.gif" title="" width="7" height="19" border="0"></td>
+              
+             
+	                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./listaCorrelatasAcaoJudicialInicioAba.do?idAcaoJudicialAtual=37412');" class="aba_link">
+	                   
+	                       Vinculadas/Correlatas
+	                   
+	                  </a>
+	                </td>
+	                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	              
+	
+	           
+	              
+	              
+	                
+	                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./listaAssociadasAcaoJudicialAba.do?idAcaoJudicialAtual=37412');" class="aba_link">Processo/Recursos Associados</a></td>
+	                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	              
+	
+	
+	
+	              <!-- Bloqueio On-line -->
+	              
+	
+	              
+	                
+	                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./listaBloqueioParteAba.do?idAcaoJudicialAtual=37412');" class="aba_link">Cadin</a></td>
+	                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	              
+	
+	
+	
+	
+	           
+	        
+            
+            <!--Fim Alteração Ação Judicial-->
+
+            
+
+            
+
+            
+
+            
+
+
+            
+          </tr>
+        </table>
+      </div>
+      <img src="./imagens/nada.gif" width="1" height="1">
+    </td>
+  </tr>
+
+
+<!-- Código das Abas Final  -->
+
+<!-- Código das subabas - Inicio -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function enviar(action) {
+  if(formularioAlteradoField && formularioAlteradoField.value == 'S' && !confirm("Os dados alterados não foram salvos e serão perdidos, deseja continuar ?")) {
+    return;
+  }
+  location.href = action;
+}
+
+function construcao() {
+  alert("Em construção.");
+}
+</script>
+
+
+
+
+
+
+
+
+ 
+ 
+
+  <tr>
+    <td valign="top" class="sub_abas_fundo">
+      <div id="sub_abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            
+
+              
+
+			  
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar('./listaAndamentoAssociado.do?idAcaoJudicialAtual=37412');" class="subaba_link_L">Andamentos</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="./ConsultaAgenda.html" class="subaba_link_L">Agenda</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+              
+              
+                
+                <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar('./listaTramitacaoAssociada.do?idAcaoJudicialAtual=37412');" class="subaba_link">Tramita&ccedil;&otilde;es</a></td>
+                <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+
+
+
+<!--
+           < %  if (acaoJudicialVO != null &&  acaoJudicialVO.getIdPapelFazenda() !=  null && !acaoJudicialVO.getIdPapelFazenda().equals(ConstantsGPJ.ID_PAPEL_FAZENDA_PROCESSO_ADMINISTRATIVO) ) { %>
+              
+              
+                < %posFixoAba = AbasAcompanhamentoAcaoJudicialUtil.getPosFixoDestaque(session, "abas.alteracaoAcaoJudicial.Acompanhamentos.RequisicoesAutos");%>
+                <td><img src="./imagens/subaba_offl< %=posFixoAba%>.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off< %=posFixoAba%>"><a href="javascript:enviar('./listaRequisicaoAuto.do?idAcaoJudicialAtual=< %=acaoJudicialVO.getId()%>');" class="subaba_link< %=posFixoAba%>">Requisi&ccedil;&otilde;es de Autos</a></td>
+                <td><img src="./imagens/subaba_offr< %=posFixoAba%>.gif" title="" width="7" height="19" border="0"></td>
+              
+            < % } %>
+-->
+
+              
+              
+                
+                <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar('./listaPericiaAcaoJudicialInicio.do?idAcaoJudicialAtual=37412');" class="subaba_link">
+               
+                  Per&iacute;cias/Contas
+               
+                 </a></td>
+                <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+
+             
+             
+             
+             
+               
+               <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                 <td class="subaba_off"><a href="javascript:enviar('./listaDespesaJudicial.do?idAcaoJudicialAtual=37412');" class="subaba_link">Despesas/Custas Judiciais</a></td>
+                 <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+             
+            
+            
+             
+             
+             
+               
+               <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                 <td class="subaba_off_L"><a href="./ConsultaDepositoRecursal.html" class="subaba_link_L">Deposito Recursal</a></td>
+                 <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+             
+             
+             
+            
+              
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="./ConsultaDepositoJudicial.html" class="subaba_link_L">Depósito Judicial</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+             
+             
+            
+             
+             
+               
+               <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                 <td class="subaba_off"><a href="javascript:enviar('./listaDespesaCustasSAInicio.do?idAcaoJudicialAtual=37412');" class="subaba_link">Despesas/Honorários do Escritório</a></td>
+                 <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+             
+                          
+             
+             
+             
+             
+             
+            
+           
+<!-- subabas Tela Entrada \ Compromissos [atuais/futuros|antigos] start -->
+
+<!-- sub abas - CAP -->
+
+               
+<!-- sub abas - Cap fim -->
+
+
+            
+             
+            
+			
+            
+            
+            
+            
+            
+
+<!-- subabas Tela Entrada \ Compromissos end -->
+
+          </tr>
+        </table>
+      </div>
+      <img src="./imagens/nada.gif" width="1" height="1" title="">
+    </td>
+  </tr>
+<!-- Código das SubAbas Final  -->
+
+
+<!-- Código das SubSubAbas - Inicio -->
+
+  <tr>
+    <td valign="top" class="sub_abas_fundo">
+      <div id="sub_sub_abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            
+
+
+			 
+              
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="./Penhora.html" class="subaba_link_L">Penhoras</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+
+
+
+
+
+
+              
+                <td><img src="./imagens/subaba_onl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_on">Condena&ccedil;&atilde;o</td>
+                <td><img src="./imagens/subaba_onr.gif" title="" width="7" height="19" border="0"></td>
+              
+              
+              
+			  
+              
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar('./listaMemoriaCalculo.do?idAcaoJudicialAtual=37412');" class="subaba_link_L">Memória Cálculo</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+              
+			  
+          	  
+            
+          </tr>
+        </table>
+      </div>
+      <img src="./imagens/nada.gif" width="1" height="1" title="">
+    </td>
+  </tr>
+
+
+<!-- Código das SubSubAbas Final  -->
+
+
+<!-- Código das subabas Final  -->
+
+  <div id='menuHoriz' style='position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3'>
+    <!-- inicio Menu -->
+
+    <ul id="menu">
+      <li>&nbsp;</li>
+    </ul>
+
+    <!-- fim Menu -->
+  </div>
+  <div id="header">
+    <div id="header_logo"></div>
+  </div>
+  <!-- Código das Abas Final  -->
+  <tr>
+    <td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+     <td>
+
+<!--- inicio tabel&atilde;o do conte&uacute;do -->
+            
+
+
+
+
+
+
+
+
+<script language="javascript1.2" src="./js/popcalendar.js" type=""></script>
+
+<script type="text/javascript">
+
+function voltar() {
+  location.href="./listaPrecatorioAcaoJudicialInicio.do"
+}
+
+function buscaCombo(nameField, opcao) {
+  var form = document.forms[0];
+  form.act.value=opcao;
+  form.action = './montaDadosPrecatorioAcaoJudicial.do';
+  saveScrollPosition(form);
+  form.submit();
+}
+
+function gravar() {
+	if (document.getElementById("dataCondenacao").value == "") {
+		alert("Campo Data da Condenação obrigatório.");
+		document.getElementById("dataCondenacao").focus();
+		return false;
+	}
+
+	if (document.getElementById("acordo").checked == true 
+			&& document.getElementById("valorOriginario").value == "") {
+		alert("Campo Valor Acordo obrigatório.");
+		document.getElementById("valorOriginario").focus();
+		return false;
+	}
+
+
+	if (document.getElementById("multaDiaria").checked == true) {
+		if (document.getElementById("valorMultaDiaria").value == "") {
+			alert("Campo Multa Diária obrigatório.");
+			document.getElementById("valorMultaDiaria").focus();
+			return false;
+		}
+		
+		if (document.getElementById("valorTetoMultaDiaria").value != "") {
+			if (document.getElementById("valorTetoMultaDiaria").value == "0" || document.getElementById("valorTetoMultaDiaria").value == "0,0" || document.getElementById("valorTetoMultaDiaria").value == "0,00") {
+				alert("Campo Valor Teto deve ser maior do que 0,00.");
+				document.getElementById("valorTetoMultaDiaria").focus();
+				return false;
+			}
+		}
+		
+	}
+
+	if (!validarBloco("multaMoratoria", "percentualMultaMoratoria", "valorMultaMoratoria", null, null)) {
+		return false;
+	}
+
+	if (!validarBloco("multaCpc", "percentualMultaCpc", null, null, null)) {
+		return false;
+	}
+	
+	if (!validarBloco("multaOutras", "percentualMultaOutras", "valorMultaOutras", null, null)) {
+		return false;
+	}
+
+	if (!validarBloco("jurosCompensatorios", "percentualJurosCompensatorios", null, null, "valorBaseJurosCompensatorios")) {
+		return false;
+	}
+
+	if (!validarBloco("jurosMoratorios", "percentualJurosMoratorios", null, null, "valorBaseJurosMoratorios")) {
+		return false;
+	}
+
+	if (!validarBloco("honorariosAdvocaticios", "percentualHonorariosAdvocaticios", "valorHonorariosAdvocaticios", null, "valorBaseHonorariosAdvocaticios")) {
+		return false;
+	}
+
+	if (!validarBloco("honorariosPericiais", "percentualHonorariosPericiais", "valorHonorariosPericiais", null, "valorBaseHonorariosPericiais")) {
+		return false;
+	}
+
+	if (!validarBloco("honorariosExecucao", "percentualHonorariosExecucao", "valorHonorariosExecucao", null, "valorBaseHonorariosExecucao")) {
+		return false;
+	}
+	
+
+	if (!validarBloco("taxaLiquidacao", "percentualTaxaLiquidacao", null, null, null)) {
+		return false;
+	}
+
+	
+	
+	document.getElementById("valorOriginario").disabled = false;
+	document.getElementById("valorMultaDiaria").disabled = false;
+	document.getElementById("dataMultaDiaria").disabled = false;
+	document.getElementById("percentualMultaMoratoria").disabled = false;
+	document.getElementById("valorMultaMoratoria").disabled = false;
+	document.getElementById("dataMultaMoratoria").disabled = false;
+	document.getElementById("percentualMultaCpc").disabled = false;
+	document.getElementById("percentualMultaOutras").disabled = false;
+	document.getElementById("valorMultaOutras").disabled = false;
+	document.getElementById("dataMultaOutras").disabled = false;
+	document.getElementById("percentualJurosCompensatorios").disabled = false;
+	document.getElementById("dataJurosCompensatorios").disabled = false;
+	document.getElementById("percentualJurosMoratorios").disabled = false;
+	document.getElementById("dataJurosMoratorios").disabled = false;
+	document.getElementById("percentualHonorariosAdvocaticios").disabled = false;
+	document.getElementById("valorHonorariosAdvocaticios").disabled = false;
+	document.getElementById("dataHonorariosAdvocaticios").disabled = false;
+	document.getElementById("percentualHonorariosPericiais").disabled = false;
+	document.getElementById("valorHonorariosPericiais").disabled = false;
+	document.getElementById("dataHonorariosPericiais").disabled = false;
+	document.getElementById("percentualTaxaLiquidacao").disabled = false;
+
+	document.getElementById("valorTetoMultaDiaria").disabled = false;
+	document.getElementById("valorBaseJurosCompensatorios").disabled = false;
+	document.getElementById("valorBaseJurosMoratorios").disabled = false;
+	document.getElementById("valorBaseHonorariosAdvocaticios").disabled = false;
+	document.getElementById("valorBaseHonorariosPericiais").disabled = false;
+	document.getElementById("percentualHonorariosExecucao").disabled = false;
+	document.getElementById("valorBaseHonorariosExecucao").disabled = false;
+	document.getElementById("valorHonorariosExecucao").disabled = false;
+	document.getElementById("dataHonorariosExecucao").disabled = false;
+	
+
+	var form = document.forms[0];
+	form.action = './salvaPrecatorioAcaoJudicial.do';
+	form.submit();
+	
+}
+
+
+function validarBloco(campo, percentual, valor, data, valorBase) {
+	if (document.getElementById(campo).checked == true) {
+		if (document.getElementById(percentual).disabled == false) {
+			if (document.getElementById(percentual).value == "") {
+				alert("Campo Percentual obrigatório.");
+				document.getElementById(percentual).focus();
+				return false;
+			}
+			var valorPercent = document.getElementById(percentual).value;
+			valorPercent = valorPercent.replace(",", ".");
+			
+			if ((valorPercent <= 0) || (valorPercent > 100)) {
+				alert("Campo Percentual deve ser maior que 0 e menor ou igual a 100.");
+				document.getElementById(percentual).focus();
+				return false;
+			}
+		}
+
+		if (valor != null) {
+			if (document.getElementById(valor).disabled == false) {
+				if (document.getElementById(valor).value == "") {
+					alert("Campo Valor obrigatório.");
+					document.getElementById(valor).focus();
+					return false;
+				}
+
+				if (document.getElementById(valor).value == "0" || document.getElementById(valor).value == "0,0" || document.getElementById(valor).value == "0,00") {
+					alert("Campo Valor deve ser maior do que 0,00.");
+					document.getElementById(valor).focus();
+					return false;
+				}
+			}
+		}
+
+
+		if (valorBase != null) {
+			if (document.getElementById(valorBase).disabled == false) {
+				if (document.getElementById(valorBase).value != "") {
+					if (document.getElementById(valorBase).value == "0" || document.getElementById(valorBase).value == "0,0" || document.getElementById(valorBase).value == "0,00") {
+						alert("Campo Valor Base deve ser maior do que 0,00.");
+						document.getElementById(valorBase).focus();
+						return false;
+					}
+				}
+			}
+		}
+
+		if (data != null) {
+			if (document.getElementById(data).value == "") {
+				alert("Campo Data obrigatório.");
+				document.getElementById(data).focus();
+				return false;
+			}
+		}
+	}
+
+	return true;
+}
+
+
+
+
+function ativarDesativar(valorCampo, camposDesativar, idRadio, idCampo) {
+	var campos = camposDesativar.split(",");
+	for (i = 0; i < campos.length; i++) {
+		if (valorCampo == "0") {
+			if (document.getElementById(campos[i]).type == "text") {
+				document.getElementById(campos[i]).value = "";
+			} else if (document.getElementById(campos[i]).type == "radio" || document.getElementById(campos[i]).type == "checkbox") {
+				document.getElementById(campos[i]).checked = "";
+			} else if (document.getElementById(campos[i]).type == "select-one") {
+				document.getElementById(campos[i]).selectedIndex = 0;
+			}
+			document.getElementById(campos[i]).disabled = true;
+		} else {
+			if (idCampo != null) {
+				document.getElementById(idCampo).value = document.getElementById(idCampo + "Valor").value;
+				if (idRadio != null && document.getElementById(idCampo).value != "") {
+					document.getElementById(idRadio).checked = true;
+					document.getElementById(idCampo).disabled = false;
+				}
+			}
+			document.getElementById(campos[i]).disabled = false;
+		}
+	}
+
+	
+
+	ativarDesativarRadios();
+}
+
+function ativarDesativarPercentualUnico(desativar, ativar) {
+		if (desativar != null) {
+			var campos = desativar.split(",");
+			for (i = 0; i < campos.length; i++) {
+				document.getElementById(campos[i]).value = "";
+				document.getElementById(campos[i]).disabled = true;
+			}
+			
+		}
+		if (ativar != null) {
+			var campos = ativar.split(",");
+			for (i = 0; i < campos.length; i++) {
+				if (campos[i].indexOf("percentual") >- 1){
+					if (document.getElementById(campos[i] + "Valor") != null && document.getElementById(campos[i] + "Valor").value != "")	
+						document.getElementById(campos[i]).value = document.getElementById(campos[i] + "Valor").value;
+				}
+				document.getElementById(campos[i]).disabled = false;
+			}
+		}
+}
+
+
+function ativarDesativarRadios() {
+	if (document.getElementById('tipoMultaMoratoria1').checked || !document.getElementById('tipoMultaMoratoria2').checked) {
+		ativarDesativarPercentualUnico('valorMultaMoratoria', null);
+	}
+	if (document.getElementById('tipoMultaMoratoria2').checked || !document.getElementById('tipoMultaMoratoria1').checked) {
+		ativarDesativarPercentualUnico('percentualMultaMoratoria', null);
+	}
+
+	if (document.getElementById('tipoMultaOutras1').checked || !document.getElementById('tipoMultaOutras2').checked) {
+		ativarDesativarPercentualUnico('valorMultaOutras', null);
+	}
+	if (document.getElementById('tipoMultaOutras2').checked || !document.getElementById('tipoMultaOutras1').checked) {
+		ativarDesativarPercentualUnico('percentualMultaOutras', null);
+	}
+
+	if (document.getElementById('tipoHonorariosAdvocaticios1').checked || !document.getElementById('tipoHonorariosAdvocaticios2').checked) {
+		ativarDesativarPercentualUnico('valorHonorariosAdvocaticios', null);
+	}
+	if (document.getElementById('tipoHonorariosAdvocaticios2').checked || !document.getElementById('tipoHonorariosAdvocaticios1').checked) {
+		ativarDesativarPercentualUnico('valorBaseHonorariosAdvocaticios,percentualHonorariosAdvocaticios', null);
+	}
+
+	if (document.getElementById('honorariosPericiais1').checked || !document.getElementById('honorariosPericiais2').checked) {
+		ativarDesativarPercentualUnico('valorHonorariosPericiais', null);
+	}
+	if (document.getElementById('honorariosPericiais2').checked || !document.getElementById('honorariosPericiais1').checked) {
+		ativarDesativarPercentualUnico('valorBaseHonorariosPericiais,percentualHonorariosPericiais', null);
+	}
+
+	if (document.getElementById('honorariosExecucao1').checked || !document.getElementById('honorariosExecucao2').checked) {
+		ativarDesativarPercentualUnico('valorHonorariosExecucao', null);
+	}
+	if (document.getElementById('honorariosExecucao2').checked || !document.getElementById('honorariosExecucao1').checked) {
+		ativarDesativarPercentualUnico('valorBaseHonorariosExecucao,percentualHonorariosExecucao', null);
+	}
+
+	if (document.getElementById('tipoJurosMoratorios2').checked || !document.getElementById('tipoJurosMoratorios1').checked) {
+		ativarDesativarPercentualUnico('percentualJurosMoratorios', null);
+	}
+	
+}
+
+</script>
+
+
+<!-- inicio tabelao conteudo -->
+<form name="PrecatorioForm" method="post" action="/gpja-web/salvaPrecatorioAcaoJudicial.do"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="fb00be1fca9f9a5c5a015bcefb0994c0">
+  <input type="hidden" name="act" value="novo">
+  	  
+  	  <input type="hidden" name="percentualMultaCpc" value="20,00" id="percentualMultaCpcValor">
+  	  <input type="hidden" name="percentualMultaOutras" value="30,00" id="percentualMultaOutrasValor">
+  	  <input type="hidden" name="percentualJurosCompensatorios" value="10,00" id="percentualJurosCompensatoriosValor">
+  	  <input type="hidden" name="percentualJurosMoratorios" value="" id="percentualJurosMoratoriosValor">
+  	  <input type="hidden" name="percentualHonorariosAdvocaticios" value="40,00" id="percentualHonorariosAdvocaticiosValor">
+  	  <input type="hidden" name="percentualHonorariosPericiais" value="5,00" id="percentualHonorariosPericiaisValor">
+  	  <input type="hidden" name="percentualHonorariosExecucao" value="2,00" id="percentualHonorariosExecucaoValor">
+  	  <input type="hidden" name="percentualTaxaLiquidacao" value="6,00" id="percentualTaxaLiquidacaoValor">
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td><img src="./imagens/nada.gif" width="10" height="10"></td>
+        </tr>
+        <tr>
+          <td class="titulo"><p><strong>Cadastro de Condena&ccedil;&atilde;o </strong></p></td>
+        </tr>
+        <tr>
+          <td><img src="./imagens/nada.gif" width="10" height="10"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+              <tr>
+                <td class="texto_lista"><strong>Nº Antigo do Processo:</strong> <span class='texto_lista_destaque'>12345                         </span>
+ - <strong>Nº no Sistema:</strong> <span class='texto_lista_destaque'>37412</span>
+<br>
+<strong>Assunto:</strong> <br>
+<strong>Tipo de A&ccedil;&atilde;o:</strong> AÇÃO CIVEL PUBLICA<br>
+<strong>Autor, Impetrante, Recorrente:</strong> LOREM IPSUM DOLLOR SIT AMED<br>
+<strong>Réu, Impetrado, Recorrido:</strong> Secretaria de Habitação<br>
+<strong>Avaliação de Risco:</strong> <br>
+<strong>&Uacute;ltimo Andamento:</strong> 
+19/03/2018 &ndash; Felipe
+<br>
+<div><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse" ><tr><td width="35%" ><strong>Área:</strong> CONTENCIOSO - JOAO ANTONIO</td><td width="65%" ><strong>Por:</strong> Felipe </td></tr></table></div>
+</td>
+              </tr>
+            </table>
+            <br>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+                <td>
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td nowrap class="rotulo">Condena&ccedil;&atilde;o:</td>
+                      <td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+              </tr>
+              <tr>
+                <td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+                <td class="celula_rotulo">
+                  <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                        <tr>
+                          <td width="15%" class="td_titulo">Senten&ccedil;a:</td>
+                          <td width="1%"  class="td_titulo_obrigatorio">&nbsp;</td>
+                          <td width="35%" class="td_conteudo" >
+                            <input type="radio" name="vo.tipoSentencaFavoravel" value="1" class="input_radio">&nbsp;Procedente &nbsp;&nbsp;
+                            <input type="radio" name="vo.tipoSentencaFavoravel" value="2" class="input_radio">&nbsp;Improcedente &nbsp;&nbsp;
+                            <input type="radio" name="vo.tipoSentencaFavoravel" value="3" class="input_radio">&nbsp;Parcialmente procedente &nbsp;&nbsp;
+                          </td>
+                          <td  width="10%" class="td_titulo">Data da Condenação:</td>
+                          <td  width="1%" class="td_titulo_obrigatorio">*</td>
+                          <td class="td_conteudo">
+                            <input type="text" name="vo.dateAsString(dataCondenacao)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataCondenacao">
+                        	<input name="button33" type="button" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataCondenacao)'], document.forms['PrecatorioForm']['vo.dateAsString(dataCondenacao)'], 'dd/mm/yyyy');" value="v">
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td  class="td_titulo">Valor 1&ordf; Inst&acirc;ncia:</td>
+                          <td  class="td_titulo_obrigatorio">&nbsp;</td>
+                          <td class="td_conteudo" colspan="4">
+                            <input type="text" name="vo.currencyAsString(valorCondenacaoPrim)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td  class="td_titulo">Valor 2&ordf; Inst&acirc;ncia:</td>
+                          <td  class="td_titulo_obrigatorio">&nbsp;</td>
+                          <td class="td_conteudo" colspan="4">
+                            <input type="text" name="vo.currencyAsString(valorRetificado)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td  class="td_titulo">Valor Condena&ccedil;&atilde;o Definitiva:</td>
+                          <td  class="td_titulo_obrigatorio">&nbsp;</td>
+                          <td class="td_conteudo" colspan="4">
+                            <input type="text" name="vo.currencyAsString(valorCondenacao)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right">
+                          </td>
+                        </tr>
+					</table>
+					<br/>
+					<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                       <tr>
+                         <td width="15%" class="td_titulo">Liquida&ccedil;&atilde;o por Arbitramento:</td>
+                         <td width="1%" class="td_titulo_obrigatorio">&nbsp;</td>
+                         <td class="td_conteudo" colspan="4">
+                           <input type="checkbox" name="chk.vo.liquidacaoArbitramento" value="1" onclick="if (this.checked) { this.form['vo.liquidacaoArbitramento'].value='1' } else { this.form['vo.liquidacaoArbitramento'].value='0' }; null" class="noborder"><input type="hidden" name="vo.liquidacaoArbitramento" value="0">
+                         </td>
+                       </tr>
+                       <tr>
+                         <td class="td_titulo">Liquida&ccedil;&atilde;o por Artigos:</td>
+                         <td class="td_titulo_obrigatorio">&nbsp;</td>
+                         <td class="td_conteudo" colspan="4">
+                           <input type="checkbox" name="chk.vo.insuficienciaDeposito" value="1" onclick="if (this.checked) { this.form['vo.insuficienciaDeposito'].value='1' } else { this.form['vo.insuficienciaDeposito'].value='0' }; null" class="noborder"><input type="hidden" name="vo.insuficienciaDeposito" value="0">
+                         </td>
+                       </tr>
+                       <tr>
+                         <td class="td_titulo">Liquida&ccedil;&atilde;o por C&aacute;lculo:</td>
+                         <td class="td_titulo_obrigatorio">&nbsp;</td>
+                         <td class="td_conteudo" colspan="4">
+                           <input type="checkbox" name="chk.vo.pedidoIntervencao" value="1" onclick="if (this.checked) { this.form['vo.pedidoIntervencao'].value='1' } else { this.form['vo.pedidoIntervencao'].value='0' }; null" class="noborder"><input type="hidden" name="vo.pedidoIntervencao" value="0">
+                         </td>
+                       </tr>
+                   </table>
+                   <br/>
+				   <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                       <tr>
+                         <td class="td_titulo" width="15%">Acordo:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.acordo" value="1" onclick="if (this.checked) { this.form['vo.acordo'].value='1' } else { this.form['vo.acordo'].value='0' }; ativarDesativar(this.checked, 'valorOriginario', null, null)" class="noborder" id="acordo"><input type="hidden" name="vo.acordo" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="15%">Valor Acordo:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="text" name="vo.currencyAsString(valorOriginario)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorOriginario">
+                         </td>
+                       </tr>
+                  </table>
+                  <br/>
+                  <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                       <tr>
+                         <td class="td_titulo" width="15%">Multa Diária:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.multaDiaria" value="1" onclick="if (this.checked) { this.form['vo.multaDiaria'].value='1' } else { this.form['vo.multaDiaria'].value='0' }; ativarDesativar(this.checked, 'valorMultaDiaria,dataMultaDiaria,btDataDiaria,valorTetoMultaDiaria', null, null)" class="noborder" id="multaDiaria"><input type="hidden" name="vo.multaDiaria" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%">Valor da Multa:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" width="24,5%">
+                           <input type="text" name="vo.currencyAsString(valorMultaDiaria)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorMultaDiaria">
+                         </td>
+                         
+                         <td class="td_titulo" width="7%">Valor Teto:</td>                         
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo" width="20%">
+	                         	<input type="text" name="vo.currencyAsString(valorTetoMultaDiaria)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorTetoMultaDiaria">
+	                         </td>	 
+                         
+                         <td class="td_titulo" width="10%">A partir da data de:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" colspan="4">
+                            <input type="text" name="vo.dateAsString(dataMultaDiaria)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataMultaDiaria">
+                        	<input name="button33" id="btDataDiaria" type="button" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataMultaDiaria)'], document.forms['PrecatorioForm']['vo.dateAsString(dataMultaDiaria)'], 'dd/mm/yyyy');" value="v">
+                         </td>
+                       </tr>
+                       
+                       <tr>
+                         <td class="td_titulo" width="15%">Multa Moratória:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.multaMoratoria" value="1" onclick="if (this.checked) { this.form['vo.multaMoratoria'].value='1' } else { this.form['vo.multaMoratoria'].value='0' }; ativarDesativar(this.checked, 'dataMultaMoratoria,btDataMultaMoratoria,tipoMultaMoratoria1,tipoMultaMoratoria2,dataMultaMoratoria,btDataMultaMoratoria', null, null)" class="noborder" id="multaMoratoria"><input type="hidden" name="vo.multaMoratoria" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoMultaMoratoria" value="1" onclick="ativarDesativarPercentualUnico('valorMultaMoratoria','percentualMultaMoratoria');" class="input_radio" id="tipoMultaMoratoria1">Percentual:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="text" name="vo.currencyAsString(percentualMultaMoratoria)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualMultaMoratoria"> % (sobre o valor da condenação)
+                         </td>
+                         
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoMultaMoratoria" value="2" checked="checked" onclick="ativarDesativarPercentualUnico('percentualMultaMoratoria','valorMultaMoratoria')" class="input_radio" id="tipoMultaMoratoria2">Valor:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="text" name="vo.currencyAsString(valorMultaMoratoria)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorMultaMoratoria">
+                         </td>
+                         
+                         <td class="td_titulo" width="10%">A partir da data de:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                            <input type="text" name="vo.dateAsString(dataMultaMoratoria)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataMultaMoratoria">
+                        	<input id="btDataMultaMoratoria" name="button33" type="button" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataMultaMoratoria)'], document.forms['PrecatorioForm']['vo.dateAsString(dataMultaMoratoria)'], 'dd/mm/yyyy');" value="v">
+                         </td>
+                       </tr>
+                       
+                       <tr>
+                         <td class="td_titulo" width="15%">Multa (art. 523 CPC):</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.multaCpc" value="1" onclick="if (this.checked) { this.form['vo.multaCpc'].value='1' } else { this.form['vo.multaCpc'].value='0' }; ativarDesativar(this.checked, 'percentualMultaCpc', null, 'percentualMultaCpc')" class="noborder" id="multaCpc"><input type="hidden" name="vo.multaCpc" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%">Percentual:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" colspan="7">
+                           <input type="text" name="vo.currencyAsString(percentualMultaCpc)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualMultaCpc"> % (sobre o valor da condenação)
+                         </td>
+                        </tr> 
+                         
+                         <tr>
+	                         <td class="td_titulo" width="15%">Multas (Outras):</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <input type="checkbox" name="chk.vo.multaOutras" value="1" onclick="if (this.checked) { this.form['vo.multaOutras'].value='1' } else { this.form['vo.multaOutras'].value='0' }; ativarDesativar(this.checked, 'tipoMultaOutras1,tipoMultaOutras2,dataMultaOutras,btDataMultaOutras', 'tipoMultaOutras1', 'percentualMultaOutras')" class="noborder" id="multaOutras"><input type="hidden" name="vo.multaOutras" value="0">
+	                         </td>
+	
+	                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoMultaOutras" value="1" onclick="ativarDesativarPercentualUnico('valorMultaOutras','percentualMultaOutras')" class="input_radio" id="tipoMultaOutras1">Percentual:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <input type="text" name="vo.currencyAsString(percentualMultaOutras)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualMultaOutras"> % 
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoMultaOutras" value="2" checked="checked" onclick="ativarDesativarPercentualUnico('percentualMultaOutras','valorMultaOutras')" class="input_radio" id="tipoMultaOutras2">Valor:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <input type="text" name="vo.currencyAsString(valorMultaOutras)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorMultaOutras">
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="10%">A partir da data de:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                            <input type="text" name="vo.dateAsString(dataMultaOutras)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataMultaOutras">
+	                        	<input name="button33" type="button" class="botao" id="btDataMultaOutras" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataMultaOutras)'], document.forms['PrecatorioForm']['vo.dateAsString(dataMultaOutras)'], 'dd/mm/yyyy');" value="v">
+	                         </td>
+                       </tr>
+                  </table>
+                  <br/>
+                  <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                       <tr>
+                       		<td class="td_titulo" width="15%">Juros Compensatórios:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <input type="checkbox" name="chk.vo.jurosCompensatorios" value="1" onclick="if (this.checked) { this.form['vo.jurosCompensatorios'].value='1' } else { this.form['vo.jurosCompensatorios'].value='0' }; ativarDesativar(this.checked, 'valorBaseJurosCompensatorios,percentualJurosCompensatorios,periodoJurosCompensatorios,dataJurosCompensatorios,btDataJurosCompensatorios', null, 'percentualJurosCompensatorios')" class="noborder" id="jurosCompensatorios"><input type="hidden" name="vo.jurosCompensatorios" value="0">
+	                         </td>
+	
+	                         <td class="td_titulo" width="7%">Percentual:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo"  width="7%">
+	                           <input type="text" name="vo.currencyAsString(percentualJurosCompensatorios)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualJurosCompensatorios"> %
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="7%">Valor Base:</td>
+	                         <td class="td_conteudo" colspan="3">
+	                         	<input type="text" name="vo.currencyAsString(valorBaseJurosCompensatorios)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorBaseJurosCompensatorios">
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="7%">Periodicidade:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <select name="vo.longAsString(periodoJurosCompensatorios)" id="periodoJurosCompensatorios"><option value="1">Mensal</option>
+						        	<option value="2">Diário</option>
+						        	<option value="3" selected="selected">Anual</option></select>		
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="10%">A partir da data de:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                            <input type="text" name="vo.dateAsString(dataJurosCompensatorios)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataJurosCompensatorios">
+	                        	<input name="button33" type="button" id="btDataJurosCompensatorios" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataJurosCompensatorios)'], document.forms['PrecatorioForm']['vo.dateAsString(dataJurosCompensatorios)'], 'dd/mm/yyyy');" value="v">
+	                         </td>
+                       </tr>
+                       <tr>
+                       		<td class="td_titulo" width="15%">Juros Moratórios:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <input type="checkbox" name="chk.vo.jurosMoratorios" value="1" onclick="if (this.checked) { this.form['vo.jurosMoratorios'].value='1' } else { this.form['vo.jurosMoratorios'].value='0' }; ativarDesativar(this.checked, 'valorBaseJurosMoratorios,periodicidadeJurosMoratorios,dataJurosMoratorios,btDataJurosMoratorios,tipoJurosMoratorios1,tipoJurosMoratorios2', null, 'percentualJurosMoratorios')" class="noborder" id="jurosMoratorios"><input type="hidden" name="vo.jurosMoratorios" value="0">
+	                         </td>
+	
+	                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoJurosMoratorios" value="1" onclick="ativarDesativarPercentualUnico(null, 'percentualJurosMoratorios')" class="input_radio" id="tipoJurosMoratorios1">Percentual Fixo:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo" width="7%">
+	                           <input type="text" name="vo.currencyAsString(percentualJurosMoratorios)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualJurosMoratorios"> %
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoJurosMoratorios" value="2" checked="checked" onclick="ativarDesativarPercentualUnico('percentualJurosMoratorios', null)" class="input_radio" id="tipoJurosMoratorios2">Diferenciado</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         
+	                         <td class="td_titulo" width="7%">Valor Base:</td>
+	                         <td class="td_conteudo">
+	                         	<input type="text" name="vo.currencyAsString(valorBaseJurosMoratorios)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorBaseJurosMoratorios">
+	                         </td>	                         
+	                         
+	                         <td class="td_titulo" width="7%">Periodicidade:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                           <select name="vo.longAsString(periodicidadeJurosMoratorios)" id="periodicidadeJurosMoratorios"><option value="1">Mensal</option>
+						        	<option value="2">Diário</option>
+						        	<option value="3" selected="selected">Anual</option></select>		
+	                         </td>
+	                         
+	                         <td class="td_titulo" width="10%">A partir da data de:</td>
+	                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+	                         <td class="td_conteudo">
+	                            <input type="text" name="vo.dateAsString(dataJurosMoratorios)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataJurosMoratorios">
+	                        	<input name="button33" id="btDataJurosMoratorios" type="button" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataJurosMoratorios)'], document.forms['PrecatorioForm']['vo.dateAsString(dataJurosMoratorios)'], 'dd/mm/yyyy');" value="v">
+	                         </td>
+                       </tr>
+                  </table>
+                  <br/>
+                  <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                       <tr>
+                         <td class="td_titulo" width="15%">Honorários Advocatícios:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.honorariosAdvocaticios" value="1" onclick="if (this.checked) { this.form['vo.honorariosAdvocaticios'].value='1' } else { this.form['vo.honorariosAdvocaticios'].value='0' }; ativarDesativar(this.checked, 'valorBaseHonorariosAdvocaticios,tipoHonorariosAdvocaticios1,tipoHonorariosAdvocaticios2,dataHonorariosAdvocaticios,btDataHonorariosAdvocaticios', 'tipoHonorariosAdvocaticios1', 'percentualHonorariosAdvocaticios')" class="noborder" id="honorariosAdvocaticios"><input type="hidden" name="vo.honorariosAdvocaticios" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoHonorariosAdvocaticios" value="1" onclick="ativarDesativarPercentualUnico('valorHonorariosAdvocaticios','percentualHonorariosAdvocaticios,valorBaseHonorariosAdvocaticios')" class="input_radio" id="tipoHonorariosAdvocaticios1">Percentual:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" width="7%">
+                           <input type="text" name="vo.currencyAsString(percentualHonorariosAdvocaticios)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualHonorariosAdvocaticios"> % 
+                         </td>
+                         
+                         <td class="td_titulo" width="7%">Valor Base:</td>
+                         <td class="td_conteudo">
+                         	<input type="text" name="vo.currencyAsString(valorBaseHonorariosAdvocaticios)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorBaseHonorariosAdvocaticios">
+                         </td>
+                         
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoHonorariosAdvocaticios" value="2" checked="checked" onclick="ativarDesativarPercentualUnico('percentualHonorariosAdvocaticios,valorBaseHonorariosAdvocaticios','valorHonorariosAdvocaticios')" class="input_radio" id="tipoHonorariosAdvocaticios2">Valor:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="text" name="vo.currencyAsString(valorHonorariosAdvocaticios)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorHonorariosAdvocaticios">
+                         </td>
+                         
+                         <td class="td_titulo" width="10%">A partir da data de:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                            <input type="text" name="vo.dateAsString(dataHonorariosAdvocaticios)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataHonorariosAdvocaticios">
+                        	<input name="button33" type="button" id="btDataHonorariosAdvocaticios" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataHonorariosAdvocaticios)'], document.forms['PrecatorioForm']['vo.dateAsString(dataHonorariosAdvocaticios)'], 'dd/mm/yyyy');" value="v">
+                         </td>
+                       </tr>
+                       <tr>
+                         <td class="td_titulo" width="15%">Honorários Periciais:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.honorariosPericiais" value="1" onclick="if (this.checked) { this.form['vo.honorariosPericiais'].value='1' } else { this.form['vo.honorariosPericiais'].value='0' }; ativarDesativar(this.checked, 'valorBaseHonorariosPericiais,honorariosPericiais1,honorariosPericiais2,dataHonorariosPericiais,btDataHonorariosPericiais', 'honorariosPericiais1', 'percentualHonorariosPericiais')" class="noborder" id="honorariosPericiais"><input type="hidden" name="vo.honorariosPericiais" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoHonorariosPericiais" value="1" onclick="ativarDesativarPercentualUnico('valorHonorariosPericiais','percentualHonorariosPericiais,valorBaseHonorariosPericiais')" class="input_radio" id="honorariosPericiais1">Percentual:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" width="7%">
+                           <input type="text" name="vo.currencyAsString(percentualHonorariosPericiais)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualHonorariosPericiais"> % 
+                         </td>
+                         
+                         <td class="td_titulo" width="7%">Valor Base:</td>
+                         <td class="td_conteudo">
+                         	<input type="text" name="vo.currencyAsString(valorBaseHonorariosPericiais)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorBaseHonorariosPericiais">
+                         </td>
+                         
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoHonorariosPericiais" value="2" checked="checked" onclick="ativarDesativarPercentualUnico('percentualHonorariosPericiais,valorBaseHonorariosPericiais','valorHonorariosPericiais')" class="input_radio" id="honorariosPericiais2">Valor:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="text" name="vo.currencyAsString(valorHonorariosPericiais)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorHonorariosPericiais">
+                         </td>
+                         
+                         <td class="td_titulo" width="10%">A partir da data de:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                            <input type="text" name="vo.dateAsString(dataHonorariosPericiais)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataHonorariosPericiais">
+                        	<input name="button33" type="button" class="botao" id="btDataHonorariosPericiais" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataHonorariosPericiais)'], document.forms['PrecatorioForm']['vo.dateAsString(dataHonorariosPericiais)'], 'dd/mm/yyyy');" value="v">
+                         </td>
+                       </tr>
+                       
+                       <tr>
+                         <td class="td_titulo" width="15%">Honorários de Execução:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.honorariosExecucao" value="1" onclick="if (this.checked) { this.form['vo.honorariosExecucao'].value='1' } else { this.form['vo.honorariosExecucao'].value='0' }; ativarDesativar(this.checked, 'valorBaseHonorariosExecucao,honorariosExecucao1,honorariosExecucao2,dataHonorariosExecucao,btDataHonorariosExecucao', 'honorariosExecucao1', 'percentualHonorariosExecucao')" class="noborder" id="honorariosExecucao"><input type="hidden" name="vo.honorariosExecucao" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoHonorariosExecucao" value="1" onclick="ativarDesativarPercentualUnico('valorHonorariosExecucao','percentualHonorariosExecucao,valorBaseHonorariosExecucao')" class="input_radio" id="honorariosExecucao1">Percentual:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" width="7%">
+                           <input type="text" name="vo.currencyAsString(percentualHonorariosExecucao)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualHonorariosExecucao"> % 
+                         </td>
+                         
+                         <td class="td_titulo" width="7%">Valor Base:</td>
+                         <td class="td_conteudo">
+                         	<input type="text" name="vo.currencyAsString(valorBaseHonorariosExecucao)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorBaseHonorariosExecucao">
+                         </td>
+                         
+                         <td class="td_titulo" width="7%"><input type="radio" name="vo.tipoHonorariosExecucao" value="2" checked="checked" onclick="ativarDesativarPercentualUnico('percentualHonorariosExecucao,valorBaseHonorariosExecucao','valorHonorariosExecucao')" class="input_radio" id="honorariosExecucao2">Valor:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="text" name="vo.currencyAsString(valorHonorariosExecucao)" maxlength="20" size="20" value="" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right" id="valorHonorariosExecucao">
+                         </td>
+                         
+                         <td class="td_titulo" width="10%">A partir da data de:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                            <input type="text" name="vo.dateAsString(dataHonorariosExecucao)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" id="dataHonorariosExecucao">
+                        	<input name="button33" type="button" class="botao" id="btDataHonorariosExecucao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dataHonorariosExecucao)'], document.forms['PrecatorioForm']['vo.dateAsString(dataHonorariosExecucao)'], 'dd/mm/yyyy');" value="v">
+                         </td>
+                       </tr>
+                       <tr>
+                         <td class="td_titulo" width="15%">Taxa de Liquidação da Execução:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo">
+                           <input type="checkbox" name="chk.vo.taxaLiquidacao" value="1" onclick="if (this.checked) { this.form['vo.taxaLiquidacao'].value='1' } else { this.form['vo.taxaLiquidacao'].value='0' }; ativarDesativar(this.checked, 'percentualTaxaLiquidacao', null, 'percentualTaxaLiquidacao')" class="noborder" id="taxaLiquidacao"><input type="hidden" name="vo.taxaLiquidacao" value="0">
+                         </td>
+
+                         <td class="td_titulo" width="7%">Percentual:</td>
+                         <td class="td_titulo_obrigatorio" width="1%">&nbsp;</td>
+                         <td class="td_conteudo" colspan="7">
+                           <input type="text" name="vo.currencyAsString(percentualTaxaLiquidacao)" maxlength="6" size="6" value="" onkeypress="return currencyFormat(this, '.', ',', event)" onblur="currencyFormat(this, '.', ',', event)" class="input_right" id="percentualTaxaLiquidacao"> % 
+                         </td>
+                       </tr>
+                  </table>   
+                  <br/>  
+                  <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                  	<tr>
+                      <td width="15%" class="td_titulo">Observação:</td>
+                      <td width="1%" class="td_titulo_obrigatorio">&nbsp;</td>
+                      <td colspan="4" class="td_conteudo">
+                        <textarea name="vo.observacao" cols="88" rows="6"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td_titulo">Data de Pagamento:</td>
+                      <td class="td_titulo_obrigatorio">&nbsp;</td>
+                      <td colspan="4" class="td_conteudo">
+                        <input type="text" name="vo.dateAsString(dtPagamento)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')">
+                        <input name="button33" type="button" class="botao" onClick="popUpCalendar(document.forms['PrecatorioForm']['vo.dateAsString(dtPagamento)'], document.forms['PrecatorioForm']['vo.dateAsString(dtPagamento)'], 'dd/mm/yyyy');" value="v">
+                      </td>
+                    </tr>
+                    
+                    
+                    
+                  </table>
+                </td>
+                <td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+              </tr>
+              <tr>
+                <td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+                <td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+                <td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="2" cellpadding="2">
+              <tr>
+                <td>
+                  <input type="button" class="botao" onClick="javascript:voltar();" value="Cancelar">
+                  <input type="button" class="botao" onClick="javascript:gravar();" value="Gravar">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+
+
+  
+  <input type="hidden" name="formularioAlterado" value="N"/>
+
+
+<script>
+	ativarDesativar(document.getElementById('acordo').checked, 'valorOriginario', null, null);
+	ativarDesativar(document.getElementById('multaDiaria').checked, 'valorMultaDiaria,dataMultaDiaria,btDataDiaria,valorTetoMultaDiaria', null, null);
+	ativarDesativar(document.getElementById('multaMoratoria').checked, 'btDataMultaMoratoria,tipoMultaMoratoria1,tipoMultaMoratoria2,dataMultaMoratoria,btDataMultaMoratoria', null, null);
+	ativarDesativar(document.getElementById('multaCpc').checked, 'percentualMultaCpc', null, null);
+	ativarDesativar(document.getElementById('multaOutras').checked, 'tipoMultaOutras1,tipoMultaOutras2,dataMultaOutras,btDataMultaOutras', null, null);
+	ativarDesativar(document.getElementById('jurosCompensatorios').checked, 'valorBaseJurosCompensatorios,percentualJurosCompensatorios,periodoJurosCompensatorios,dataJurosCompensatorios,btDataJurosCompensatorios', null, null);
+	ativarDesativar(document.getElementById('jurosMoratorios').checked, 'valorBaseJurosMoratorios,percentualJurosMoratorios,periodicidadeJurosMoratorios,dataJurosMoratorios,btDataJurosMoratorios,tipoJurosMoratorios1,tipoJurosMoratorios2', null, null);
+	ativarDesativar(document.getElementById('honorariosAdvocaticios').checked, 'valorBaseHonorariosAdvocaticios,tipoHonorariosAdvocaticios1,tipoHonorariosAdvocaticios2,dataHonorariosAdvocaticios,btDataHonorariosAdvocaticios', null, null);
+	ativarDesativar(document.getElementById('honorariosPericiais').checked, 'valorBaseHonorariosPericiais,honorariosPericiais1,honorariosPericiais2,dataHonorariosPericiais,btDataHonorariosPericiais', null, null);
+	ativarDesativar(document.getElementById('honorariosExecucao').checked, 'valorBaseHonorariosExecucao,honorariosExecucao1,honorariosExecucao2,dataHonorariosExecucao,btDataHonorariosExecucao', null, null);
+	ativarDesativar(document.getElementById('taxaLiquidacao').checked, 'percentualTaxaLiquidacao', null, null);
+</script>
+</form>
+
+            <script>
+addEvent(window, "resize", centralizarLoading);
+addEvent(window, "scroll", centralizarLoading);
+</script>
+<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: #CDCDCD;
+       filter:alpha(opacity=40); opacity: 0.4; -moz-opacity:0.4; z-index: 1000; display: block;" onmousemove="segurarFoco();">
+   </div>
+   <div id="divAguarde" style="position: absolute; border: #C0C0C0 2px solid; height: 50px; width: 150px; cursor: wait; z-index: 1001;
+       background-color: #FFFFFF; top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: block;">
+
+       <table width="100%" cellpadding=0 cellspacing=0 border=0>
+           <tr>
+               <td width="50"><img src="./imagens/loading.gif"/></td>
+               <td style="text-align: center;">
+                   <input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size=10
+                       style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;"/>
+               </td>
+           </tr>
+       </table>
+
+</div>
+
+<!--- fim tabel&atilde;o do conte&uacute;do -->
+          </td>
+          <td width="10">
+            <img src="./imagens/nada.gif" title="" width="10" height="10" border="0">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="footer_fundo">
+    
+
+
+
+
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+      <tr>
+        <td width="50%">
+          <span class="footer_texto">Usu&aacute;rio:</span>
+          Felipe
+
+          
+
+        </td>
+        <td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+        <td width="15%" align="right" class="footer_texto">
+           
+           
+           04/04/2018 17:16
+        </td>
+      </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<script type="text/javascript">
+  loading(false);
+</script>
+
+<script type="text/javascript">
+    alternateRowColors();
+</script>
+
+
+
+
+
+
+
+
+   
+
+
+
+

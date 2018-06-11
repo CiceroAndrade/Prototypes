@@ -1,0 +1,575 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+    addmenu(
+    menu=["Movimentação",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Tela de Entrada", "./Entrada.html",,,1
+    
+      ,"Cadastro de Pessoas", "./pesquisaPessoa.do?act=init",,,1
+    
+      ,"Pesquisa de Ação", "./montaPesquisaSimplesAcaoJudicial.do",,,1
+    
+      ,"Pesquisa de Ação Avançada", "./montaPesquisaAcaoJudicial.do",,,1
+    
+      ,"Cadastro de Ação", "./montaInclusaoAcaoJudicial.do?act=init",,,1
+    
+      ,"Pesquisa de Processo - CAP", "./montaPesquisaAcaoCap.do",,,1
+    
+      ,"Novo Processo - CAP", "./cadastroAcaoCap.do?registroNovo=S",,,1
+    
+      ,"Pesquisa de Processo Administrativo", "./montaPesquisaProcessoAdmin.do",,,1
+    
+      ,"Cadastro de Processo Administrativo", "./montaInclusaoProcessoAdmin.do?act=init",,,1
+    
+      ,"Publicações", "./montaPesquisaPublicacao.do",,,1
+    
+      ,"Tramitações em Lote", "./montaDadosTramitacaoEmLote.do?act=novoLote",,,1
+    
+      ,"Atualiza Valor Ação", "./montaAtualizacaoValorAcaoJudicial.do",,,1
+    
+      ,"Andamentos em Lote", "./montaDadosAndamentoEmLote.do?act=init",,,1
+    
+      ,"Cadastro de Ação Simplificado", "./montaDadosAcaoJudicialSimplificada.do?act=init",,,1
+    
+      ,"Pesquisa de Ação Simplificada", "./montaPesquisaAcaoJudicialSimplificada.do?act=init",,,1
+	  
+	  ," Cadastro de Bloqueios", "./ConsultaBloqueios.html",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Pagamentos",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Pesquisa de Solicitação Autônoma", "./pesquisaSolicitacaoAutonoma.do",,,1
+    
+      ,"Pesquisa Despesas e Honorários", "./pesquisaDespesasHonorarios.do",,,1
+    
+      ,"Pesquisa de Solicitações de Pagamento/Reembolso", "./pesquisaSolicitacaoPagamento.do",,,1
+    
+      ,"Pendências Para Conferência", "./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Manutenção",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"CAP Contratados", "./listaContratadosCap.do",,,1
+    
+      ,"Despesas/Honorários", "./despesaHonorarios.do",,,1
+    
+      ,"Escritório Contratado", "./pesquisaSociedadeCredenciada.do",,,1
+    
+      ,"Usuários de Escritório Contratado", "./pesquisaUsuarioSociedadeCredenciada.do",,,1
+    
+      ,"Parâmetros", "./listaParametro.do",,,1
+    
+      ,"Parâmetros de Memória de Cálculo", "./listaParametroMemoriaCalculo.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Parâmetros de Integração TOTVS", "./parametroIntegracao.do?acao=init",,,1
+    
+      ,"Empreendimento", "./montaPesquisaEmpreendimento.do",,,1
+    
+      ,"Valor Índice", "./montaPesquisaValorIndice.do",,,1
+    
+      ,"Tipo de Andamento", "./montaPesquisaTipoAndamento.do",,,1
+    
+      ,"Classificação/Distribuição de Processos", "./montaClassificacaoDistribuicao.do",,,1
+    
+      ,"TESTE", "",,,1
+    
+      ,"Pedidos", "./pesquisaPedido.do",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Relatórios",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Empreendimento", "./prepareFiltroRelatorioEmpreendimento.do",,,1
+    
+      ,"Importar Planilha", "./importacaoPlanilha.do",,,1
+    
+      ,"Histórico de Importações", "./historicoImportacaoPlanilha.do",,,1
+    
+      ,"Geral de Provisionamento", "./relatorioProvisionamento.do?acao=init",,,1
+    
+      ,"Histórico de Provisões", "./relatorioProvisionamento.do?acao=initHistorico",,,1
+    
+      ,"Emissão de Relatórios Gerenciais", "./montaDadosRelatorioGerencial.do",,,1
+    
+      ,"Histórico de Planilha de Processos", "./montaRelatorioProcessosHistorico.do?acao=init",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Segurança",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Altera Senha", "./novaTrocaSenha.do",,,1
+    
+    ])
+  
+
+
+    addmenu(
+    menu=["Versão",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+      ,"Info", "./showVersion.do",,,1
+    ])
+
+
+addmenu(menu=["mainmenu",90,0,120,1,"left",style1,1,"center",,,1,,,,,,,,,,
+
+  ,"Movimentação","show-menu=Movimentação",,"",1
+
+  ,"Pagamentos","show-menu=Pagamentos",,"",1
+
+  ,"Manutenção","show-menu=Manutenção",,"",1
+
+  ,"Estatísticas","show-menu=Estatísticas",,"",1
+
+  ,"Relatórios","show-menu=Relatórios",,"",1
+
+  ,"Segurança","show-menu=Segurança",,"",1
+
+  ,"Sair","sair.do",,"",1
+  
+  ,"Ajuda","paginas/helpNovo/HTML/index.html",,"",1
+  
+  ,"Versão","show-menu=Versão",,"",1
+])
+
+
+dumpmenus()
+
+</script>
+
+
+<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+
+<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript" >
+
+	 
+	 $('form').ready(function(){		 
+		 $( "input:text" ).each(function() {
+			 $(this).bind('blur', function (e) {
+				    if (e.which >= 97 && e.which <= 122) {
+				        var newKey = e.which - 32;
+				        // I have tried setting those
+				        e.keyCode = newKey;
+				        e.charCode = newKey;
+				    }
+
+				    $(this).val(($(this).val()).toUpperCase());
+				});
+		 });
+
+	});
+	 
+	$("a[href='paginas/help/index.html']").attr("target","_blank"); 
+	$("a[href='paginas/help/SC/index.html']").attr("target","_blank"); 
+	
+      function redirect(url){    	      	  
+        document.location='/gpja-web/'+url;
+      }
+      function alternateRowColors() {
+        styleTitTabla = "tit_lista";
+        styleAltRow   = "texto_lista";
+        styleRow      = "texto_lista_1";
+        styleButton   = "td_botao";
+        tableStyle    = "alternate";
+        tableStyleNew = "tabelas";
+        tables = document.getElementsByTagName("table");
+        for(var i=0;i<tables.length;i++) {
+          atable = tables.item(i);
+          if(atable.className==tableStyle){
+            rows = atable.rows;
+            for(var j=0;j<rows.length;j++) {
+              arow = rows.item(j);
+              if (j == 0){
+                arow.className = styleTitTabla;
+              }else if (j == rows.length-1) {
+                arow.className = styleButton;
+              }else if (j%2==0){
+                arow.className = styleRow;
+              }else {
+                arow.className = styleAltRow;
+              }
+            }
+            atable.className=tableStyleNew;
+          }
+        }
+      }
+
+   function MM_goToURL() {	   
+        var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+       for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+  }
+
+</script>
+
+<script type="text/javascript">
+var formularioAlteradoField;
+
+function verificaAlteracao() {
+  if(formularioAlteradoField) {
+    formularioAlteradoField.value = 'S';
+  }
+}
+
+for(i=0;i<document.forms.length;i++) {
+  var form = document.forms[i];
+  for(j=0;j<form.elements.length;j++) {
+    var field = form.elements[j];
+    if(field.type == 'hidden' && field.name == 'formularioAlterado') {
+      formularioAlteradoField = field;
+    }
+  }
+}
+
+if(formularioAlteradoField) {
+  for(i=0;i<document.forms.length;i++) {
+    var form = document.forms[i];
+    for(j=0;j<form.elements.length;j++) {
+      var field = form.elements[j];
+      if(field.type != 'hidden') {
+        if(field.onchange) {
+          var onchangeOriginal = field.onchange;
+          field.onchange = verificaAlteracao;
+          addListener(field, 'change', onchangeOriginal);
+        } else {
+          field.onchange = verificaAlteracao;
+        }
+      }
+    }
+  }
+}
+
+function addListener(element, event, listener, bubble) {
+  if(element.addEventListener) {
+    if(typeof(bubble) == "undefined") bubble = false;
+    element.addEventListener(event, listener, bubble);
+  } else if(this.attachEvent) {
+    element.attachEvent("on" + event, listener);
+  }
+}
+</script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="header_fundo">
+      <img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+    </td>
+  </tr>
+  <tr>
+    <td class="menu_fundo">&nbsp;</td>
+  </tr>
+<!-- Código das Abas - Inicio -->
+
+
+<!-- Código das Abas Final  -->
+
+<!-- Código das subabas - Inicio -->
+
+
+<!-- Código das subabas Final  -->
+
+  <div id='menuHoriz' style='position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3'>
+    <!-- inicio Menu -->
+
+    <ul id="menu">
+      <li>&nbsp;</li>
+    </ul>
+
+    <!-- fim Menu -->
+  </div>
+  <div id="header">
+    <div id="header_logo"></div>
+  </div>
+  <!-- Código das Abas Final  -->
+  <tr>
+    <td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+     <td>
+
+<!--- inicio tabel&atilde;o do conte&uacute;do -->
+      
+<script language="javascript1.2" type="text/javascript" src="./js/popcalendar.js"></script>
+<script language="javascript" type="text/javascript">
+	function fechar() {
+		var form = document.forms[0];
+		form.action = './voltarCadastroEntradaSolicitacaoAutonoma.do?tipoOperacao=ver';
+		form.submit();
+	}
+
+	function salvar() {
+		var form = document.forms[0];
+
+		if (form['observacao'].value == "") {
+			alert("O campo 'Observações' é obrigatório.");
+			form['observacao'].focus();
+			return;
+		}
+		
+
+		if (form['observacao'].value.length > 1000) {
+			alert("O campo 'Observações' é permitido somente 1000 caracteres.");
+			form['observacao'].focus();
+			return;
+		}			
+
+		
+
+		if (confirm('Ao cancelar a Solicitação Autônoma, a Ordem de Serviço será automaticamente cancelada.\n\nDeseja Continuar?')) {
+			form.action = './cancelaEntradaSolicitacaoAutonoma.do?tipoOperacao=ver';
+			form.submit();
+		}
+	}
+
+	function isTextAlphaNumeric(e, Object, MaxLen) { // Alphanumeric only
+	    
+
+	    var k;
+	    //document.all ? k=e.keycode : k=e.which;
+
+		var caracteresValidos = 'àèìòùâêîôûäëïöüáéíóúãõçÇÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÁÉÍÓÚÃÕ'; 
+		
+		
+		var palavra = String.fromCharCode(event.keyCode);
+		
+	    if((Object.value.length < MaxLen) && caracteresValidos.indexOf(palavra) != -1) {
+	       return true; 
+	    }    
+	    if((Object.value.length >= MaxLen)) {
+	        return false;
+	    }
+	    
+	    k=event.keyCode;	
+	    return( (k>47 && k<58)||(k>64 && k<91)||(k>96 && k<123)||k==0 || k==32);    
+	    
+	 }
+
+	function validateKey () {  
+		 var ctrl=window.event.ctrlKey;
+		 var tecla=window.event.keyCode;
+		 if (ctrl && tecla==67) {
+			 event.keyCode=0; event.returnValue=false;
+		 }
+		 if (ctrl && tecla==86) {
+			 event.keyCode=0; event.returnValue=false;
+		 }
+	}  
+
+	function fecharVisualizacao() {
+		var form = document.forms[0];
+		form.action = './PendenciasBloqueiosPenhoras.html';
+		form.submit();
+	}
+
+	function fecharConsultaSolicitacao() {
+		var form = document.forms[0];
+		form.action = './listaSolicitacaoAutonoma.do';
+		form.submit();
+	}
+</script>
+	<form name="MontaDadosSolicitacoesAutonomaForm" method="post" action=""><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="d2b1b804ad7e8a46d55c68dfefc98893">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+			<td><img src="./imagens/nada.gif" width="10" height="10"></td>
+			</tr>
+			<tr>
+			<td class="titulo">
+				<p><strong>Cancelamento de Bloqueios</strong></p>
+			</td>
+			</tr>
+			<tr>
+			<td><img src="./imagens/nada.gif" width="10" height="10"></td>
+			</tr>
+			<tr>
+			<td>
+				<table width="100%" border="0" cellpadding="2" cellspacing="1">
+					<tr>
+						<td width="20%" class="td_titulo">Valor do Bloqueio:</td>
+						<td class="td_conteudo">
+							<input name="dataBloqueio" type="text" size="10" maxlength="10" value="52.000,00" disabled="true" />
+						</td>
+					</tr>
+					<tr>
+						<td width="20%" class="td_titulo">Data do Cadatro:</td>
+						<td class="td_conteudo">
+							<input type="text" name="dataCadastroBloqueio" maxlength="10" size="10" value="22/01/2018" disabled="disabled">
+						</td>
+					</tr>
+					<tr>
+						<td width="20%" class="td_titulo">Data do Bloqueio:</td>
+						<td class="td_conteudo">
+							<input name="dataBloqueio" type="text" size="10" maxlength="10" value="09/04/2018" disabled="true" />
+						</td>
+					</tr>
+					<tr>
+						<td width="20%" class="td_titulo">Data do Cancelamento:</td>
+						<td class="td_conteudo">
+							<input name="dataBloqueio" type="text" size="10" maxlength="10" value="09/04/2018" disabled="true" />
+						</td>
+					</tr>
+					<tr>
+						<td width="20%" class="td_titulo">Responsável pelo Cadastro:</td>
+						<td class="td_conteudo">
+							<input name="dataBloqueio" type="text" size="50" maxlength="50" value="Lorem Ipsum Dollor Sit Amed" disabled="true" />
+						</td>
+					</tr>
+					<tr>
+						<td width="20%" class="td_titulo">Responsável pelo Cancelamento:</td>
+						<td class="td_conteudo">
+							<input name="dataBloqueio" type="text" size="50" maxlength="50" value="Lorem Ipsum Dollor Sit Amed" disabled="true" />
+						</td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+							<td><table cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								<td nowrap class="rotulo">Detalhes:</td>
+								<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+								</tr>
+							</table></td>
+							<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+						</tr>
+						<tr>
+							<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+							<td class="celula_rotulo"><table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+								<tr>
+									<td class="td_titulo" width="20%">Motivo:</td>
+									<td class="td_titulo_obrigatorio" width="1%">*</td>
+									<td class="td_conteudo" width="79%">
+										<input type="radio" name="cancelamentoBloqueio1" value="1" disabled="disabled" class="input_radio">Cadastro em Duplicidade
+										<input type="radio" name="cancelamentoBloqueio2" value="2" checked="checked" disabled="disabled" class="input_radio">Cadastro Errado
+										<input type="radio" name="cancelamentobloqueio3." value="3" disabled="disabled" class="input_radio">Outros
+									</td>
+								</tr>
+								<tr>
+									<td class="td_titulo" width="20%">Observações:</td> 
+									<td class="td_titulo_obrigatorio" width="1%">*</td>
+									<td class="td_conteudo" width="79%">
+										<textarea name="cancelamentoBloqueioObservacoes" cols="130" rows="11" disabled="disabled" id="observacao">Lorem Ipsum Dollor Sit Amed!</textarea>
+									</td>
+								</tr>
+								
+							</table></td>
+							<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+						</tr>
+						<tr>
+							<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+							<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+							<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+						</tr>
+					</table>
+					<table width="100%" border="0" cellspacing="2" cellpadding="2">
+						<tr>
+							<td align="left">
+								<input type="button" class="botao" onClick="javascript:fecharVisualizacao();" value="Fechar">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+<script>
+addEvent(window, "resize", centralizarLoading);
+addEvent(window, "scroll", centralizarLoading);
+</script>
+<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: #CDCDCD;
+       filter:alpha(opacity=40); opacity: 0.4; -moz-opacity:0.4; z-index: 1000; display: block;" onmousemove="segurarFoco();">
+   </div>
+   <div id="divAguarde" style="position: absolute; border: #C0C0C0 2px solid; height: 50px; width: 150px; cursor: wait; z-index: 1001;
+       background-color: #FFFFFF; top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: block;">
+       <table width="100%" cellpadding=0 cellspacing=0 border=0>
+           <tr>
+               <td width="50"><img src="./imagens/loading.gif"/></td>
+               <td style="text-align: center;">
+                   <input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size=10
+                       style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;"/>
+               </td>
+           </tr>
+       </table>
+</div>
+<!--- fim tabel&atilde;o do conte&uacute;do -->
+          </td>
+          <td width="10">
+            <img src="./imagens/nada.gif" title="" width="10" height="10" border="0">
+          </td>
+        </tr>
+      </table>
+    </td>
+	</tr>
+	<tr>
+	<td class="footer_fundo">
+    
+	<table width="100%" border="0" cellspacing="1" cellpadding="1">
+      <tr>
+        <td width="50%">
+          <span class="footer_texto">Usu&aacute;rio:</span>
+          Felipe
+        </td>
+        <td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+        <td width="15%" align="right" class="footer_texto">           
+           09/04/2018 14:39
+        </td>
+      </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<script type="text/javascript">
+  loading(false);
+</script>
+
+<script type="text/javascript">
+    alternateRowColors();
+</script>
+
+
+
+
+
+
+
+
+   
+
+
+
+

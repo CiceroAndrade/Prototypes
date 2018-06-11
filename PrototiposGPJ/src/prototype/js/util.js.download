@@ -1,0 +1,563 @@
+/**
+ Ex: Se vc começar a digitar 'Ba' em 'campoTexto' o value=2 do select vai
+     ser selecionado automaticamente.
+
+ <html:text styleClass="campo" maxlength="25" property="campoTexto"
+             size="25" onkeyup="findCombo(this, form['campoSelect']);"/>
+ <html:select styleClass="campo" property="campoSelect" >
+    <html:option value=""> </html:option>
+    <html:option value="1">Aaabc Unidade Emissora 001</html:option>
+    <html:option value="2">Babc Unidade Emissora 002</html:option>
+    <html:option value="3">Bbbc Unidade Emissora 003</html:option>
+  </html:select>
+
+  Import: <script language="JavaScript" src='../js/util.js'></script>
+ */
+  function findTextInSelect(textField, combo) {
+    combo.options[0].selected=true;
+    for(i=0; i<combo.options.length; i++) {
+      texto = combo.options[i].text.substring(0, textField.value.length);
+      if(texto.toUpperCase() == textField.value.toUpperCase()) {
+        combo.options[i].selected=true;
+        break;
+      }
+    }
+  }
+
+  function submitWizardAbas(form, step) {
+    if(step == 3) {
+       form.action = "exibeDevedoresRD.do";
+    }
+    else {
+       form.action = "wizardRegistroDebitoAutuacao.do";
+       form.stepWizard.value = step;
+    }
+    form.onsubmit = "";
+    form.submit();
+  }
+
+  function submitWizardAbasGeneric(form, step, action) {
+    if(step == 3) {
+       form.action = "exibeDevedoresRD.do";
+    }
+    else {
+      if(action != undefined) {
+        form.action = action;
+      }
+      else {
+        form.action = "dispatchRegistroDebitoAction.do"
+      }
+    }
+    form.stepWizard.value = step;
+    form.onsubmit = "";
+    form.submit();
+  }
+
+//Formata qualquer dado numérico durante a digitação conforme máscara passada
+function formatarDados(obj,evento,mascara){
+  var caracteres = "0123456789";
+  var code;
+
+  if(document.all){
+    code = evento.keyCode;
+  }
+  else if(evento != null && evento.which){
+    code = evento.which;
+  }
+
+  if (code == 8) return true;
+  if (code == undefined) return true;
+
+  if(obj.value.length == mascara.length) {
+    return false;
+  }
+  pos = obj.value.length;
+  if (mascara.charAt(pos) != '0'){
+    obj.value = obj.value + mascara.charAt(pos);
+    pos++;
+  }
+  if(mascara.charAt(obj.value.length) == '0') {
+    if(caracteres.indexOf(String.fromCharCode(code)) >= 0) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/*****************************************************************************/
+
+function confirmaAcao(acao) {
+  return confirm("Tem certeza que deseja " + acao + "?");
+}
+
+/*****************************************************************************/
+
+function disableTargetWhenZeroSelected(obj,target) {
+
+  if (obj.value != "") {
+    target.value = obj.options[obj.options.selectedIndex].text;
+    target.readOnly = true;
+  } else {
+    target.readOnly = false;
+    target.value = "";
+  }
+
+}
+
+/*
+*	Esta função compara duas datas retornando true se dataInicio < dataFim.
+*/
+	function comparaDatas(dataInicio, dataFim){
+
+		campoInicio =           dataInicio;
+		dia  		=	campoInicio.substring(0,2);
+		mes 		= 	campoInicio.substring(3,5);
+		ano 		= 	campoInicio.substring(6,10);
+
+	  	campoFim	=       dataFim;
+		diaFim  	=	campoFim.substring(0,2);
+		mesFim 		= 	campoFim.substring(3,5);
+		anoFim 		= 	campoFim.substring(6,10);
+
+
+		inicio 		=       new Date(mes, dia, ano);
+		fim 		=       new Date(mesFim, diaFim, anoFim);
+
+		if(inicio.getTime() <= fim.getTime()){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+
+function currencyFormat(fld, milSep, decSep, e)
+{
+	var sep = 0;
+	var key = '';
+	var i = j = 0;
+	var len = len2 = 0;
+	var strCheck = '0123456789';
+	var aux = aux2 = '';
+	var whichCode = (window.Event) ? e.which : e.keyCode;
+	if (whichCode == 13) return true;
+	if (whichCode == 8) return true;
+	if (whichCode == 0) return true;
+        if(fld.maxLength <= fld.value.length){
+         return false;
+        }
+	key = String.fromCharCode(whichCode);
+	if (strCheck.indexOf(key) == -1) return false;
+	len = fld.value.length;
+	for(i = 0; i < len; i++)
+	if ((fld.value.charAt(i) != '0') && (fld.value.charAt(i) != decSep)) break;
+	aux = '';
+	for(; i < len; i++)
+	if (strCheck.indexOf(fld.value.charAt(i))!=-1) aux += fld.value.charAt(i);
+	aux += key;
+	len = aux.length;
+	if (len == 0) fld.value = '';
+	if (len == 1) fld.value = '0'+ decSep + '0' + aux;
+	if (len == 2) fld.value = '0'+ decSep + aux;
+	if (len > 2)
+	{
+		aux2 = '';
+		for (j = 0, i = len - 3; i >= 0; i--)
+		{
+			if (j == 3)
+			{
+				aux2 += milSep;
+				j = 0;
+			}
+			aux2 += aux.charAt(i);
+			j++;
+		}
+		fld.value = '';
+		len2 = aux2.length;
+		for (i = len2 - 1; i >= 0; i--)
+		fld.value += aux2.charAt(i);
+		fld.value += decSep + aux.substr(len - 2, len);
+	}
+	return false;
+}
+
+function telefoneFormat(fld, chrSep, e)
+{
+	var sep = 0;
+	var key = '';
+	var i = j = 0;
+	var len = len2 = 0;
+	var strCheck = '0123456789';
+	var aux = aux2 = '';
+	var whichCode = (window.Event) ? e.which : e.keyCode;
+	if (whichCode == 13) return true;
+	if (whichCode == 8) return true;
+	if (whichCode == 0) return true;
+        if(fld.maxLength <= fld.value.length){
+         return false;
+        }
+	key = String.fromCharCode(whichCode);
+	if (strCheck.indexOf(key) == -1) return false;
+	len = fld.value.length;
+	for(i = 0; i < len; i++)
+	if ((fld.value.charAt(i) != '0') && (fld.value.charAt(i) != chrSep)) break;
+	aux = '';
+	for(; i < len; i++)
+	if (strCheck.indexOf(fld.value.charAt(i))!=-1) aux += fld.value.charAt(i);
+	aux += key;
+
+	len = aux.length;
+	if (len == 0) fld.value = '';
+	if (len > 0 && len <= 4 ) fld.value = aux;
+	if (len > 4)
+	{
+		for (i = len - 5; i >= 0; i--)
+                   aux2 += aux.charAt(i);
+		fld.value = '';
+		len2 = aux2.length;
+		for (i = len2 - 1; i >= 0; i--)
+ 		   fld.value += aux2.charAt(i);
+		fld.value += chrSep + aux.substr(len - 4, len);
+	}
+	return false;
+}
+
+
+function replaceAll(text, strA, strB)
+{
+    return text.replace( new RegExp(strA, "g"), strB );
+}
+
+function trim(s) {
+	return ltrim(rtrim(s));
+}
+
+function ltrim(s) {
+	return s.replace( /^\s*/, "" );
+}
+
+function rtrim(s) {
+	return s.replace( /\s*$/, "" );
+}
+
+function reverse(str) {
+  var str1 = '';
+  for(i = str.length-1;i>=0;i--) {
+	str1 += str.charAt(i);
+  }
+  return str1;
+}
+
+function validaTamanhoOnKeyPress(campo, size, e) {
+  var keynum;
+  if(window.event) {// IE
+    keynum = e.keyCode
+  } else if(e.which) {// Netscape/Firefox/Opera
+    keynum = e.which
+  }
+
+  if(!keynum || keynum == 8) {
+    return true;
+  }
+  return campo.value.length < size;
+}
+
+function validaTamanho(campo, qtChr) {
+  if(campo.value.length > qtChr) {
+    return false;
+  }
+  return true;
+}
+
+function getScrollPos(){
+	if(typeof window.pageYOffset=="number") {
+		return {x:window.pageXOffset, y:window.pageYOffset};
+	} else {
+		var c=getCompatModeElement();
+		if(c){
+			return {x:c.scrollLeft, y:c.scrollTop};
+		} else {
+			return {x:-1, y:-1};
+		}
+	}
+}
+
+function getCompatModeElement(){
+	if(document.compatMode &&
+		document.compatMode.indexOf("CSS")!=-1 &&
+		document.documentElement) {
+		return document.documentElement;
+	} else if(document.body) {
+		return document.body;
+	} else {
+		return null;
+	}
+}
+
+function scroll(pos) {
+	window.scrollPosition = function() {
+		if(typeof window.document.body.scrollTop != "undefined")
+			return window.document.body.scrollTop;
+		else if(typeof window.pageYOffset != "undefined")
+			return window.pageYOffset;
+		else
+			return -20;
+	}
+        window.scrollTo(0, pos);
+}
+
+function saveScrollPosition(form) {
+  if(form.action.indexOf('?') > -1) {
+    form.action += '&scrollPosition=';
+  } else {
+    form.action += '?scrollPosition=';
+  }
+  form.action += getScrollPos().y;
+}
+
+function openWindow(mypage, w, h, scroll, modal) {
+  try {
+    var leftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+    var topPosition = (screen.height) ? (screen.height-h)/2 : 0;
+
+    if (window.showModalDialog && modal) {
+      var settings = 'dialogWidth:' + w + 'px;dialogHeight:' + h + 'px';
+      window.showModalDialog(mypage,'',settings);
+    } else {
+      var settings = 'height='+h+',width='+w+',top='+topPosition+',left='+leftPosition;
+      window.open(mypage,'',settings);
+    }
+  } catch(e) {
+    alert(e.message);
+  }
+}
+
+function validaCampoCpf(campo) {
+  if(trim(campo.value) != '' && !validaCpf(campo.value)) {
+    alert('CPF inválido.');
+    campo.focus();
+    return false;
+  } else {
+	  return true;
+  }
+}
+
+function validaCampoPis(campo) {
+  if(trim(campo.value) != '' && !validaPis(campo.value)) {
+    alert('PIS inválido.');
+    campo.focus();
+    return false;
+  } else {
+	  return true;
+  }
+}
+
+function validaCampoCnpj(campo) {
+  if(trim(campo.value) != '' && !validaCnpj(campo.value)) {
+    alert('CNPJ inválido.');
+    campo.focus();
+    return false;
+  } else {
+	  return true;
+  }
+}
+
+function validaCampoCpfCnpj(campo) {
+  if(trim(campo.value) != '' && (!validaCpf(campo.value) && !validaCnpj(campo.value))) {
+    alert('CPF/CNPJ inválido.');
+    campo.focus();
+    return false;
+  } else {
+	  return true;
+  }
+}
+
+function validaCpf(cpf) {
+
+  cpf = replaceAll(cpf, "\\.", "");
+  cpf = replaceAll(cpf, "/", "");
+  cpf = replaceAll(cpf, "-", "");
+
+  if(cpf.length != 11) {
+    return false;
+  }
+
+  var n = 9;
+  var n1 = cpf.charAt(0);
+  var n2 = cpf.charAt(1);
+  var n3 = cpf.charAt(2);
+  var n4 = cpf.charAt(3);
+  var n5 = cpf.charAt(4);
+  var n6 = cpf.charAt(5);
+  var n7 = cpf.charAt(6);
+  var n8 = cpf.charAt(7);
+  var n9 = cpf.charAt(8);
+
+  var d1 = n9*2+n8*3+n7*4+n6*5+n5*6+n4*7+n3*8+n2*9+n1*10;
+  d1 = 11 - ( mod(d1,11) );
+
+  if (d1>=10) d1 = 0;
+
+  var d2 = d1*2+n9*3+n8*4+n7*5+n6*6+n5*7+n4*8+n3*9+n2*10+n1*11;
+  d2 = 11 - ( mod(d2,11) );
+  if (d2>=10) d2 = 0;
+
+  if(d1 != cpf.charAt(9) || d2 != cpf.charAt(10)) {
+    return false;
+  }
+
+  return true;
+}
+
+function validaCnpj(cnpj) {
+  cnpj = replaceAll(cnpj, "\\.", "");
+  cnpj = replaceAll(cnpj, "/", "");
+  cnpj = replaceAll(cnpj, "-", "");
+
+  if(cnpj.length != 14) {
+    return false;
+  }
+
+  var n = 9;
+  var n1 = cnpj.charAt(0);
+  var n2 = cnpj.charAt(1);
+  var n3 = cnpj.charAt(2);
+  var n4 = cnpj.charAt(3);
+  var n5 = cnpj.charAt(4);
+  var n6 = cnpj.charAt(5);
+  var n7 = cnpj.charAt(6);
+  var n8 = cnpj.charAt(7);
+  var n9 = cnpj.charAt(8);
+  var n10 = cnpj.charAt(9);
+  var n11 = cnpj.charAt(10);
+  var n12 = cnpj.charAt(11);
+
+  var d1 = n12*2+n11*3+n10*4+n9*5+n8*6+n7*7+n6*8+n5*9+n4*2+n3*3+n2*4+n1*5;
+  d1 = 11 - ( mod(d1,11) );
+  if (d1>=10) d1 = 0;
+
+  var d2 = d1*2+n12*3+n11*4+n10*5+n9*6+n8*7+n7*8+n6*9+n5*2+n4*3+n3*4+n2*5+n1*6;
+  d2 = 11 - ( mod(d2,11) );
+  if (d2>=10) d2 = 0;
+
+  if(d1 != cnpj.charAt(12) || d2 != cnpj.charAt(13)) {
+    return false;
+  }
+
+  return true;
+}
+
+
+function validaPis(PIS_PASEP)
+{
+
+   try {
+      PIS_PASEP = PIS_PASEP.replace('.', '').replace('.', '').replace('-', '');
+
+      if(PIS_PASEP.length != 11)
+         return false; // 'PIS/PASEP inválido!';
+      if(isNaN(PIS_PASEP))
+         return false; //'PIS/PASEP inválido!';
+      if(PIS_PASEP == '00000000000')
+         return false; //'PIS/PASEP inválido!';
+
+      var intResultado = new String();
+      var intTotal = 0;
+      var strPeso = '3298765432';
+
+      for(i = 1; i <= 10; i++) {
+         intResultado = PIS_PASEP.substring(i, i - 1) * strPeso.substring(i, i - 1);
+         intTotal += intResultado;
+      }
+
+      var intResto = intTotal % 11;
+      if(intResto != 0)
+         intResto = 11 - intResto;
+      if(intResto == 10 || intResto == 11)
+         intResto = intResto.toString().substring(2, 1);
+      if(parseInt(intResto, 10) != parseInt(PIS_PASEP.substring(11, 10), 10))
+         return false; //'PIS/PASEP inválido!';
+
+      return true;
+   } catch(excecao) {
+      return false; //'valPISPASEP(): ' + excecao.description;
+   }
+}
+
+
+function mod(dividendo,divisor) {
+  return Math.round(dividendo - (Math.floor(dividendo/divisor)*divisor));
+}
+
+var enviado = false;
+
+function eviadoTimeout() {
+   enviado = false;
+}
+
+function changeLocation(link) {
+   if (!enviado) {
+     location = link;
+     setTimeout("eviadoTimeout()",60000);
+     enviado = true;
+   }
+}
+
+function submitForm(form) {
+   if (!enviado) {
+     form.submit();
+     setTimeout("eviadoTimeout()",60000);
+     enviado = true;
+   }
+}
+
+function postForm(form, action, setReload) {
+   form.action = action;
+   submitForm(form);
+   if (setReload != undefined) {
+      parent.top.reload = setReload;
+   }
+   return true;
+}
+
+/**
+ *  Transfere o focus para o proximo elemento baseando-se no maxlength e tabindex
+ */
+
+function doNext(el)
+{
+   if (el.value.length < el.getAttribute('maxlength')) return;
+   var nextEl = el.form.elements[el.tabIndex+1];
+   if (nextEl && nextEl.focus) nextEl.focus();
+}
+
+
+function loading(b){
+    document.getElementById("divTravaTela").style.display = (b?"block":"none");
+    document.getElementById("divAguarde").style.display = (b?"block":"none");
+}
+
+function centralizarLoading(){
+    var theBody = document.getElementsByTagName("BODY")[0];
+    document.getElementById("divTravaTela").style.top = theBody.scrollTop +"px";
+    document.getElementById("divAguarde").style.marginTop = (theBody.scrollTop - 25) +"px";
+}
+
+function segurarFoco(){
+    document.getElementById("txtLoading").focus();
+}
+
+function verificaESC(evnt){
+    if(evnt.keyCode == 27) loading(false);
+}
+
+function addEvent(to, type, fn){
+    if(document.addEventListener){
+        to.addEventListener(type, fn, false);
+    } else if(document.attachEvent){
+        to.attachEvent('on'+type, fn);
+    } else {
+        to['on'+type] = fn;
+    }  
+}

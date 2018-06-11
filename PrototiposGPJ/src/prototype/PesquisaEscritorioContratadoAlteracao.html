@@ -1,0 +1,804 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+	content="text/html; charset=windows-1252">
+<title>CDHU - São Paulo - Gestão de Processos Judiciais e
+	Administrativos</title>
+<link href="./css/multinivel_horizontal.css" rel="stylesheet"
+	type="text/css">
+<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="./js/menu_array.js"
+	type="text/javascript"></script>
+<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/jquery.js"
+	type="text/javascript"></script>
+<script language="JavaScript" src="./js/comportamento.js"
+	type="text/javascript"></script>
+<script language="JavaScript" src="./js/gotourl.js"
+	type="text/javascript"></script>
+<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/popcalendar.js" type=""></script>
+</head>
+<body style="">
+	<div id="menuHoriz"
+		style="position: absolute; left: 1px; top: 87px; width: 700px; height: 23px; z-index: 3">
+		<!-- inicio Menu -->
+
+		<ul id="menu">
+			<li>&nbsp;</li>
+		</ul>
+
+		<!-- fim Menu -->
+	</div>
+	<div id="header">
+		<div id="header_logo"></div>
+	</div>
+	<table width="100%" height="100%" border="0" cellpadding="0"
+		cellspacing="0">
+		<tbody>
+			<tr>
+				<td class="header_fundo"><img
+					src="./imagens/header_esquerdo.jpg" title="" width="100%"
+					height="85"></td>
+			</tr>
+			<tr>
+				<td class="menu_fundo">&nbsp;</td>
+			</tr>
+			<!-- Código das Abas - Inicio -->
+
+			<tr>
+				<td valign="top">
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody>
+							<tr>
+								<td width="10"><img src="./imagens/nada.gif" title=""
+									width="10" height="10" border="0"></td>
+								<td>
+									<!-- inicio tabela conteudo -->
+									<form name="SociedadeCredenciadaForm" method="post"
+										action="/gpja-web/incluiSociedadeCredenciada.do"
+										enctype="multipart/form-data"
+										onsubmit="return validaDadosForm();">
+										<input type="hidden"
+											name="org.apache.struts.taglib.html.TOKEN"
+											value="cbde669013841a66a5d3ff77dcbe4a1f"> <input
+											type="hidden" name="act" value=""> <input
+											type="hidden" name="exibeCampo" value="" id="idExibeCampo">
+										<input type="hidden" name="habilitarStatus" value=""
+											id="idHabilitarStatus"> <input type="hidden"
+											name="socrId" value="1"> <input type="hidden"
+											name="filePath" value=""> <input type="hidden"
+											name="msgOperacao" value="null">
+
+										<table cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td><img src="./imagens/nada.gif" width="10"
+													height="10" title=""></td>
+											</tr>
+											<tr>
+												<td class="titulo"><strong> Cadastro de
+														Escritório Contratado</strong></td>
+											</tr>
+											<tr>
+												<td><img src="./imagens/nada.gif" width="10"
+													height="10"></td>
+											</tr>
+											<tr>
+												<td>
+													<table width="100%" border="0" cellpadding="0"
+														cellspacing="0">
+														<tr>
+															<td><img src="./imagens/gbox_a1.gif" title=""
+																width="8" height="17" border="0"></td>
+															<td>
+																<table cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td nowrap class="rotulo">Alteração de Escritório
+																			Contratado</td>
+																		<td width="100%"
+																			background="./imagens/gbox_a2.gif"><img
+																			src="./imagens/nada.gif" title="" width="1"
+																			height="17" border="0"></td>
+																	</tr>
+																</table>
+															</td>
+															<td><img src="./imagens/gbox_a3.gif" title=""
+																width="8" height="17" border="0"></td>
+														</tr>
+														<tr>
+															<td width="8" background="./imagens/gbox_b1.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td class="celula_rotulo">
+																<table width="100%" border="0" cellpadding="2"
+																	cellspacing="1" class="tabelas">
+																	<tr>
+																		<td class="td_titulo120">Região:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="60"><select
+																			name="vo.idMacroRegiao"
+																			onchange="javascript:buscaCombo(this, 'selRegional');"
+																			disabled="disabled" class="campo"><option
+																					value="">Selecione...</option>
+																				<option value="1">REGIÃO 1</option>
+																				<option value="2" selected="selected">REGIÃO
+																					2</option>
+																				<option value="3">REGIÃO 3</option>
+																				<option value="4">REGIÃO 4</option>
+																				<option value="5">REGIÃO 5</option></select></td>
+																		<td class="td_titulo120">Número de Ordem:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="25"><input
+																			type="text" name="vo.longAsString(ordem)"
+																			maxlength="3" size="20" value="1"
+																			onkeypress="return formatarDados(this,event,'000')"
+																			disabled="disabled"></td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">Razão Social:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="60"><input
+																			type="text" name="vo.descricao" maxlength="100"
+																			size="50" value="M.Cais Sociedade de Advogados"
+																			disabled="disabled"></td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">CNPJ:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="20"><input
+																			type="text" name="vo.cnpj" maxlength="18" size="20"
+																			value="10.555.690/0001-07"
+																			onkeypress="return formatarDados(this,event,'00.000.000/0000-00')"
+																			disabled="disabled"></td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">Endereço:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="60"><input
+																			type="text" name="vo.endereco" maxlength="250"
+																			size="50"
+																			value="Avenida Benedito Rodrigues Lisboa, nº 2385">
+																		</td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">Complemento:</td>
+																		<td class="td_titulo_obrigatorio" width="1"></td>
+																		<td class="td_conteudo" width="35"><input
+																			type="text" name="vo.complemento" maxlength="200"
+																			size="50" value=""
+																			onkeypress="javascript:return isAlphaNumeric(event.keyCode);">
+																		</td>
+																		<td class="td_titulo120">Bairro:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="35"><input
+																			type="text" name="vo.bairro" maxlength="100"
+																			size="50" value="Jardim Vivendas"></td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">Município Sede:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="50"><select
+																			name="vo.idMunicipio" class="campo"><option
+																					value="">Selecione...</option>
+																				<option value="295">ADAMANTINA</option>
+																				<option value="416">ADOLFO</option>
+																				<option value="43">AGUAI</option>
+																				<option value="44">AGUAS DA PRATA</option>
+																				<option value="296">ALFREDO MARCONDES</option>
+																				<option value="1">ALTO ALEGRE</option>
+																				<option value="417">ALVARES FLORENCE</option>
+																				<option value="297">ALVARES MACHADO</option>
+																				<option value="45">AMERICO BRASILIENSE</option>
+																				<option value="418">AMERICO DE CAMPOS</option>
+																				<option value="46">ANALANDIA</option>
+																				<option value="2">ANDRADINA</option>
+																				<option value="298">ANHUMAS</option>
+																				<option value="419">APARECIDA D OESTE</option>
+																				<option value="3">ARACATUBA</option>
+																				<option value="47">ARARAQUARA</option>
+																				<option value="48">ARARAS</option>
+																				<option value="420">ARIRANHA</option>
+																				<option value="421">ASPASIA</option>
+																				<option value="4">AURIFLAMA</option>
+																				<option value="5">AVANHANDAVA</option>
+																				<option value="422">BADY BASSITT</option>
+																				<option value="423">BALSAMO</option>
+																				<option value="6">BARBOSA</option>
+																				<option value="7">BENTO DE ABREU</option>
+																				<option value="8">BILAC</option>
+																				<option value="9">BIRIGUI</option>
+																				<option value="49">BOA ESPERANCA DO SUL</option>
+																				<option value="50">BORBOREMA</option>
+																				<option value="10">BRAUNA</option>
+																				<option value="11">BREJO ALEGRE</option>
+																				<option value="51">BROTAS</option>
+																				<option value="12">BURITAMA</option>
+																				<option value="52">CACONDE</option>
+																				<option value="299">CAIABU</option>
+																				<option value="300">CAIUA</option>
+																				<option value="53">CANDIDO RODRIGUES</option>
+																				<option value="424">CARDOSO</option>
+																				<option value="54">CASA BRANCA</option>
+																				<option value="13">CASTILHO</option>
+																				<option value="425">CATANDUVA</option>
+																				<option value="426">CATIGUA</option>
+																				<option value="427">CEDRAL</option>
+																				<option value="14">CLEMENTINA</option>
+																				<option value="55">CONCHAL</option>
+																				<option value="56">CORDEIROPOLIS</option>
+																				<option value="15">COROADOS</option>
+																				<option value="57">CORUMBATAI</option>
+																				<option value="428">COSMORAMA</option>
+																				<option value="58">DESCALVADO</option>
+																				<option value="429">DIRCE REIS</option>
+																				<option value="59">DIVINOLANDIA</option>
+																				<option value="60">DOBRADA</option>
+																				<option value="430">DOLCINOPOLIS</option>
+																				<option value="61">DOURADO</option>
+																				<option value="301">DRACENA</option>
+																				<option value="431">ELISIARIO</option>
+																				<option value="302">EMILIANOPOLIS</option>
+																				<option value="62">ESPIRITO SANTO DO PINHAL</option>
+																				<option value="63">ESTIVA GERBI</option>
+																				<option value="432">ESTRELA D OESTE</option>
+																				<option value="303">ESTRELA DO NORTE</option>
+																				<option value="304">EUCLIDES DA CUNHA
+																					PAULISTA</option>
+																				<option value="64">FERNANDO PRESTES</option>
+																				<option value="433">FERNANDOPOLIS</option>
+																				<option value="305">FLORA RICA</option>
+																				<option value="434">FLOREAL</option>
+																				<option value="306">FLORIDA PAULISTA</option>
+																				<option value="16">GABRIEL MONTEIRO</option>
+																				<option value="17">GASTAO VIDIGAL</option>
+																				<option value="65">GAVIAO PEIXOTO</option>
+																				<option value="18">GENERAL SALGADO</option>
+																				<option value="19">GLICERIO</option>
+																				<option value="435">GUAPIACU</option>
+																				<option value="20">GUARACAI</option>
+																				<option value="436">GUARANI D OESTE</option>
+																				<option value="21">GUARARAPES</option>
+																				<option value="22">GUZOLANDIA</option>
+																				<option value="66">IBATE</option>
+																				<option value="437">IBIRA</option>
+																				<option value="67">IBITINGA</option>
+																				<option value="438">ICEM</option>
+																				<option value="307">IEPE</option>
+																				<option value="23">ILHA SOLTEIRA</option>
+																				<option value="308">INDIANA</option>
+																				<option value="439">INDIAPORA</option>
+																				<option value="309">INUBIA PAULISTA</option>
+																				<option value="68">IPEUNA</option>
+																				<option value="440">IPIGUA</option>
+																				<option value="441">IRAPUA</option>
+																				<option value="310">IRAPURU</option>
+																				<option value="442">ITAJOBI</option>
+																				<option value="69">ITAPIRA</option>
+																				<option value="70">ITAPOLIS</option>
+																				<option value="24">ITAPURA</option>
+																				<option value="71">ITIRAPINA</option>
+																				<option value="72">ITOBI</option>
+																				<option value="443">JACI</option>
+																				<option value="444">JALES</option>
+																				<option value="445">JOSE BONIFACIO</option>
+																				<option value="311">JUNQUEIROPOLIS</option>
+																				<option value="25">LAVINIA</option>
+																				<option value="73">LEME</option>
+																				<option value="26">LOURDES</option>
+																				<option value="312">LUCELIA</option>
+																				<option value="27">LUIZIANIA</option>
+																				<option value="446">MACAUBAL</option>
+																				<option value="447">MACEDONIA</option>
+																				<option value="448">MAGDA</option>
+																				<option value="313">MARABA PAULISTA</option>
+																				<option value="449">MARAPOAMA</option>
+																				<option value="314">MARIAPOLIS</option>
+																				<option value="450">MARINOPOLIS</option>
+																				<option value="315">MARTINOPOLIS</option>
+																				<option value="74">MATAO</option>
+																				<option value="451">MENDONCA</option>
+																				<option value="452">MERIDIANO</option>
+																				<option value="453">MESOPOLIS</option>
+																				<option value="454">MIRA ESTRELA</option>
+																				<option value="28">MIRANDOPOLIS</option>
+																				<option value="316">MIRANTE DO PARANAPANEMA</option>
+																				<option value="455">MIRASSOL</option>
+																				<option value="456">MIRASSOLANDIA</option>
+																				<option value="75">MOCOCA</option>
+																				<option value="76">MOGI GUACU</option>
+																				<option value="77">MOGI MIRIM</option>
+																				<option value="457">MONCOES</option>
+																				<option value="458">MONTE APRAZIVEL</option>
+																				<option value="317">MONTE CASTELO</option>
+																				<option value="78">MOTUCA</option>
+																				<option value="79">MURUTINGA DO SUL</option>
+																				<option value="318">NANTES</option>
+																				<option value="319">NARANDIBA</option>
+																				<option value="459">NEVES PAULISTA</option>
+																				<option value="460">NHANDEARA</option>
+																				<option value="461">NIPOA</option>
+																				<option value="462">NOVA ALIANCA</option>
+																				<option value="463">NOVA CANAA PAULISTA</option>
+																				<option value="29">NOVA CASTILHO</option>
+																				<option value="80">NOVA EUROPA</option>
+																				<option value="464">NOVA GRANADA</option>
+																				<option value="320">NOVA GUATAPORANGA</option>
+																				<option value="30">NOVA INDEPENDENCIA</option>
+																				<option value="31">NOVA LUZITANIA</option>
+																				<option value="465">NOVAIS</option>
+																				<option value="466">NOVO HORIZONTE</option>
+																				<option value="467">ONDA VERDE</option>
+																				<option value="468">ORINDIUVA</option>
+																				<option value="321">OSVALDO CRUZ</option>
+																				<option value="322">OURO VERDE</option>
+																				<option value="469">OUROESTE</option>
+																				<option value="323">PACAEMBU</option>
+																				<option value="470">PALESTINA</option>
+																				<option value="471">PALMARES PAULISTA</option>
+																				<option value="472">PALMEIRA D OESTE</option>
+																				<option value="324">PANORAMA</option>
+																				<option value="473">PARAISO</option>
+																				<option value="474">PARANAPUA</option>
+																				<option value="475">PARISI</option>
+																				<option value="325">PAULICEIA</option>
+																				<option value="476">PAULO DE FARIA</option>
+																				<option value="477">PEDRANOPOLIS</option>
+																				<option value="32">PENAPOLIS</option>
+																				<option value="33">PEREIRA BARRETO</option>
+																				<option value="34">PIACATU</option>
+																				<option value="478">PINDORAMA</option>
+																				<option value="326">PIQUEROBI</option>
+																				<option value="327">PIRAPOZINHO</option>
+																				<option value="81">PIRASSUNUNGA</option>
+																				<option value="479">PLANALTO</option>
+																				<option value="480">POLONI</option>
+																				<option value="481">PONTALINDA</option>
+																				<option value="482">PONTES GESTAL</option>
+																				<option value="483">POPULINA</option>
+																				<option value="82">PORTO FERREIRA</option>
+																				<option value="484">POTIRENDABA</option>
+																				<option value="328">PRACINHA</option>
+																				<option value="329">PRESIDENTE BERNARDES</option>
+																				<option value="330">PRESIDENTE EPITACIO</option>
+																				<option value="331">PRESIDENTE PRUDENTE</option>
+																				<option value="332">PRESIDENTE VENCESLAU</option>
+																				<option value="333">RANCHARIA</option>
+																				<option value="334">REGENTE FEIJO</option>
+																				<option value="83">RIBEIRAO BONITO</option>
+																				<option value="335">RIBEIRAO DOS INDIOS</option>
+																				<option value="84">RINCAO</option>
+																				<option value="85">RIO CLARO</option>
+																				<option value="485">RIOLANDIA</option>
+																				<option value="336">ROSANA</option>
+																				<option value="35">RUBIACEA</option>
+																				<option value="486">RUBINEIA</option>
+																				<option value="337">SAGRES</option>
+																				<option value="487">SALES</option>
+																				<option value="338">SALMOURAO</option>
+																				<option value="339">SANDOVALINA</option>
+																				<option value="488">SANTA ADELIA</option>
+																				<option value="489">SANTA ALBERTINA</option>
+																				<option value="490">SANTA CLARA D OESTE</option>
+																				<option value="86">SANTA CRUZ DA CONCEICAO</option>
+																				<option value="87">SANTA CRUZ DAS PALMEIRAS</option>
+																				<option value="88">SANTA ERNESTINA</option>
+																				<option value="491">SANTA FE DO SUL</option>
+																				<option value="89">SANTA GERTRUDES</option>
+																				<option value="90">SANTA LUCIA</option>
+																				<option value="340">SANTA MERCEDES</option>
+																				<option value="492">SANTA RITA D OESTE</option>
+																				<option value="91">SANTA RITA DO PASSA
+																					QUATRO</option>
+																				<option value="493">SANTA SALETE</option>
+																				<option value="494">SANTANA DA PONTE PENSA</option>
+																				<option value="341">SANTO ANASTACIO</option>
+																				<option value="36">SANTO ANTONIO DO
+																					ARACANGUA</option>
+																				<option value="92">SANTO ANTONIO DO JARDIM</option>
+																				<option value="342">SANTO EXPEDITO</option>
+																				<option value="37">SANTOPOLIS DO AGUAPEI</option>
+																				<option value="93">SAO CARLOS</option>
+																				<option value="495">SAO FRANCISCO</option>
+																				<option value="94">SAO JOAO DA BOA VISTA</option>
+																				<option value="496">SAO JOAO DAS DUAS
+																					PONTES</option>
+																				<option value="38">SAO JOAO DE IRACEMA</option>
+																				<option value="343">SAO JOAO DO PAU D ALHO</option>
+																				<option value="95">SAO JOSE DO RIO PARDO</option>
+																				<option value="497" selected="selected">SAO
+																					JOSE DO RIO PRETO</option>
+																				<option value="96">SAO SEBASTIAO DA GRAMA</option>
+																				<option value="498">SEBASTIANOPOLIS DO SUL</option>
+																				<option value="39">SUD MENNUCCI</option>
+																				<option value="40">SUZANAPOLIS</option>
+																				<option value="499">TABAPUA</option>
+																				<option value="97">TABATINGA</option>
+																				<option value="344">TACIBA</option>
+																				<option value="98">TAMBAU</option>
+																				<option value="500">TANABI</option>
+																				<option value="99">TAPIRATIBA</option>
+																				<option value="100">TAQUARITINGA</option>
+																				<option value="345">TARABAI</option>
+																				<option value="346">TEODORO SAMPAIO</option>
+																				<option value="101">TORRINHA</option>
+																				<option value="102">TRABIJU</option>
+																				<option value="501">TRES FRONTEIRAS</option>
+																				<option value="347">TUPI PAULISTA</option>
+																				<option value="41">TURIUBA</option>
+																				<option value="502">TURMALINA</option>
+																				<option value="503">UBARANA</option>
+																				<option value="504">UCHOA</option>
+																				<option value="505">UNIAO PAULISTA</option>
+																				<option value="506">URANIA</option>
+																				<option value="507">URUPES</option>
+																				<option value="508">VALENTIM GENTIL</option>
+																				<option value="42">VALPARAISO</option>
+																				<option value="103">VARGEM GRANDE DO SUL</option>
+																				<option value="509">VITORIA BRASIL</option>
+																				<option value="510">VOTUPORANGA</option>
+																				<option value="511">ZACARIAS</option></select></td>
+																		<td class="td_titulo120">CEP:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="35"><input
+																			type="text" name="vo.cep" maxlength="9" size="20"
+																			value="15090-370"
+																			onkeypress="return formatarDados(this,event,'00000-000')">
+																		</td>
+																	</tr>
+
+
+																	<tr>
+																		<td class="td_titulo120">Telefone:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="15"><input
+																			type="text" name="vo.telefone" maxlength="20"
+																			size="20" value="(017)3302-8000"
+																			onkeypress="return formatarDados(this,event,'(000)0000-0000')">
+																		</td>
+																		<td class="td_titulo120">Ramal:</td>
+																		<td class="td_titulo_obrigatorio" width="1"></td>
+																		<td class="td_conteudo" width="15"><input
+																			type="text" name="vo.ramal" maxlength="10" size="10"
+																			value="(017) 3227-1667"
+																			onkeypress="return formatarDados(this,event,'0000000000')">
+																		</td>
+																		<td class="td_titulo120">Fax:</td>
+																		<td class="td_titulo_obrigatorio" width="1"></td>
+																		<td class="td_conteudo" width="20"><input
+																			type="text" name="vo.fax" maxlength="20" size="20"
+																			value=""
+																			onkeypress="return formatarDados(this,event,'(000)0000-0000')">
+																		</td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">Email:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="50"><input
+																			type="hidden" name="vo.email"
+																			value="GPJA_DESTINATARIO@REDEGOV.SP.GOV.BR"
+																			id="socrEmail"> <input type="text" id="email"
+																			name="email" maxlength="50" size="50"
+																			onkeypress="javascript:return only_LowerCase(event);"
+																			onblur="baixa(this)"
+																			value="GPJA_DESTINATARIO@REDEGOV.SP.GOV.BR" /></td>
+																	</tr>
+
+																	<tr>
+																		<td class="td_titulo120">Banco:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="15"><input
+																			type="text" name="vo.longAsString(banco)"
+																			maxlength="10" size="20" value="1"
+																			onkeypress="return formatarDados(this,event,'0000000000')">
+																		</td>
+																		<td class="td_titulo120">Agência:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="15"><input
+																			type="text" name="vo.agencia" maxlength="15"
+																			size="15" value="4816"></td>
+																		<td class="td_titulo120">Conta:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="15"><input
+																			type="text" name="vo.conta" maxlength="20" size="20"
+																			value="14939-9"></td>
+																	</tr>
+																	<tr>
+																		<td class="td_titulo120">Status:</td>
+																		<td class="td_titulo_obrigatorio" width="1"></td>
+																		<td class="td_conteudo" width="15"><select
+																			name="vo.ativo" disabled="disabled" class="campo"><option
+																					value="1" selected="selected">Ativo</option>
+																				<option value="0">Inativo</option>
+																				<option value="2">Suspenso</option></select></td>
+
+
+																	</tr>
+																</table>
+
+															</td>
+															<td width="8" background="./imagens/gbox_b3.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+														</tr>
+														<tr>
+															<td><img src="./imagens/gbox_c1.gif" title=""
+																width="8" height="8" border="0"></td>
+															<td background="./imagens/gbox_c2.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td><img src="./imagens/gbox_c3.gif" title=""
+																width="8" height="8" border="0"></td>
+														</tr>
+													</table> <br />
+
+													<table width="100%" border="0" cellpadding="0"
+														cellspacing="0">
+														<tr>
+															<td><img src="./imagens/gbox_a1.gif" title=""
+																width="8" height="17" border="0"></td>
+															<td>
+																<table cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td nowrap class="rotulo">Segurança</td>
+																		<td width="100%"
+																			background="./imagens/gbox_a2.gif"><img
+																			src="./imagens/nada.gif" title="" width="1"
+																			height="17" border="0"></td>
+																	</tr>
+																</table>
+															</td>
+															<td><img src="./imagens/gbox_a3.gif" title=""
+																width="8" height="17" border="0"></td>
+														</tr>
+														<tr>
+															<td width="8" background="./imagens/gbox_b1.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td class="celula_rotulo">
+																<table width="100%" border="0" cellpadding="2"
+																	cellspacing="1" class="tabelas">
+																	<tr>
+																		<td class="td_titulo120" width="15%">Usuário Adm:</td>
+																		<td class="td_titulo_obrigatorio" width="1%">*</td>
+																		<td class="td_conteudo" width="30%"><input
+																			type="text" name="vo.sguAdminUser" maxlength="100"
+																			size="60" value="ADMIN_230" disabled="disabled">
+																		</td>
+
+																		<td class="td_titulo120" width="15%">Senha
+																			primeiro acesso:</td>
+																		<td class="td_titulo_obrigatorio" width="1%"></td>
+																		<td class="td_conteudo" width="38%"><input
+																			type="text" name="usu" value="cdhu"
+																			disabled="disabled" /></td>
+																	</tr>
+
+
+																</table>
+
+															</td>
+															<td width="8" background="./imagens/gbox_b3.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+														</tr>
+														<tr>
+															<td><img src="./imagens/gbox_c1.gif" title=""
+																width="8" height="8" border="0"></td>
+															<td background="./imagens/gbox_c2.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td><img src="./imagens/gbox_c3.gif" title=""
+																width="8" height="8" border="0"></td>
+														</tr>
+													</table> <br />
+
+
+
+													<table width="100%" border="0" cellpadding="0"
+														cellspacing="0">
+														<tr>
+															<td><img src="./imagens/gbox_a1.gif" title=""
+																width="8" height="17" border="0"></td>
+															<td>
+																<table cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td nowrap class="rotulo">Contrato Social</td>
+																		<td width="100%"
+																			background="./imagens/gbox_a2.gif"><img
+																			src="./imagens/nada.gif" title="" width="1"
+																			height="17" border="0"></td>
+																	</tr>
+																</table>
+															</td>
+															<td><img src="./imagens/gbox_a3.gif" title=""
+																width="8" height="17" border="0"></td>
+														</tr>
+														<tr>
+															<td width="8" background="./imagens/gbox_b1.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td class="celula_rotulo">
+																<table width="100%" border="0" cellpadding="2"
+																	cellspacing="1" class="tabelas">
+																	<!-- ANTERIOR -->
+																	<tr>
+																		<td class="td_titulo">Arquivo:</td>
+																		<td class="td_titulo_obrigatorio">&nbsp;</td>
+																		<td colspan="7" class="td_conteudo" id="UploadForm">
+
+
+																			<ul id="files">
+
+																			</ul>
+
+																			<div id="uploadButton">
+																				<input id="inputFile" name="arquivoAnexo" size="1"
+																					type="file">
+																			</div>
+
+
+																		</td>
+																	</tr>
+																	<tr>
+
+
+																		<!-- FIM-->
+																</table>
+
+															</td>
+															<td width="8" background="./imagens/gbox_b3.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+														</tr>
+														<tr>
+															<td><img src="./imagens/gbox_c1.gif" title=""
+																width="8" height="8" border="0"></td>
+															<td background="./imagens/gbox_c2.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td><img src="./imagens/gbox_c3.gif" title=""
+																width="8" height="8" border="0"></td>
+														</tr>
+													</table> <br />
+
+													<table width="100%" border="0" cellpadding="0"
+														cellspacing="0">
+														<tr>
+															<td><img src="./imagens/gbox_a1.gif" title=""
+																width="8" height="17" border="0"></td>
+															<td>
+																<table cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td nowrap class="rotulo">Contratos</td>
+																		<td width="100%"
+																			background="./imagens/gbox_a2.gif"><img
+																			src="./imagens/nada.gif" title="" width="1"
+																			height="17" border="0"></td>
+																	</tr>
+																</table>
+															</td>
+															<td><img src="./imagens/gbox_a3.gif" title=""
+																width="8" height="17" border="0"></td>
+														</tr>
+														<tr>
+															<td width="8" background="./imagens/gbox_b1.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td class="celula_rotulo">
+																<table width="100%" border="0" cellpadding="2"
+																	cellspacing="1" class="tabelas">
+																	<tr class="tit_lista">
+																		<td width="23%" align="center"><strong>Nº
+																				Contrato</strong></td>
+																		<td width="23%" align="center"><strong>Data
+																				de Início</strong></td>
+																		<td width="23%" align="center"><strong>Data
+																				de Término</strong></td>
+																		<td align="center"><strong>Valor</strong></td>
+																		<td width="1%" align="center"><strong>&nbsp;</strong></td>
+																	</tr>
+
+
+																</table>
+															</td>
+															<td width="8" background="./imagens/gbox_b3.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+														</tr>
+														<tr>
+															<td><img src="./imagens/gbox_c1.gif" title=""
+																width="8" height="8" border="0"></td>
+															<td background="./imagens/gbox_c2.gif"><img
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
+															<td><img src="./imagens/gbox_c3.gif" title=""
+																width="8" height="8" border="0"></td>
+														</tr>
+													</table> <br />
+
+													<table width="100%" border="0" cellspacing="2"
+														cellpadding="2">
+														<tr>
+															<td><input name="Button1" type="button"
+																class="botao" onClick="JavaScript:voltar();"
+																value="Voltar"> <input name="Button2"
+																type="submit" class="botao" value="Gravar"> <input
+																name="Button1" type="button" class="botao"
+																onClick="javascript:redirect('PesquisaEscritorioContratadoCadastroDeContrato.html');"
+																value="Adicionar Contrato"></td>
+
+															<td align="right"><input name="Button3"
+																type="button" class="botao"
+																onClick="JavaScript:enviar();" value="Enviar Email">
+															</td>
+														</tr>
+													</table> <br>
+												</td>
+											</tr>
+										</table>
+									</form> <!-- fim tabelao conteudo --> <script>
+							addEvent(window, "resize", centralizarLoading);
+							addEvent(window, "scroll", centralizarLoading);
+							</script>
+									<div id="divTravaTela"
+										style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: rgb(205, 205, 205); opacity: 0.4; z-index: 1000; display: none;"
+										onmousemove="segurarFoco();"></div>
+									<div id="divAguarde"
+										style="position: absolute; border: 2px solid rgb(192, 192, 192); height: 50px; width: 150px; cursor: wait; z-index: 1001; background-color: rgb(255, 255, 255); top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: none;">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tbody>
+												<tr>
+													<td width="50"><img src="./imagens/loading.gif"></td>
+													<td style="text-align: center;"><input id="txtLoading"
+														type="text" value="Aguarde..." readonly="readonly"
+														size="10"
+														style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div> <!--- fim tabel&atilde;o do conte&uacute;do -->
+								</td>
+								<td width="10"><img src="./imagens/nada.gif" title=""
+									width="10" height="10" border="0"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="footer_fundo">
+					<table width="100%" border="0" cellspacing="1" cellpadding="1">
+						<tbody>
+							<tr>
+								<td width="50%"><span class="footer_texto">Usuário:</span>
+									Felipe</td>
+								<td width="35%" align="center" class="footer_texto">Companhia
+									de Desenvolvimento Habitacional - CDHU</td>
+								<td width="15%" align="right" class="footer_texto">
+									29/03/2018 16:33</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script type="text/javascript">
+	  loading(false);
+	</script>
+
+	<script type="text/javascript">
+		alternateRowColors();
+	</script>
+</body>
+</html>

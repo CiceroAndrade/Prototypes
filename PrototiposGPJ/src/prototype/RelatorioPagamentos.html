@@ -1,0 +1,598 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+	<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+	<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/popupcalendar.js" type=""></script>
+</head>
+<body style="">
+	<div id="menuHoriz" style="position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3">
+		<!-- inicio Menu -->
+
+		<ul id="menu">
+		  <li>&nbsp;</li>
+		</ul>
+
+		<!-- fim Menu -->
+	</div>
+	<div id="header">
+		<div id="header_logo"></div>
+	</div>	
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+		<tr>
+			<td class="header_fundo">
+				<img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+			</td>
+		</tr>
+		<tr>
+			<td class="menu_fundo">&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td valign="top">
+				<table cellspacing="0" cellpadding="0" border="0" width="100%"><tbody>
+					<tr>
+						<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+						<td>
+							<!--- inicio tabel&atilde;o do conte&uacute;do -->
+							<form name="PesquisaPagamentosForm" method="POST">
+								<input type="hidden" name="act" value="">
+								<table cellspacing="0" cellpadding="0" border="0" width="100%"><tbody>
+									<!--Titulo da janela---->
+									<tr>
+										<td>
+											<img src="./imagens/nada.gif" width="10" height="10">
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="titulo"><strong>Relatório de Pagamentos e Reembolsos dos Escritórios Contratados</strong></td>
+									</tr>
+									<tr>
+										<td><img src="./imagens/nada.gif" width="10" height="10"></td>
+									</tr>
+									<!--FIM Titulo da janela---->
+									
+									<!--Tabela de Principal-->
+									<tr>
+										<td>
+											<table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+												<tr>
+													<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+													<td>
+														<table cellspacing="0" cellpadding="0" border="0"><tbody>
+															<tr>
+																<td nowrap="" class="rotulo">-</td>
+																<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+															</tr>
+														</tbody></table>
+													</td>
+													<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+												</tr>
+												
+												<tr>
+													<td width="8" background="./imagens/gbox_b1.gif">
+														<img src="./imagens/nada.gif" title="" width="8" height="8" border="0">
+													</td>
+													<td class="celula_rotulo">
+														<!--Conteúdo-->
+														
+														<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas"><tbody>
+															<tr>
+																<td width="12%" class="td_titulo">Região:</td>
+																<td width="1%" class="td_titulo_obrigatorio"></td>
+																<td width="87%" class="td_conteudo">	
+																	<select name="idRegional" class="campo" id="idRegionalAdministrativa">
+																		<option value="0" selected="selected">Selecione...</option>
+																		<option value="1">REGIÃO 1</option>
+																		<option value="2">REGIÃO 2</option>
+																		<option value="3">REGIÃO 3</option>
+																		<option value="4">REGIÃO 4</option>
+																		<option value="5">REGIÃO 5</option>
+																	</select>					
+																</td>
+															</tr>
+																
+															<tr>
+																<td width="12%" class="td_titulo">Escritório Contratado:</td>
+																<td width="1%" class="td_titulo_obrigatorio"></td>
+																<td width="87%" class="td_conteudo">
+																	<select name="idSociedade" class="campo" id="idSociedadeCredenciada">
+																		<option value="0" selected="selected">Selecione...</option>
+																		<option value="1">Lorem Ipsum Dolor Sit Amet</option>
+																		<option value="2">Escritório2</option>
+																		<option value="3">Escritório3</option>
+																
+																	</select>		
+																</td>
+															</tr>
+															
+															<tr>
+																<td width="12%" class="td_titulo">Tipo:</td>
+																<td width="1%" class="td_titulo_obrigatorio"></td>
+																<td width="87%" class="td_conteudo">
+																	
+																	<select name="idTipo" class="campo" id="idTipo">
+																		<option value="0" selected="selected">Ambos</option>
+																		<option value="1">Pagamento</option>
+																		<option value="2">Reembolso</option>
+																	</select>
+																</td>
+															</tr>
+															
+															<tr>
+																<td width="12%" class="td_titulo">Gerência:</td>
+																<td width="1%" class="td_titulo_obrigatorio"></td>
+																<td width="87%" class="td_conteudo">	
+																	<select name="idGerencia" class="campo" id="idGerencia">
+																		<option value="0" selected="selected">Selecione...</option>
+																		<option value="1">EMPRESARIAL</option>
+																		<option value="2">MULTUÁRIOS</option>
+																	</select>
+																</td>
+															</tr>
+															
+															
+															<tr>
+																<td width="12%" class="td_titulo">Status:</td>
+																<td width="1%" class="td_titulo_obrigatorio"></td>
+																<td width="87%" class="td_conteudo">
+																	<select name="idStatus" class="campo" id="idStatus">
+																		<option value="1" selected="selected">Efetivado</option>
+																		<option value="1">Aguardando Efetivação</option>
+																	</select>	
+																</td>
+															</tr>
+															
+															<tr>
+																<td width="12%" class="td_titulo">Período de Emissão: </td>
+																<td width="1%" class="td_titulo_obrigatorio"></td>
+																<td width="87%" class="td_conteudo">
+																	<input type="text" name="vo.dateAsString(dtEmissaoInicio)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')">
+																	<input name="button32" type="button" class="botao" onclick="popUpCalendar(document.forms[0]['vo.dateAsString(dtEmissaoInicio)'], document.forms[0]['vo.dateAsString(dtEmissaoInicio)'], 'dd/mm/yyyy');" value="v">
+																		a
+																	<input type="text" name="vo.dateAsString(dtEmissaoFim)" maxlength="10" size="10" value="" onkeypress="return formatarDados(this,event,'00/00/0000')">
+																	<input name="button32" type="button" class="botao" onclick="popUpCalendar(document.forms[0]['vo.dateAsString(dtEmissaoFim)'], document.forms[0]['vo.dateAsString(dtEmissaoFim)'], 'dd/mm/yyyy');" value="v">
+																</td>
+															</tr>
+															<tr>
+																<td class="td_titulo">Exibição do Relatório:</td>
+																<td class="td_titulo_obrigatorio">&nbsp;</td>
+																<td class="td_conteudo">
+																	<input type="radio" name="SaidaTela" value="0" class="input_radio">Em Tela
+																	<input type="radio" name="PDF" value="1" class="input_radio" disabled="False">PDF
+																	<input type="radio" name="XLS" value="2" class="input_radio" disabled="False">XLS
+																</td>
+															</tr>
+															<tr>
+																<td class="td_titulo">Tipo de Relatório:</td>
+																<td class="td_titulo_obrigatorio">&nbsp;</td>
+																<td class="td_conteudo">
+																	<input type="radio" name="Detalhado" value="0" class="input_radio">Detalhado
+																	<input type="radio" name="Sintético" value="1" class="input_radio">Sintético
+																</td>
+															</tr>
+															
+														</tbody></table>
+														
+														<!--Fim Conteúdo-->
+													</td>
+													<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+												</tr>
+												<tr>
+													<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+													<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+													<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+									<!--Fim da tabela de Principal-->
+									<!--Fim da tabela de Principal-->
+									<tr>	
+										<td colspan="7" class="td_botao">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody><tr>
+												<td>
+													<input type="button" class="botao" onclick="javascript:novoRelatorio();" value="Gerar Relatório">
+												</td>
+													<!--td align="right">&nbsp;</td-->	
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+									<!-- INICIO SOLICITAÇÃO AUTÔNOMA -->
+									<tr>
+										<td>
+											<br>
+											<table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+												<tr>
+													<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+													<td><table cellspacing="0" cellpadding="0" border="0">
+													<tbody><tr>
+														<td nowrap="" class="rotulo">Pagamentos e Reembolsos</td>
+														<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+														</tr>
+													</tbody></table></td>
+													<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+												</tr>
+											
+												<tr>
+													<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+													<td class="celula_rotulo">
+														<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas"><tbody>
+															<thead class="tit_lista">
+																<th>Região</th>
+																<th>Escritorio</th>
+																<th>N° da Solicitação</th>	
+																<th>Tipo</th>
+																<th>Data de Emissão</th>
+																
+																<th>Nº Nota/ Recibo</th>
+																<!--th>Data da Nota/ Recibo</th-->
+																<th>Valor</th>	
+																<th>&nbsp;</th>	
+															</thead>
+															<!--fw:searchIterate id="item" indexId="index" searchFormName="ListaCompromissosForm"-->
+														
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>626/2018</td>
+																<td>Pagamento</td>
+																<td>28/02/2018</td>
+															 
+																<td>98456</td>
+																<!--td>00/00/0000</td-->
+																<td>10.000,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>625/2018</td>
+																<td>Pagamento</td>
+																<td>27/02/2018</td>
+															 
+																<td>456321</td>
+																<!--td>00/00/0000</td-->
+																<td>1.000,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>624/2018</td>
+																<td>Pagamento</td>
+																<td>26/02/2018</td>
+															 
+																<td>454654</td>
+																<!--td>00/00/0000</td-->
+																<td>6.000,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>623/2018</td>
+																<td>Pagamento</td>
+																<td>25/02/2018</td>
+															 
+																<td>963258</td>
+																<!--td>00/00/0000</td-->
+																<td>20.0000,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>622/2018</td>
+																<td>Pagamento</td>
+																<td>24/02/2018</td>
+															 
+																<td>852147</td>
+																<!--td>00/00/0000</td-->
+																<td>450,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>621/2018</td>
+																<td>Pagamento</td>
+																<td>23/02/2018</td>
+															 
+																<td>852963</td>
+																<!--td>00/00/0000</td-->
+																<td>380,50</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>512/2018</td>
+																<td>Pagamento</td>
+																<td>22/02/2018</td>
+															 
+																<td>789321</td>
+																<!--td>00/00/0000</td-->
+																<td>2.430,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>510/2018</td>
+																<td>Pagamento</td>
+																<td>21/02/2018</td>
+															 
+																<td>654789</td>
+																<!--td>00/00/0000</td-->
+																<td>120.000,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>415/2018</td>
+																<td>Pagamento</td>
+																<td>20/02/2018</td>
+															 
+																<td>785463</td>
+																<!--td>00/00/0000</td-->
+																<td>1.800,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>410/2018</td>
+																<td>Pagamento</td>
+																<td>19/02/2018</td>
+															 
+																<td>469731</td>
+																<!--td>00/00/0000</td-->
+																<td>3.050,20</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>408/2018</td>
+																<td>Pagamento</td>
+																<td>18/02/2018</td>
+															 
+																<td>563298</td>
+																<!--td>00/00/0000</td-->
+																<td>654,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>407/2018</td>
+																<td>Pagamento</td>
+																<td>17/02/2018</td>
+															 
+																<td>784512</td>
+																<!--td>00/00/0000</td-->
+																<td>6.000,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																			<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																		</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>403/2018</td>
+																<td>Pagamento</td>
+																<td>16/02/2018</td>
+															 
+																<td>985214</td>
+																<!--td>00/00/0000</td-->
+																<td>1.280,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista_1">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>402/2018</td>
+																<td>Pagamento</td>
+																<td>15/02/2018</td>
+															 
+																<td>632563</td>
+																<!--td>00/00/0000</td-->
+																<td>590,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															<tr class="texto_lista">
+																<td>REGIÃO 1</td>
+																<td>Lorem Ipsum Dolor Sit Amet</td>
+																<td>380/2018</td>
+																<td>Pagamento</td>
+																<td>14/02/2018</td>
+															 
+																<td>987852</td>
+																<!--td>00/00/0000</td-->
+																<td>1.340,00</td>
+																<td>
+																	<a href='./montaCadastroSolicitacaoPagamento.html'>
+																		<img src="./imagens/btn_new.gif" width="16" height="16" border="0" title="Possui Anexo">
+																	</a>
+																</td>
+															</tr>
+															
+															
+													
+															<!-- tr>
+																<td colspan="7" class="td_botao">
+																<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																	<td>
+																		&nbsp;
+																	</td>
+								
+																	</tr>
+																</table></td>
+															</tr-->
+														</tbody>
+														</table>
+													</td>
+													<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+												</tr>
+												<tr>
+													<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+													<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+													<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+												</tr>
+											</tbody></table>
+										
+										</td>
+										
+										
+									</tr>
+									<!-- FIM SOLICITAÇÃO AUTÔNOMA -->            
+								</tbody></table>
+								
+									
+											<div align="right">
+												<table border="0" cellspacing="0" cellpadding="0" width="86"><tbody>
+													<tr align="center" valign="middle">
+														<td align="right" width="16">&nbsp;</td>
+														<td width="54">
+															<select >
+																<option value="1" selected="">1-15</option>
+																<option value="2">16-30</option>
+															</select>
+														</td>
+														<td align="left" width="16">
+															<a href="">
+															<img src="./imagens/seta_avancar.gif" width="11" height="11" border="0" teclaatalho="PageDown" id="avancar" alt="Próxima"></a>
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="pageNumber">
+												<script type="text/javascript">
+													function mudaPagina(page) {var form = document.forms['PesquisaPagamentosForm'];
+														document.getElementsByName('pageNumber')[0].value = page;
+														form.action = 'pesquisaPagamento.do';
+														form.submit();} 	 
+												</script>
+											</div>
+									
+										
+								
+							</form>
+
+							<script>
+							addEvent(window, "resize", centralizarLoading);
+							addEvent(window, "scroll", centralizarLoading);
+							</script>
+							<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: rgb(205, 205, 205); opacity: 0.4; z-index: 1000; display: none;" onmousemove="segurarFoco();">
+							</div>
+							<div id="divAguarde" style="position: absolute; border: 2px solid rgb(192, 192, 192); height: 50px; width: 150px; cursor: wait; z-index: 1001; background-color: rgb(255, 255, 255); top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: none;">
+								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tbody><tr>
+										<td width="50"><img src="./imagens/loading.gif"></td>
+										<td style="text-align: center;">
+											<input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size="10" style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;">
+										</td>
+									   </tr>
+									</tbody>
+								</table>
+							</div>
+
+						<!--- fim tabel&atilde;o do conte&uacute;do -->
+						</td>
+						<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+					</tr>
+				</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td class="footer_fundo">
+			<table width="100%" border="0" cellspacing="1" cellpadding="1">
+			<tbody>
+				<tr>
+					<td width="50%">
+						<span class="footer_texto">Usuário:</span>Loerem Ipsum</td>
+					<td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+					<td width="15%" align="right" class="footer_texto">29/03/2018 16:33</td>
+				</tr>
+			</tbody>
+			</table>
+	
+			</td>
+		</tr>
+	</tbody></table>
+
+	<script type="text/javascript">
+	  loading(false);
+	</script>
+
+	<script type="text/javascript">
+		alternateRowColors();
+	</script>
+</body></html>

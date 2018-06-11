@@ -1,0 +1,664 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+	<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+	<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/popupcalendar.js" type=""></script>
+</head>
+<body style="">
+	<div id="menuHoriz" style="position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3">
+		<!-- inicio Menu -->
+
+		<ul id="menu">
+		  <li>&nbsp;</li>
+		</ul>
+
+		<!-- fim Menu -->
+	</div>
+	<div id="header">
+		<div id="header_logo"></div>
+	</div>	
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+		<tr>
+			<td class="header_fundo">
+				<img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+			</td>
+		</tr>
+		<tr>
+			<td class="menu_fundo">&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td valign="top">
+				<table cellspacing="0" cellpadding="0" border="0" width="100%"><tbody>
+					<tr>
+						<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+						<td>
+<!--- inicio tabel&atilde;o do conte&uacute;do -->
+            
+
+
+
+<!-- inicio formulario para preenchimento Solicitação -->
+	<form name="PesquisaSolicitacaoPagamentoForm" method="post" action="/gpja-web/listaSolicitacaoPagamento.do"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="e9500fb4e863871faf079fc415c55220">
+						
+						<input type="hidden" name="act" value="">
+							<input type="hidden" name="impressao" value="">
+							<input type="hidden" name="dataReservaVerbal" value="">
+							<input type="hidden" name="dataOutros" value="">
+							<input type="hidden" name="dataDocPagto" value="">
+							<input type="hidden" name="vo.dateAsString(credDtVencimento)" value="05/05/2018">
+							<input type="hidden" name="tela" value="consultaPagamento">
+							
+							<br>
+							<table id="tblTituloFormulario" width="75%" border="0"	align="center" cellpadding="0" cellspacing="0" >
+								<tr >
+									<td style="font-family:Verdana;	font-size:16px; font-weight: bold;" align="center">
+										SOLICITAÇÃO DE REEMBOLSO 				
+									</td>
+								</tr>
+							</table>
+							<br>
+						
+							
+							<table width="75%" border="0" align="center" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="border: 1px solid #152F4A;">
+										<!-- Numero e data Emissao -->
+										<br>
+										<table width="98%" border="0" align="center" cellpadding="1"cellspacing="1" style="border: 1px solid #152F4A; background-color: #B7D0EE;"  >
+											<tr >
+												<td>
+													<div align="left">
+														<strong>N°</strong>
+														<input type="text" name="vo.codigo" maxlength="15" size="15" value="624/2018" disabled="disabled">
+													</div>
+												</td>
+												<td >
+													<div align="right">
+														<strong>Data de Emiss&atilde;o</strong>
+														<input name="dataEmissao" type="text" size="12" maxlength="10" disabled="true" value="05/04/2018" onkeypress="return formatarDados(this,event,'00/00/0000')">
+													</div>
+												</td>
+											</tr>					
+										</table>
+										
+										<br>
+						
+										<table width="98%" border="0" align="center" cellpadding="0"cellspacing="0">
+											<tr>
+												<td class="titulo" align="center" width="87%"><strong>SOLICITANTE</strong></td>
+											</tr>
+											<tr>
+												<td>
+													<div align="right">
+														<table width="100%" border="0.5" align="center" cellpadding="1" cellspacing="1" bgcolor="#B7D0EE">
+															<tr>
+																<td class="titulo">
+																	<div align="left">
+																		<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+																			<tr class="Campo">
+																				<td class="td_titulo">
+																					<div align="left">
+																					<strong>Área</strong>
+																					</div>
+																				</td> 
+																				<td class="td_titulo">
+																					<div align="left">
+																					<strong>Centro de Custo</strong>
+																					</div>
+																				</td>
+																				<td class="td_titulo">
+																					<div align="left">
+																					<strong>Denomina&ccedil;&atilde;o</strong>
+																					</div>
+																				</td>
+																				<td class="td_titulo">
+																					<div align="left">
+																					<strong>Telefone/Ramal</strong>
+																					</div>
+																				</td>
+																			</tr>
+																			<tr>
+																			<td class="td_conteudo">
+																				<input type="text" name="vo.solicArea" value="GESTORA" disabled="disabled" id="area">
+																			</td>
+																			<td class="td_conteudo">
+																				<input type="text" name="vo.solicCentroCusto" value=" 9.02.00.00" disabled="disabled" id="centroCusto">
+																			</td>
+																			<td class="td_conteudo">
+																				<div align="left">
+																					<input type="text" name="vo.solicDenominacao" maxlength="50" size="50" value="SUPERINTENDÊNCIA DO CONTENCIOSO" disabled="disabled" id="identSolicitantePagamento">
+																				</div>
+																			</td>
+																			<td class="td_conteudo">
+																				<input type="text" name="vo.solicTelefone" size="10" value=" 2193" disabled="disabled" id="telefone">
+																				<input type="text" name="vo.solicRamal" size="5" value="" disabled="disabled" id="ramal">
+																			</td>
+																			</tr>												
+																		</table>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</table>
+						
+							<br>
+							<table id="tblFavorecidoTitulo" width="98%" border="0" align="center" cellpadding="0" cellspacing="0" >
+								<tr>
+									<td class="titulo" align="center"  width="87%">
+									<strong>                
+									Favorecido / a Cr&eacute;dito de:
+									</strong>
+									</td>
+								</tr>
+							</table>
+							
+							
+							<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+							<td class="titulo">
+								<div align="right">
+								<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#B7D0EE">
+									<tr>
+									<td>
+										<div align="left">
+										<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+											<tr class="Campo">
+											<td class="td_titulo">
+												<div align="left">
+												<strong>Raz&atilde;o Social/Nome:</strong>
+												</div>
+											</td>
+											<td class="td_titulo">
+												<div align="left">
+												<strong>CNPJ/CPF:</strong>
+												</div>
+											</td>
+											</tr>
+											<tr>
+											<td class="td_conteudo">
+												<input type="text" name="vo.credRazaoSocial" maxlength="100" size="80" value="M.Cais Sociedade de Advogados" onkeypress="return onlyLetters(event)" disabled="disabled">
+											</td>
+											<td class="td_conteudo">
+												<input type="text" name="vo.credCnpj" maxlength="50" size="30" value="10.555.690/0001-07" onkeypress="return onlyAlfanumeric(event)" disabled="disabled">
+											</td>
+											</tr>                   
+										</table>
+										</div>
+									</td>
+									</tr>
+								</table>
+								</div>
+							</td>
+							</tr>
+							</table>
+							<br>
+								
+							<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="titulo" align="center"  width="87%">
+									<strong>
+									PAGAMENTO
+									</strong>
+								</td>
+								</tr>
+							<tr>
+							<td class="titulo">
+								<div align="right">
+								<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" class="tabelas">
+									<tr>
+									<td>
+										<div align="left">
+										<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+											<tr class="Campo">
+											<td class="td_titulo" colspan="2">
+												<div align="left">
+												<strong>Valor Total do Pagamento:</strong>
+												</div>
+											</td>
+											<td class="td_titulo" colspan="2">
+												<div align="left">
+												<strong>Valor por Extenso:</strong>
+												</div>
+											</td>
+											<td class="td_titulo">
+												<div align="left">
+												<strong>Vencimento:</strong>
+												</div>
+											</td>
+											</tr>
+											<tr>
+											<td class="td_conteudo" colspan="2">
+												<input type="text" name="vo.currencyAsString(valorTotal)" maxlength="10" value="5.020,10" onkeypress="return numbersonly(event);" disabled="disabled"><span>&nbsp;</span>
+											</td>
+											<td class="td_conteudo" colspan="2">
+												<input type="text" name="vo.credValorExtenso" maxlength="200" size="80" value="CINCO MIL E VINTE REAIS E DEZ CENTAVOS" onkeypress="return onlyLetters(event)" disabled="disabled">
+											</td>
+											<td class="td_conteudo">
+												
+												<input name="dataVencimento" type="text" size="12" maxlength="10" disabled="true" value="05/05/2018" onkeypress="return formatarDados(this,event,'00/00/0000')">
+												
+												
+											</td>
+											</tr>
+											<tr class="Campo">
+											<td class="td_titulo" colspan="5">
+												<div align="left">
+												<strong>Forma de Pagamento:</strong>
+												</div>
+											</td>
+											</tr>
+											<tr>
+											<td class="td_conteudo" width="30%" colspan="2">
+												
+													<input type="checkbox" checked="true"    value="vo.credTipoPagamento" name="SolicitacaoPagtoForm" disabled="true">
+													Dep&oacute;sito em conta corrente/poupança - informar</input>
+												
+												
+											</td>
+											<td class="td_conteudo" width="25%">
+												<div align="left">Banco:</div>
+												<input type="text" name="vo.credBanco" maxlength="50" size="50" value="479" disabled="disabled" id="banco">				
+											</td>
+											<td class="td_conteudo" width="5%">
+												Agência:<br>
+												<input type="text" name="vo.credAgencia" maxlength="10" size="10" value="4816-5" disabled="disabled" id="agencia">
+											</td>
+											<td class="td_conteudo" colspan="2">
+												Conta:<br>
+												<input type="text" name="vo.credConta" maxlength="20" size="20" value="09747-3" disabled="disabled" id="conta">
+											</td>
+											</tr>
+											<tr>
+											<td class="td_conteudo" colspan="5">
+											
+											
+															<input type="checkbox"  value="vo.credTipoPagamento" name="SolicitacaoPagtoForm" disabled="true" >
+														Outros -Especificar</input>
+											<span>&nbsp;&nbsp;</span>
+											<input type="text" name="vo.credOutros" maxlength="70" size="70" value="" disabled="disabled" id="especificar">
+											</td>
+											</tr>
+										</table>
+										</div>
+									</td>
+									</tr>
+								</table>
+								</div>
+							</td>
+							</tr>
+							
+							</table>
+							<br>
+							<table id="tblReservaTitulo" width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="titulo" align="center"  width="87%">
+									<strong>
+											Reserva de Verba:
+									</strong>
+									</td>
+								</tr>
+							</table>   
+							
+							
+							<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+							<td class="titulo">
+								<div align="right">
+								<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" class="tabelas">
+								
+										
+								
+									<tr>
+									<td>
+										<div align="left">
+										<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+											<tr class="Campo">
+											<td class="td_titulo">
+												<div align="left">
+												<strong>N&uacute;mero:</strong>
+												</div>
+											</td>
+											<td class="td_titulo">
+											<div align="left">
+												<strong>Data:</strong>
+												</div>
+											</td>
+											<td class="td_titulo">
+												<div align="left">
+												<strong>Valor:</strong>
+												</div>
+											</td>
+											</tr>
+											
+											
+											<tr>
+											<td class="td_conteudo" >
+											<input type="text" name="vo.rvNumero" maxlength="10" value=" I20183" onkeypress="return numbersonly(event);" disabled="disabled">
+											</td>
+											<td class="td_conteudo">
+												<input name="dataReserva" type="text" disabled size="12" maxlength="10"  value="05/01/2012" onkeypress="return formatarDados(this,event,'00/00/0000')">
+													<input name="button32" type="button" class="botao" onClick="popUpCalendar(document.forms[0]['dataReserva'], document.forms[0]['dataReserva'], 'dd/mm/yyyy');" value="v" disabled>
+											</td>
+											<td class="td_conteudo">
+												<input type="text" name="vo.currencyAsString(rvValor)" maxlength="10" value="125.000,00" onkeypress="return numbersonly(event);" disabled="disabled">
+											</td>
+											</tr>
+											
+										</table>
+										</div>
+									</td>
+									</tr>
+								</table>
+								</div>
+							</td>
+							</tr>
+							</table>
+								
+								<br>
+							<table id="tblReservaTitulo" width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+								<tr>
+								<td class="titulo" align="center"  width="87%">
+									<strong>
+									Objeto do Pagamento:      
+									</strong>
+								</td>
+								</tr>
+						
+								<tr>
+								<td class="titulo">
+									<div align="right">
+									
+									
+										<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" class="tabelas">
+											<tr>
+											<td>
+												<div align="left">
+												<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+													<tr>
+													<td class="td_titulo" colspan="2">
+													<strong>Vara:</strong>
+													</td>
+													<td class="td_titulo" colspan="2">
+													<strong>Processo Nº:</strong>
+													</td>
+													<td class="td_titulo" colspan="2">
+													<strong>Comarca/UF:</strong>
+													</td>
+													</tr>
+													<tr>
+													<td class="td_conteudo" colspan="2">
+														<input type="text" name="vo.vara" maxlength="150" size="30" value="" disabled="disabled">
+													</td>
+													<td class="td_conteudo" colspan="2">
+														<input type="text" name="vo.processo" maxlength="150" size="30" value="" disabled="disabled">
+													</td>
+													<td class="td_conteudo" colspan="2">
+														<input type="text" name="vo.comarca" maxlength="150" size="30" value="" disabled="disabled">
+													</td>
+													</tr>
+													<tr>
+														<td class="td_titulo" colspan="6">
+															<strong>Natureza do Processo:</strong>
+														</td>
+													</tr>
+													<tr>
+													<td class="td_conteudo">
+															<input type="checkbox" name="chk.vo.indTrabalhista" value="1" checked="checked" onclick="if (this.checked) { this.form['vo.indTrabalhista'].value='1' } else { this.form['vo.indTrabalhista'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indTrabalhista" value="1">Trabalhista<br>
+															<input type="checkbox" name="chk.vo.indDefinitivo" value="1" onclick="if (this.checked) { this.form['vo.indDefinitivo'].value='1' } else { this.form['vo.indDefinitivo'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indDefinitivo" value="0">Definitivo
+													</td>
+													<td class="td_conteudo">
+															<input type="checkbox" name="chk.vo.indCDHU" value="1" onclick="if (this.checked) { this.form['vo.indCDHU'].value='1' } else { this.form['vo.indCDHU'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indCDHU" value="0">CDHU<br>
+															<input type="checkbox" name="chk.vo.indDepositoJud" value="1" onclick="if (this.checked) { this.form['vo.indDepositoJud'].value='1' } else { this.form['vo.indDepositoJud'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indDepositoJud" value="0">Depósito Judicial
+													</td> 
+													<td class="td_conteudo"> 
+															<input type="checkbox" name="chk.vo.indTerceiros" value="1" onclick="if (this.checked) { this.form['vo.indTerceiros'].value='1' } else { this.form['vo.indTerceiros'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indTerceiros" value="0">Terceiros<br>
+															<input type="checkbox" name="chk.vo.indDecisaoJud" value="1" onclick="if (this.checked) { this.form['vo.indDecisaoJud'].value='1' } else { this.form['vo.indDecisaoJud'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indDecisaoJud" value="0">Decisão Judicial
+														</td>
+														<td class="td_conteudo">
+															<input type="checkbox" name="chk.vo.indCivil" value="1" onclick="if (this.checked) { this.form['vo.indCivil'].value='1' } else { this.form['vo.indCivil'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indCivil" value="0">Civil<br>
+															<input type="checkbox" name="chk.vo.indEmGarantia" value="1" onclick="if (this.checked) { this.form['vo.indEmGarantia'].value='1' } else { this.form['vo.indEmGarantia'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indEmGarantia" value="0">Em Garantia
+													</td>
+													<td class="td_conteudo">
+															<input type="checkbox" name="chk.vo.indTributario" value="1" onclick="if (this.checked) { this.form['vo.indTributario'].value='1' } else { this.form['vo.indTributario'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indTributario" value="0">Tributário<br>
+															<input type="checkbox" name="chk.vo.indAcordo" value="1" onclick="if (this.checked) { this.form['vo.indAcordo'].value='1' } else { this.form['vo.indAcordo'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indAcordo" value="0">Acordo
+														</td>
+														<td class="td_conteudo">
+															<input type="checkbox" name="chk.vo.indDiretoParte" value="1" onclick="if (this.checked) { this.form['vo.indDiretoParte'].value='1' } else { this.form['vo.indDiretoParte'].value='0' }; null" disabled="disabled" class="noborder"><input type="hidden" name="vo.indDiretoParte" value="0">Direito para o Parte<br>
+															&nbsp;
+														</td>
+													</td>
+													</td>
+													</tr>
+													<tr>
+													<td class="td_conteudo">
+													Principal
+													</td>
+													<td class="td_conteudo">
+													Indenização:<br>
+													<input type="text" name="vo.currencyAsString(valorIndenizacao)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo">
+													Tributo:<br>
+													<input type="text" name="vo.currencyAsString(valorTributo)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo">
+													Multa:<br>
+													<input type="text" name="vo.currencyAsString(valorMulta)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo">
+													Hono. Sucumbência:<br>
+													<input type="text" name="vo.currencyAsString(valorHonorSucumbencia)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo">
+													Depósito Recursal:<br>
+													<input type="text" name="vo.currencyAsString(valorDepositoRecursal)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													</tr>
+													<tr>
+													<td class="td_conteudo">
+													Custas
+													</td>
+													<td class="td_conteudo">
+													Hono. Peritos:<br>
+													<input type="text" name="vo.currencyAsString(valorHonorariosPeritos)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo" colspan="4">
+													Outros:<br>
+													<input type="text" name="vo.currencyAsString(valorOutros)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													</tr>
+													<tr>
+													<td class="td_conteudo" colspan="2">
+													Contrato Nº:<br>
+													<input type="text" name="vo.numContrato" maxlength="30" size="40" value="" disabled="disabled">
+													</td>
+													<td class="td_conteudo">
+													Honorários:<br>
+													<input type="text" name="vo.currencyAsString(valorHonorario)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo">
+													Reembolso de Custas:<br>
+													<input type="text" name="vo.currencyAsString(valorReembolsoCusta)" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													<td class="td_conteudo" colspan="2">
+													Reembolso de Despesas:<br>
+													<input type="text" name="vo.currencyAsString(valorReembolsoDespesas)" maxlength="10" value="4,45" onkeydown="return validateKey();" onkeypress="return currencyFormat(this, '.', ',', event);" disabled="disabled">
+													</td>
+													</tr>
+													<tr>
+														<td class="td_conteudo" colspan="3">
+														Local da Presta&ccedil;&atilde;o do Servi&ccedil;o:<br>
+														<input type="text" name="vo.objLocalPrest" maxlength="100" size="40" value="" onkeydown="return validateKey();" onkeypress="javascript:return isAlphaNumeric(event.keyCode);" disabled="disabled">
+														</td>
+														<td class="td_conteudo" colspan="3">
+														Empreendimento:<br>
+														<input type="text" name="vo.objEmpreend" maxlength="100" size="40" value="" onkeydown="return validateKey();" onkeypress="return isAlphaNumeric(event.keyCode);" disabled="disabled">
+														</td>
+													</tr>
+													<tr>
+														<td class="td_conteudo">
+															N&uacute;mero de:<br>
+															<input type="text" name="vo.objNumero" maxlength="10" value="" onkeydown="return validateKey();" onkeypress="return numbersonly(event);" disabled="disabled">
+														</td>
+														<td class="td_conteudo">
+															Per&iacute;odo/Compet&ecirc;ncia:<br>
+															<input type="text" name="vo.objCompetencia" maxlength="20" value="" onkeydown="return validateKey();" onkeypress="javascript:return isAlphaNumeric(event.keyCode);" disabled="disabled">
+														</td>
+														<td class="td_conteudo">
+															Parcela:<br>
+															<input type="text" name="vo.objParcela" maxlength="3" size="3" value="" onkeydown="return validateKey();" onkeypress="return numbersonly(event);" disabled="disabled">
+														</td>
+														<td class="td_conteudo" colspan="3">
+															Data:<br>
+															<input name="dataPagtoIncial" type="text" size="12" maxlength="10"  onkeydown="return validateKey();" value="" onkeypress="return formatarDados(this,event,'00/00/0000')" disabled="disabled">
+															<input name="button32" type="button" class="botao" onClick="popUpCalendar(document.forms[0]['dataPagtoIncial'], document.forms[0]['dataPagtoIncial'], 'dd/mm/yyyy');" value="v" disabled="disabled">
+														</td>
+													</tr>
+													<tr>
+														<td class="td_conteudo" colspan="2">
+															Documento de Pagamento:<br>
+															<input type="text" name="vo.objDocPagto" maxlength="50" size="40" value="RECIBO" disabled="disabled" id="idDocPagto">
+														</td>
+														<td class="td_conteudo" >
+															N&uacute;mero:<br>
+															<input type="text" name="vo.objDocNumero" maxlength="10" value="45445" onkeydown="return validateKey();" onkeypress="return formatarDados(this,event,'0000000000')" disabled="disabled" id="idDocNumero">
+															<span style="color:red">*</span></td>
+														<td class="td_conteudo" colspan="3">
+															Data:<br>
+															<input name="dataDocumento" type="text" id="idDocData" size="12" maxlength="10" onkeydown="return validateKey();"  value="05/04/2018" onkeypress="return formatarDados(this,event,'00/00/0000')" disabled="true">
+															<input name="button32" type="button" class="botao" onClick="popUpCalendar(document.forms[0]['dataDocumento'], document.forms[0]['dataDocumento'], 'dd/mm/yyyy');" value="v" disabled="true">
+															<span style="color:red">*</span>
+														</td>
+													</tr>
+												</table>
+												</div>
+											</td>
+											</tr>  
+										</table>
+									
+									</div>
+								</td>
+								</tr>
+							</table>
+								
+							<br>
+							<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">    
+								<tr>
+								<td class="titulo" align="center" width="87%">
+									<strong>
+										INFORMA&Ccedil;&Otilde;ES COMPLEMENTARES
+									</strong>
+								</td>
+								</tr>
+								<tr>
+								<td class="titulo">
+									<div align="right">
+									<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" class="tabelas">
+										<tr>
+										<td>
+											<div align="left">
+											<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+												<tr class="Campo">
+												<td class="td_conteudo">
+												
+												
+													<textarea name="vo.caucaoInformacoes" cols="142" rows="5" disabled="disabled"></textarea>
+												
+												</td>
+												</tr>	
+											</table>
+											</div>
+										</td>
+										</tr>
+									</table>
+									</div>
+								</td>
+								</tr>    
+							</table>
+							<br>
+						</table>
+						
+						<br>
+						<table width="75%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+							<td align="left">
+								<input type="button" class="botao" value="Fechar" onclick="javascript:voltar()"/>			
+							</td>
+							<td align="right">
+							
+									<input type="button" name="button" class="botao" value="Efetivar" onClick="javascript:salvaSolicitacaoEfetivacao();" disabled="true"/>
+									<input type="button" name="button" class="botao" value="Gerar Lista" onClick="javascript:gerarLista('13833');" />
+									
+										<input type="button" name="button" class="botao" value="Imprimir" onClick="javascript:salvaSolicitacaoEfetivacaoImpressao(false);" />
+									
+							
+								
+							</td>
+							</tr>
+						</table>
+						<br>
+						</form>
+
+							<script>
+							addEvent(window, "resize", centralizarLoading);
+							addEvent(window, "scroll", centralizarLoading);
+							</script>
+							<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: rgb(205, 205, 205); opacity: 0.4; z-index: 1000; display: none;" onmousemove="segurarFoco();">
+							</div>
+							<div id="divAguarde" style="position: absolute; border: 2px solid rgb(192, 192, 192); height: 50px; width: 150px; cursor: wait; z-index: 1001; background-color: rgb(255, 255, 255); top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: none;">
+								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tbody><tr>
+										<td width="50"><img src="./imagens/loading.gif"></td>
+										<td style="text-align: center;">
+											<input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size="10" style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;">
+										</td>
+									   </tr>
+									</tbody>
+								</table>
+							</div>
+
+						<!--- fim tabel&atilde;o do conte&uacute;do -->
+						</td>
+						<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+					</tr>
+				</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td class="footer_fundo">
+			<table width="100%" border="0" cellspacing="1" cellpadding="1">
+			<tbody>
+				<tr>
+					<td width="50%">
+						<span class="footer_texto">Usuário:</span>Felipe</td>
+					<td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+					<td width="15%" align="right" class="footer_texto">29/03/2018 16:33</td>
+				</tr>
+			</tbody>
+			</table>
+	
+			</td>
+		</tr>
+	</tbody></table>
+
+	<script type="text/javascript">
+	  loading(false);
+	</script>
+
+	<script type="text/javascript">
+		alternateRowColors();
+	</script>
+</body></html>

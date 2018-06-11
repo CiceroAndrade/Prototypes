@@ -1,0 +1,892 @@
+
+<!-- saved from url=(0067)http://10.200.240.81/gpja-web/montaAlteracaoBemPenhora.do?vo.id=704 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+<script language="JavaScript" src="./files/menu_array.js.download" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+  
+    addmenu(
+    menu=["Movimentação",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Tela de Entrada", "./Entrada.html",,,1
+    
+      ,"Cadastro de Pessoas", "./pesquisaPessoa.do?act=init",,,1
+    
+      ,"Pesquisa de Ação", "./montaPesquisaSimplesAcaoJudicial.do",,,1
+    
+      ,"Pesquisa de Ação Avançada", "./montaPesquisaAcaoJudicial.do",,,1
+    
+      ,"Cadastro de Ação", "./montaInclusaoAcaoJudicial.do?act=init",,,1
+    
+      ,"Pesquisa de Processo - CAP", "./montaPesquisaAcaoCap.do",,,1
+    
+      ,"Novo Processo - CAP", "./cadastroAcaoCap.do?registroNovo=S",,,1
+    
+      ,"Pesquisa de Processo Administrativo", "./montaPesquisaProcessoAdmin.do",,,1
+    
+      ,"Cadastro de Processo Administrativo", "./montaInclusaoProcessoAdmin.do?act=init",,,1
+    
+      ,"Publicações", "./montaPesquisaPublicacao.do",,,1
+    
+      ,"Tramitações em Lote", "./montaDadosTramitacaoEmLote.do?act=novoLote",,,1
+    
+      ,"Atualiza Valor Ação", "./montaAtualizacaoValorAcaoJudicial.do",,,1
+    
+      ,"Andamentos em Lote", "./montaDadosAndamentoEmLote.do?act=init",,,1
+    
+      ,"Cadastro de Ação Simplificado", "./montaDadosAcaoJudicialSimplificada.do?act=init",,,1
+    
+      ,"Pesquisa de Ação Simplificada", "./montaPesquisaAcaoJudicialSimplificada.do?act=init",,,1
+	  
+	  ,"Cadastro de Bloqueios", "./ConsultaBloqueios.html",,,1
+    
+    ])
+  
+    addmenu(
+    menu=["Pagamentos",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Pesquisa de Solicitação Autônoma", "./pesquisaSolicitacaoAutonoma.do",,,1
+    
+      ,"Pesquisa Despesas e Honorários", "./pesquisaDespesasHonorarios.do",,,1
+    
+      ,"Pesquisa de Solicitações de Pagamento/Reembolso", "./pesquisaSolicitacaoPagamento.do",,,1
+    
+      ,"Pendências Para Conferência", "./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas",,,1
+    
+    ])
+  
+    addmenu(
+    menu=["Manutenção",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"CAP Contratados", "./listaContratadosCap.do",,,1
+    
+      ,"Despesas/Honorários", "./despesaHonorarios.do",,,1
+    
+      ,"Escritório Contratado", "./pesquisaSociedadeCredenciada.do",,,1
+    
+      ,"Usuários de Escritório Contratado", "./pesquisaUsuarioSociedadeCredenciada.do",,,1
+    
+      ,"Parâmetros", "./listaParametro.do",,,1
+    
+      ,"Parâmetros de Memória de Cálculo", "./listaParametroMemoriaCalculo.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Parâmetros de Integração TOTVS", "./parametroIntegracao.do?acao=init",,,1
+    
+      ,"Empreendimento", "./montaPesquisaEmpreendimento.do",,,1
+    
+      ,"Valor Índice", "./montaPesquisaValorIndice.do",,,1
+    
+      ,"Tipo de Andamento", "./montaPesquisaTipoAndamento.do",,,1
+    
+      ,"Classificação/Distribuição de Processos", "./montaClassificacaoDistribuicao.do",,,1
+    
+      ,"TESTE", "",,,1
+    
+      ,"Pedidos", "./pesquisaPedido.do",,,1
+    
+    ])
+  
+    addmenu(
+    menu=["Relatórios",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Empreendimento", "./prepareFiltroRelatorioEmpreendimento.do",,,1
+    
+      ,"Importar Planilha", "./importacaoPlanilha.do",,,1
+    
+      ,"Histórico de Importações", "./historicoImportacaoPlanilha.do",,,1
+    
+      ,"Geral de Provisionamento", "./relatorioProvisionamento.do?acao=init",,,1
+    
+      ,"Histórico de Provisões", "./relatorioProvisionamento.do?acao=initHistorico",,,1
+    
+      ,"Emissão de Relatórios Gerenciais", "./montaDadosRelatorioGerencial.do",,,1
+    
+      ,"Histórico de Planilha de Processos", "./montaRelatorioProcessosHistorico.do?acao=init",,,1
+    
+    ])
+  
+    addmenu(
+    menu=["Segurança",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Altera Senha", "./novaTrocaSenha.do",,,1
+    
+    ])
+	addmenu(
+    menu=["Versão",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+      ,"Info", "./showVersion.do",,,1
+    ])
+
+addmenu(menu=["mainmenu",90,0,120,1,"left",style1,1,"center",,,1,,,,,,,,,,
+
+  ,"Movimentação","show-menu=Movimentação",,"",1
+
+  ,"Pagamentos","show-menu=Pagamentos",,"",1
+
+  ,"Manutenção","show-menu=Manutenção",,"",1
+
+  ,"Estatísticas","show-menu=Estatísticas",,"",1
+
+  ,"Relatórios","show-menu=Relatórios",,"",1
+
+  ,"Segurança","show-menu=Segurança",,"",1
+
+  ,"Sair","sair.do",,"",1
+  
+  ,"Ajuda","paginas/helpNovo/HTML/index.html",,"",1
+  
+  ,"Versão","show-menu=Versão",,"",1
+])
+
+dumpmenus()
+
+</script><script language="javascript"> menu1=menus[1]; menu2=menus[2]; menu3=menus[3]; menu4=menus[4]; menu5=menus[5]; menu6=menus[6]; menu7=menus[7];</script>
+<script language="JavaScript" src="./files/mmenu.js.download" type="text/javascript"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body style=""><div tabindex="1" id="menu1" style=";z-index:19;visibility:hidden; border:solid 1px #2977B5;position:absolute;background:#2977B5;width:180px;left:0px;top:undefinedpx;"><a id="lnk0" href="http://10.200.240.81/gpja-web/listaCompromisso.do" style="text-decoration:none;"><div id="el0" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaCompromisso.do &#39;,&#39;menu1&#39;,0);;;;return stch(&#39;./listaCompromisso.do&#39;);" onmouseout="rep_img(); popdn(this,0, &#39;menu1&#39;, &#39;./listaCompromisso.do &#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;;; return stch(&#39;&#39;);">Tela de Entrada</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk1" href="http://10.200.240.81/gpja-web/pesquisaPessoa.do?act=init" style="text-decoration:none;"><div id="el1" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaPessoa.do?act=init&#39;,&#39;menu1&#39;,1);;;return stch(&#39;./pesquisaPessoa.do?act=init&#39;);" onmouseout="rep_img(); popdn(this,1, &#39;menu1&#39;, &#39;./pesquisaPessoa.do?act=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Cadastro de Pessoas</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk2" href="http://10.200.240.81/gpja-web/montaPesquisaSimplesAcaoJudicial.do" style="text-decoration:none;"><div id="el2" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaSimplesAcaoJudicial.do&#39;,&#39;menu1&#39;,2);;;return stch(&#39;./montaPesquisaSimplesAcaoJudicial.do&#39;);" onmouseout="rep_img(); popdn(this,2, &#39;menu1&#39;, &#39;./montaPesquisaSimplesAcaoJudicial.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Ação</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk3" href="http://10.200.240.81/gpja-web/montaPesquisaAcaoJudicial.do" style="text-decoration:none;"><div id="el3" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaAcaoJudicial.do&#39;,&#39;menu1&#39;,3);;;return stch(&#39;./montaPesquisaAcaoJudicial.do&#39;);" onmouseout="rep_img(); popdn(this,3, &#39;menu1&#39;, &#39;./montaPesquisaAcaoJudicial.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Ação Avançada</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk4" href="http://10.200.240.81/gpja-web/montaInclusaoAcaoJudicial.do?act=init" style="text-decoration:none;"><div id="el4" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaInclusaoAcaoJudicial.do?act=init&#39;,&#39;menu1&#39;,4);;;return stch(&#39;./montaInclusaoAcaoJudicial.do?act=init&#39;);" onmouseout="rep_img(); popdn(this,4, &#39;menu1&#39;, &#39;./montaInclusaoAcaoJudicial.do?act=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Cadastro de Ação</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk5" href="http://10.200.240.81/gpja-web/montaPesquisaAcaoCap.do" style="text-decoration:none;"><div id="el5" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaAcaoCap.do&#39;,&#39;menu1&#39;,5);;;return stch(&#39;./montaPesquisaAcaoCap.do&#39;);" onmouseout="rep_img(); popdn(this,5, &#39;menu1&#39;, &#39;./montaPesquisaAcaoCap.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Processo - CAP</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk6" href="http://10.200.240.81/gpja-web/cadastroAcaoCap.do?registroNovo=S" style="text-decoration:none;"><div id="el6" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./cadastroAcaoCap.do?registroNovo=S&#39;,&#39;menu1&#39;,6);;;return stch(&#39;./cadastroAcaoCap.do?registroNovo=S&#39;);" onmouseout="rep_img(); popdn(this,6, &#39;menu1&#39;, &#39;./cadastroAcaoCap.do?registroNovo=S&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Novo Processo - CAP</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk7" href="http://10.200.240.81/gpja-web/montaPesquisaProcessoAdmin.do" style="text-decoration:none;"><div id="el7" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaProcessoAdmin.do&#39;,&#39;menu1&#39;,7);;;return stch(&#39;./montaPesquisaProcessoAdmin.do&#39;);" onmouseout="rep_img(); popdn(this,7, &#39;menu1&#39;, &#39;./montaPesquisaProcessoAdmin.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Processo Administrativo</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk8" href="http://10.200.240.81/gpja-web/montaInclusaoProcessoAdmin.do?act=init" style="text-decoration:none;"><div id="el8" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaInclusaoProcessoAdmin.do?act=init&#39;,&#39;menu1&#39;,8);;;return stch(&#39;./montaInclusaoProcessoAdmin.do?act=init&#39;);" onmouseout="rep_img(); popdn(this,8, &#39;menu1&#39;, &#39;./montaInclusaoProcessoAdmin.do?act=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Cadastro de Processo Administrativo</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk9" href="http://10.200.240.81/gpja-web/montaPesquisaPublicacao.do" style="text-decoration:none;"><div id="el9" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaPublicacao.do&#39;,&#39;menu1&#39;,9);;;return stch(&#39;./montaPesquisaPublicacao.do&#39;);" onmouseout="rep_img(); popdn(this,9, &#39;menu1&#39;, &#39;./montaPesquisaPublicacao.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Publicações</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk10" href="http://10.200.240.81/gpja-web/montaDadosTramitacaoEmLote.do?act=novoLote" style="text-decoration:none;"><div id="el10" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaDadosTramitacaoEmLote.do?act=novoLote&#39;,&#39;menu1&#39;,10);;;return stch(&#39;./montaDadosTramitacaoEmLote.do?act=novoLote&#39;);" onmouseout="rep_img(); popdn(this,10, &#39;menu1&#39;, &#39;./montaDadosTramitacaoEmLote.do?act=novoLote&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Tramitações em Lote</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk11" href="http://10.200.240.81/gpja-web/montaAtualizacaoValorAcaoJudicial.do" style="text-decoration:none;"><div id="el11" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaAtualizacaoValorAcaoJudicial.do&#39;,&#39;menu1&#39;,11);;;return stch(&#39;./montaAtualizacaoValorAcaoJudicial.do&#39;);" onmouseout="rep_img(); popdn(this,11, &#39;menu1&#39;, &#39;./montaAtualizacaoValorAcaoJudicial.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Atualiza Valor Ação</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk12" href="http://10.200.240.81/gpja-web/montaDadosAndamentoEmLote.do?act=init" style="text-decoration:none;"><div id="el12" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaDadosAndamentoEmLote.do?act=init&#39;,&#39;menu1&#39;,12);;;return stch(&#39;./montaDadosAndamentoEmLote.do?act=init&#39;);" onmouseout="rep_img(); popdn(this,12, &#39;menu1&#39;, &#39;./montaDadosAndamentoEmLote.do?act=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Andamentos em Lote</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk13" href="http://10.200.240.81/gpja-web/montaDadosAcaoJudicialSimplificada.do?act=init" style="text-decoration:none;"><div id="el13" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaDadosAcaoJudicialSimplificada.do?act=init&#39;,&#39;menu1&#39;,13);;;return stch(&#39;./montaDadosAcaoJudicialSimplificada.do?act=init&#39;);" onmouseout="rep_img(); popdn(this,13, &#39;menu1&#39;, &#39;./montaDadosAcaoJudicialSimplificada.do?act=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Cadastro de Ação Simplificado</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk14" href="http://10.200.240.81/gpja-web/montaPesquisaAcaoJudicialSimplificada.do?act=init" style="text-decoration:none;"><div id="el14" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaAcaoJudicialSimplificada.do?act=init&#39;,&#39;menu1&#39;,14);;;return stch(&#39;./montaPesquisaAcaoJudicialSimplificada.do?act=init&#39;);" onmouseout="rep_img(); popdn(this,14, &#39;menu1&#39;, &#39;./montaPesquisaAcaoJudicialSimplificada.do?act=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Ação Simplificada</div></a></div>
+<div tabindex="1" id="menu2" style=";z-index:19;visibility:hidden; border:solid 1px #2977B5;position:absolute;background:#2977B5;width:180px;left:0px;top:undefinedpx;"><a id="lnk15" href="http://10.200.240.81/gpja-web/pesquisaSolicitacaoAutonoma.do" style="text-decoration:none;"><div id="el15" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaSolicitacaoAutonoma.do&#39;,&#39;menu2&#39;,15);;;return stch(&#39;./pesquisaSolicitacaoAutonoma.do&#39;);" onmouseout="rep_img(); popdn(this,15, &#39;menu2&#39;, &#39;./pesquisaSolicitacaoAutonoma.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Solicitação Autônoma</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk16" href="http://10.200.240.81/gpja-web/pesquisaDespesasHonorarios.do" style="text-decoration:none;"><div id="el16" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaDespesasHonorarios.do&#39;,&#39;menu2&#39;,16);;;return stch(&#39;./pesquisaDespesasHonorarios.do&#39;);" onmouseout="rep_img(); popdn(this,16, &#39;menu2&#39;, &#39;./pesquisaDespesasHonorarios.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa Despesas e Honorários</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk17" href="http://10.200.240.81/gpja-web/pesquisaSolicitacaoPagamento.do" style="text-decoration:none;"><div id="el17" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaSolicitacaoPagamento.do&#39;,&#39;menu2&#39;,17);;;return stch(&#39;./pesquisaSolicitacaoPagamento.do&#39;);" onmouseout="rep_img(); popdn(this,17, &#39;menu2&#39;, &#39;./pesquisaSolicitacaoPagamento.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pesquisa de Solicitações de Pagamento/Reembolso</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk18" href="http://10.200.240.81/gpja-web/listaDespesaCustasEntrada.do?tipoDespesa=despesascustas" style="text-decoration:none;"><div id="el18" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas&#39;,&#39;menu2&#39;,18);;;return stch(&#39;./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas&#39;);" onmouseout="rep_img(); popdn(this,18, &#39;menu2&#39;, &#39;./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pendências Para Conferência</div></a></div>
+<div tabindex="1" id="menu3" style=";z-index:19;visibility:hidden; border:solid 1px #2977B5;position:absolute;background:#2977B5;width:180px;left:0px;top:undefinedpx;"><a id="lnk19" href="http://10.200.240.81/gpja-web/listaContratadosCap.do" style="text-decoration:none;"><div id="el19" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaContratadosCap.do&#39;,&#39;menu3&#39;,19);;;return stch(&#39;./listaContratadosCap.do&#39;);" onmouseout="rep_img(); popdn(this,19, &#39;menu3&#39;, &#39;./listaContratadosCap.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">CAP Contratados</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk20" href="http://10.200.240.81/gpja-web/despesaHonorarios.do" style="text-decoration:none;"><div id="el20" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./despesaHonorarios.do&#39;,&#39;menu3&#39;,20);;;return stch(&#39;./despesaHonorarios.do&#39;);" onmouseout="rep_img(); popdn(this,20, &#39;menu3&#39;, &#39;./despesaHonorarios.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Despesas/Honorários</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk21" href="http://10.200.240.81/gpja-web/pesquisaSociedadeCredenciada.do" style="text-decoration:none;"><div id="el21" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaSociedadeCredenciada.do&#39;,&#39;menu3&#39;,21);;;return stch(&#39;./pesquisaSociedadeCredenciada.do&#39;);" onmouseout="rep_img(); popdn(this,21, &#39;menu3&#39;, &#39;./pesquisaSociedadeCredenciada.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Escritório Contratado</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk22" href="http://10.200.240.81/gpja-web/pesquisaUsuarioSociedadeCredenciada.do" style="text-decoration:none;"><div id="el22" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaUsuarioSociedadeCredenciada.do&#39;,&#39;menu3&#39;,22);;;return stch(&#39;./pesquisaUsuarioSociedadeCredenciada.do&#39;);" onmouseout="rep_img(); popdn(this,22, &#39;menu3&#39;, &#39;./pesquisaUsuarioSociedadeCredenciada.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Usuários de Escritório Contratado</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk23" href="http://10.200.240.81/gpja-web/listaParametro.do" style="text-decoration:none;"><div id="el23" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaParametro.do&#39;,&#39;menu3&#39;,23);;;return stch(&#39;./listaParametro.do&#39;);" onmouseout="rep_img(); popdn(this,23, &#39;menu3&#39;, &#39;./listaParametro.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Parâmetros</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk24" href="http://10.200.240.81/gpja-web/listaParametroMemoriaCalculo.do" style="text-decoration:none;"><div id="el24" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaParametroMemoriaCalculo.do&#39;,&#39;menu3&#39;,24);;;return stch(&#39;./listaParametroMemoriaCalculo.do&#39;);" onmouseout="rep_img(); popdn(this,24, &#39;menu3&#39;, &#39;./listaParametroMemoriaCalculo.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Parâmetros de Memória de Cálculo</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk25" href="http://10.200.240.81/gpja-web/listaGrupoContabil.do" style="text-decoration:none;"><div id="el25" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaGrupoContabil.do&#39;,&#39;menu3&#39;,25);;;return stch(&#39;./listaGrupoContabil.do&#39;);" onmouseout="rep_img(); popdn(this,25, &#39;menu3&#39;, &#39;./listaGrupoContabil.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Grupo Contábil</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk26" href="http://10.200.240.81/gpja-web/listaGrupoContabil.do" style="text-decoration:none;"><div id="el26" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaGrupoContabil.do&#39;,&#39;menu3&#39;,26);;;return stch(&#39;./listaGrupoContabil.do&#39;);" onmouseout="rep_img(); popdn(this,26, &#39;menu3&#39;, &#39;./listaGrupoContabil.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Grupo Contábil</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk27" href="http://10.200.240.81/gpja-web/listaGrupoContabil.do" style="text-decoration:none;"><div id="el27" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./listaGrupoContabil.do&#39;,&#39;menu3&#39;,27);;;return stch(&#39;./listaGrupoContabil.do&#39;);" onmouseout="rep_img(); popdn(this,27, &#39;menu3&#39;, &#39;./listaGrupoContabil.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Grupo Contábil</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk28" href="http://10.200.240.81/gpja-web/parametroIntegracao.do?acao=init" style="text-decoration:none;"><div id="el28" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./parametroIntegracao.do?acao=init&#39;,&#39;menu3&#39;,28);;;return stch(&#39;./parametroIntegracao.do?acao=init&#39;);" onmouseout="rep_img(); popdn(this,28, &#39;menu3&#39;, &#39;./parametroIntegracao.do?acao=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Parâmetros de Integração TOTVS</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk29" href="http://10.200.240.81/gpja-web/montaPesquisaEmpreendimento.do" style="text-decoration:none;"><div id="el29" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaEmpreendimento.do&#39;,&#39;menu3&#39;,29);;;return stch(&#39;./montaPesquisaEmpreendimento.do&#39;);" onmouseout="rep_img(); popdn(this,29, &#39;menu3&#39;, &#39;./montaPesquisaEmpreendimento.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Empreendimento</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk30" href="http://10.200.240.81/gpja-web/montaPesquisaValorIndice.do" style="text-decoration:none;"><div id="el30" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaValorIndice.do&#39;,&#39;menu3&#39;,30);;;return stch(&#39;./montaPesquisaValorIndice.do&#39;);" onmouseout="rep_img(); popdn(this,30, &#39;menu3&#39;, &#39;./montaPesquisaValorIndice.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Valor Índice</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk31" href="http://10.200.240.81/gpja-web/montaPesquisaTipoAndamento.do" style="text-decoration:none;"><div id="el31" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaPesquisaTipoAndamento.do&#39;,&#39;menu3&#39;,31);;;return stch(&#39;./montaPesquisaTipoAndamento.do&#39;);" onmouseout="rep_img(); popdn(this,31, &#39;menu3&#39;, &#39;./montaPesquisaTipoAndamento.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Tipo de Andamento</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk32" href="http://10.200.240.81/gpja-web/montaClassificacaoDistribuicao.do" style="text-decoration:none;"><div id="el32" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaClassificacaoDistribuicao.do&#39;,&#39;menu3&#39;,32);;;return stch(&#39;./montaClassificacaoDistribuicao.do&#39;);" onmouseout="rep_img(); popdn(this,32, &#39;menu3&#39;, &#39;./montaClassificacaoDistribuicao.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Classificação/Distribuição de Processos</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div> <div id="el33" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;#&#39;,&#39;menu3&#39;,33);;;return stch(&#39;#&#39;);" onmouseout="rep_img(); popdn(this,33, &#39;menu3&#39;, &#39;#&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">TESTE</div><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk34" href="http://10.200.240.81/gpja-web/pesquisaPedido.do" style="text-decoration:none;"><div id="el34" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./pesquisaPedido.do&#39;,&#39;menu3&#39;,34);;;return stch(&#39;./pesquisaPedido.do&#39;);" onmouseout="rep_img(); popdn(this,34, &#39;menu3&#39;, &#39;./pesquisaPedido.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pedidos</div></a></div>
+<div tabindex="1" id="menu4" style=";z-index:19;visibility:hidden; border:solid 1px #2977B5;position:absolute;background:#2977B5;width:180px;left:0px;top:undefinedpx;"><a id="lnk35" href="http://10.200.240.81/gpja-web/prepareFiltroRelatorioEmpreendimento.do" style="text-decoration:none;"><div id="el35" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./prepareFiltroRelatorioEmpreendimento.do&#39;,&#39;menu4&#39;,35);;;return stch(&#39;./prepareFiltroRelatorioEmpreendimento.do&#39;);" onmouseout="rep_img(); popdn(this,35, &#39;menu4&#39;, &#39;./prepareFiltroRelatorioEmpreendimento.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Empreendimento</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk36" href="http://10.200.240.81/gpja-web/importacaoPlanilha.do" style="text-decoration:none;"><div id="el36" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./importacaoPlanilha.do&#39;,&#39;menu4&#39;,36);;;return stch(&#39;./importacaoPlanilha.do&#39;);" onmouseout="rep_img(); popdn(this,36, &#39;menu4&#39;, &#39;./importacaoPlanilha.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Importar Planilha</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk37" href="http://10.200.240.81/gpja-web/historicoImportacaoPlanilha.do" style="text-decoration:none;"><div id="el37" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./historicoImportacaoPlanilha.do&#39;,&#39;menu4&#39;,37);;;return stch(&#39;./historicoImportacaoPlanilha.do&#39;);" onmouseout="rep_img(); popdn(this,37, &#39;menu4&#39;, &#39;./historicoImportacaoPlanilha.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Histórico de Importações</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk38" href="http://10.200.240.81/gpja-web/relatorioProvisionamento.do?acao=init" style="text-decoration:none;"><div id="el38" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./relatorioProvisionamento.do?acao=init&#39;,&#39;menu4&#39;,38);;;return stch(&#39;./relatorioProvisionamento.do?acao=init&#39;);" onmouseout="rep_img(); popdn(this,38, &#39;menu4&#39;, &#39;./relatorioProvisionamento.do?acao=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Geral de Provisionamento</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk39" href="http://10.200.240.81/gpja-web/relatorioProvisionamento.do?acao=initHistorico" style="text-decoration:none;"><div id="el39" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./relatorioProvisionamento.do?acao=initHistorico&#39;,&#39;menu4&#39;,39);;;return stch(&#39;./relatorioProvisionamento.do?acao=initHistorico&#39;);" onmouseout="rep_img(); popdn(this,39, &#39;menu4&#39;, &#39;./relatorioProvisionamento.do?acao=initHistorico&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Histórico de Provisões</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk40" href="http://10.200.240.81/gpja-web/montaDadosRelatorioGerencial.do" style="text-decoration:none;"><div id="el40" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaDadosRelatorioGerencial.do&#39;,&#39;menu4&#39;,40);;;return stch(&#39;./montaDadosRelatorioGerencial.do&#39;);" onmouseout="rep_img(); popdn(this,40, &#39;menu4&#39;, &#39;./montaDadosRelatorioGerencial.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Emissão de Relatórios Gerenciais</div></a><div style="text-align:left;"><div onmouseout="popdn();" onmouseover="clearTimeout(Mtimer)" style="left:0;background:#FFFFFF;width:178px;position:absolute;clip:rect(0 100% 1px 0);height:1px;"></div></div><a id="lnk41" href="http://10.200.240.81/gpja-web/montaRelatorioProcessosHistorico.do?acao=init" style="text-decoration:none;"><div id="el41" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./montaRelatorioProcessosHistorico.do?acao=init&#39;,&#39;menu4&#39;,41);;;return stch(&#39;./montaRelatorioProcessosHistorico.do?acao=init&#39;);" onmouseout="rep_img(); popdn(this,41, &#39;menu4&#39;, &#39;./montaRelatorioProcessosHistorico.do?acao=init&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Histórico de Planilha de Processos</div></a></div>
+<div tabindex="1" id="menu5" style=";z-index:19;visibility:hidden; border:solid 1px #2977B5;position:absolute;background:#2977B5;width:180px;left:0px;top:undefinedpx;"><a id="lnk42" href="http://10.200.240.81/gpja-web/novaTrocaSenha.do" style="text-decoration:none;"><div id="el42" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./novaTrocaSenha.do&#39;,&#39;menu5&#39;,42);;;return stch(&#39;./novaTrocaSenha.do&#39;);" onmouseout="rep_img(); popdn(this,42, &#39;menu5&#39;, &#39;./novaTrocaSenha.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Altera Senha</div></a></div>
+<div tabindex="1" id="menu6" style=";z-index:19;visibility:hidden; border:solid 1px #2977B5;position:absolute;background:#2977B5;width:180px;left:0px;top:undefinedpx;"><a id="lnk43" href="http://10.200.240.81/gpja-web/showVersion.do" style="text-decoration:none;"><div id="el43" style="margin:0px;text-align:left;width:176px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;./showVersion.do&#39;,&#39;menu6&#39;,43);;;return stch(&#39;./showVersion.do&#39;);" onmouseout="rep_img(); popdn(this,43, &#39;menu6&#39;, &#39;./showVersion.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Info</div></a></div>
+<div tabindex="1" id="menu7" style="z-index: 21; visibility: visible; border: 1px solid rgb(41, 119, 181); position: absolute; background: rgb(41, 119, 181); width: 1088px; left: 1px; top: 90px; height: 17px;"><div id="hel44" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 0px; height: 17px;"> <div id="el44" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=movimentação&#39;,&#39;menu7&#39;,44);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,44, &#39;menu7&#39;, &#39;show-menu=movimentação&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Movimentação</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep44" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel45" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 121px; height: 17px;"> <div id="el45" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=pagamentos&#39;,&#39;menu7&#39;,45);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,45, &#39;menu7&#39;, &#39;show-menu=pagamentos&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Pagamentos</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep45" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel46" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 242px; height: 17px;"> <div id="el46" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=manutenção&#39;,&#39;menu7&#39;,46);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,46, &#39;menu7&#39;, &#39;show-menu=manutenção&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Manutenção</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep46" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel47" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 363px; height: 17px;"> <div id="el47" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=estatísticas&#39;,&#39;menu7&#39;,47);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,47, &#39;menu7&#39;, &#39;show-menu=estatísticas&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Estatísticas</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep47" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel48" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 484px; height: 17px;"> <div id="el48" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=relatórios&#39;,&#39;menu7&#39;,48);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,48, &#39;menu7&#39;, &#39;show-menu=relatórios&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Relatórios</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep48" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel49" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 605px; height: 17px;"> <div id="el49" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=segurança&#39;,&#39;menu7&#39;,49);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,49, &#39;menu7&#39;, &#39;show-menu=segurança&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Segurança</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep49" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel50" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 726px; height: 17px;"><a id="lnk50" href="http://10.200.240.81/gpja-web/sair.do" style="text-decoration:none;"><div id="el50" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;sair.do&#39;,&#39;menu7&#39;,50);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,50, &#39;menu7&#39;, &#39;sair.do&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Sair</div></a><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep50" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel51" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 847px; height: 17px;"><a id="lnk51" href="http://10.200.240.81/gpja-web/paginas/helpNovo/HTML/index.html" style="text-decoration:none;"><div id="el51" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;pointer&#39;;ShM=1;; popi(&#39;paginas/helpNovo/HTML/index.html&#39;,&#39;menu7&#39;,51);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,51, &#39;menu7&#39;, &#39;paginas/helpNovo/HTML/index.html&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Ajuda</div></a><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep51" style="position: absolute; background: rgb(255, 255, 255); width: 1px; height: 17px; left: 120px;">
+</div>
+</div></div><div id="hel52" style="text-align: left; width: 120px; position: absolute; top: 0px; left: 968px; height: 17px;"> <div id="el52" style="margin:0px;text-align:center;position:absolute;width:118px;padding:1px 1px 1px 1px ;font-weight:normal;font-style:normal;font-family:Verdana, Arial;font-size:12px;color:#FFFFFF;background:#2977B5;" onmouseover=";this.style.background=&#39;#D0DDED&#39;;style.color=&#39;#000000&#39;;this.style.cursor=&#39;default&#39;;ShM=1;; popi(&#39;show-menu=versão&#39;,&#39;menu7&#39;,52);;;return stch(&#39;&#39;);" onmouseout="rep_img(); popdn(this,52, &#39;menu7&#39;, &#39;show-menu=versão&#39;, &#39;#2977B5&#39;, &#39;#FFFFFF&#39;, &#39;&#39;);;; return stch(&#39;&#39;);">Versão</div><div style=";top:0;position:absolute;"><div onmouseover="clearTimeout(Mtimer)" id="hsep52" style="position: absolute; background: rgb(255, 255, 255); width: 0px; height: 0px; left: 0px;">
+</div>
+</div></div></div>
+<link href="./files/gpj.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="./files/jquery.js.download" type="text/javascript"></script>
+<script language="JavaScript" src="./files/menu.js.download" type="text/javascript"></script>
+<script language="JavaScript" src="./files/comportamento.js.download" type="text/javascript"></script>
+<script language="JavaScript" src="./files/gotourl.js.download" type="text/javascript"></script>
+<script language="JavaScript" src="./files/util.js.download" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+	 
+	 $('form').ready(function(){		 
+		 $( "input:text" ).each(function() {
+			 $(this).bind('blur', function (e) {
+				    if (e.which >= 97 && e.which <= 122) {
+				        var newKey = e.which - 32;
+				        // I have tried setting those
+				        e.keyCode = newKey;
+				        e.charCode = newKey;
+				    }
+
+				    $(this).val(($(this).val()).toUpperCase());
+				});
+		 });
+
+	});
+	 
+	$("a[href='paginas/help/index.html']").attr("target","_blank"); 
+	$("a[href='paginas/help/SC/index.html']").attr("target","_blank"); 
+	
+      function redirect(url){    	      	  
+        document.location='./'+url;
+      }
+      function alternateRowColors() {
+        styleTitTabla = "tit_lista";
+        styleAltRow   = "texto_lista";
+        styleRow      = "texto_lista_1";
+        styleButton   = "td_botao";
+        tableStyle    = "alternate";
+        tableStyleNew = "tabelas";
+        tables = document.getElementsByTagName("table");
+        for(var i=0;i<tables.length;i++) {
+          atable = tables.item(i);
+          if(atable.className==tableStyle){
+            rows = atable.rows;
+            for(var j=0;j<rows.length;j++) {
+              arow = rows.item(j);
+              if (j == 0){
+                arow.className = styleTitTabla;
+              }else if (j == rows.length-1) {
+                arow.className = styleButton;
+              }else if (j%2==0){
+                arow.className = styleRow;
+              }else {
+                arow.className = styleAltRow;
+              }
+            }
+            atable.className=tableStyleNew;
+          }
+        }
+      }
+
+   function MM_goToURL() {	   
+        var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+       for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+  }
+
+</script>
+
+<script type="text/javascript">
+var formularioAlteradoField;
+
+function verificaAlteracao() {
+  if(formularioAlteradoField) {
+    formularioAlteradoField.value = 'S';
+  }
+}
+
+for(i=0;i<document.forms.length;i++) {
+  var form = document.forms[i];
+  for(j=0;j<form.elements.length;j++) {
+    var field = form.elements[j];
+    if(field.type == 'hidden' && field.name == 'formularioAlterado') {
+      formularioAlteradoField = field;
+    }
+  }
+}
+
+if(formularioAlteradoField) {
+  for(i=0;i<document.forms.length;i++) {
+    var form = document.forms[i];
+    for(j=0;j<form.elements.length;j++) {
+      var field = form.elements[j];
+      if(field.type != 'hidden') {
+        if(field.onchange) {
+          var onchangeOriginal = field.onchange;
+          field.onchange = verificaAlteracao;
+          addListener(field, 'change', onchangeOriginal);
+        } else {
+          field.onchange = verificaAlteracao;
+        }
+      }
+    }
+  }
+}
+
+function addListener(element, event, listener, bubble) {
+  if(element.addEventListener) {
+    if(typeof(bubble) == "undefined") bubble = false;
+    element.addEventListener(event, listener, bubble);
+  } else if(this.attachEvent) {
+    element.attachEvent("on" + event, listener);
+  }
+}
+</script>
+<div id="menuHoriz" style="position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3">
+    <!-- inicio Menu -->
+
+    <ul id="menu">
+      <li>&nbsp;</li>
+    </ul>
+
+    <!-- fim Menu -->
+  </div><div id="header">
+    <div id="header_logo"></div>
+  </div><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td class="header_fundo">
+      <img src="./files/header_esquerdo.jpg" title="" width="100%" height="85">
+    </td>
+  </tr>
+  <tr>
+    <td class="menu_fundo">&nbsp;</td>
+  </tr>
+<!-- Código das Abas - Inicio -->
+<script type="text/javascript">
+function enviar(action) {
+  if(formularioAlteradoField && formularioAlteradoField.value == 'S' && !confirm("Os dados alterados não foram salvos e serão perdidos, deseja continuar ?")) {
+    return;
+  }
+  location.href = action;
+}
+
+function construcao() {
+  alert("Em construção.");
+}
+</script>
+  <tr>
+    <td valign="top" class="abas_fundo">
+	<div id="abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+		<tr>
+            <!-- Inicio aba ACAO CAP-->
+            
+            <!-- TELA DE ENTRADA CAP -->
+            
+            <!-- FIM DA TELA DE ENTRADA CAP -->
+
+            <!-- Fim aba ACAO CAP -->
+
+            <!--Inicio Alteração Ação Judicial-->
+              
+            <td><img src="./files/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+                  
+            <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar(&#39;./montaAlteracaoAcaoJudicialAntigaAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Processo</a></td>
+				
+			<td><img src="./files/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+				<td><img src="./files/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+			<td class="aba_off_L" nowrap="nowrap"><a href="javascript:enviar(&#39;./listaParteAcaoJudicialPoloAtivoInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link_L">Partes</a></td>
+			<td><img src="./files/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+				<td><img src="./files/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+			<td class="aba_off_L" nowrap="nowrap">
+				<a href="javascript:enviar(&#39;./listaLembreteAcaoJudicialAssuntoInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link_L">Lembretes</a>
+			</td>
+			<td><img src="./files/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+			<td><img src="./files/aba_onl.gif" title="" width="5" height="19" border="0"></td>
+			<td class="aba_on" nowrap="nowrap">Acompanhamento</td>
+			<td><img src="./files/aba_onr.gif" title="" width="7" height="19" border="0"></td>
+				<td><img src="./files/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+			<td class="aba_off" nowrap="nowrap"><a href="javascript:enviar(&#39;./listaCorrelatasAcaoJudicialInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">       
+				Vinculadas/Correlatas
+					</a>
+			</td>
+			<td><img src="./files/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+			<td><img src="./files/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+			<td class="aba_off" nowrap="nowrap"><a href="javascript:enviar(&#39;./listaAssociadasAcaoJudicialAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Processo/Recursos Associados</a></td>
+			<td><img src="./files/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	
+			<!-- Bloqueio On-line -->
+		
+			<td><img src="./files/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+			<td class="aba_off" nowrap="nowrap"><a href="javascript:enviar(&#39;./listaBloqueioParteAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Cadin</a></td>
+			<td><img src="./files/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+		
+            <!--Fim Alteração Ação Judicial-->
+
+		 </tr>
+        </tbody></table>
+    </div>
+    <img src="./files/nada.gif" width="1" height="1">
+    </td>
+  </tr>
+
+
+<!-- Código das Abas Final  -->
+
+<!-- Código das subabas - Inicio -->
+
+<script type="text/javascript">
+function enviar(action) {
+  if(formularioAlteradoField && formularioAlteradoField.value == 'S' && !confirm("Os dados alterados não foram salvos e serão perdidos, deseja continuar ?")) {
+    return;
+  }
+  location.href = action;
+}
+
+function construcao() {
+  alert("Em construção.");
+}
+</script>
+
+  <tr>
+    <td valign="top" class="sub_abas_fundo">
+      <div id="sub_abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr>
+               
+                <td><img src="./files/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar(&#39;./listaAndamentoAssociado.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link_L">Andamentos</a></td>
+                <td><img src="./files/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+                
+                <td><img src="./files/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar(&#39;./listaCompromissoAtualAcaoJudicialInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link_L">Agenda</a></td>
+                <td><img src="./files/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+                 
+                <td><img src="./files/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar(&#39;./listaTramitacaoAssociada.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Tramitações</a></td>
+                <td><img src="./files/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+<!--
+           < %  if (acaoJudicialVO != null &&  acaoJudicialVO.getIdPapelFazenda() !=  null && !acaoJudicialVO.getIdPapelFazenda().equals(ConstantsGPJ.ID_PAPEL_FAZENDA_PROCESSO_ADMINISTRATIVO) ) { %>
+              
+              
+                < %posFixoAba = AbasAcompanhamentoAcaoJudicialUtil.getPosFixoDestaque(session, "abas.alteracaoAcaoJudicial.Acompanhamentos.RequisicoesAutos");%>
+                <td><img src="paginas/imagens/subaba_offl< %=posFixoAba%>.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off< %=posFixoAba%>"><a href="javascript:enviar('./listaRequisicaoAuto.do?idAcaoJudicialAtual=< %=acaoJudicialVO.getId()%>');" class="subaba_link< %=posFixoAba%>">Requisi&ccedil;&otilde;es de Autos</a></td>
+                <td><img src="paginas/imagens/subaba_offr< %=posFixoAba%>.gif" title="" width="7" height="19" border="0"></td>
+              
+            < % } %>
+-->
+
+                <td><img src="./files/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar(&#39;./listaPericiaAcaoJudicialInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">
+               
+                  Perícias/Contas
+               
+                </a></td>
+                <td><img src="./files/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+				<td><img src="./files/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar(&#39;./listaDespesaJudicial.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Despesas/Custas Judiciais</a></td>
+                <td><img src="./files/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+             
+				<td><img src="./files/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar(&#39;./listaDepositoRecursal.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Deposito Recursal</a></td>
+                <td><img src="./files/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+             
+                <td><img src="./files/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:redirect('ConsultaDepositoJudicial.html');" class="subaba_link_L">Depósito Judicial</a></td>
+                <td><img src="./files/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+                <td><img src="./files/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar(&#39;./listaDespesaCustasSAInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Despesas/Honorários do Escritório</a></td>
+                <td><img src="./files/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+<!-- subabas Tela Entrada \ Compromissos [atuais/futuros|antigos] start -->
+
+<!-- sub abas - CAP -->
+
+               
+<!-- sub abas - Cap fim -->
+<!-- subabas Tela Entrada \ Compromissos end -->
+
+          </tr>
+        </tbody></table>
+      </div>
+      <img src="./files/nada.gif" width="1" height="1" title="">
+    </td>
+  </tr>
+<!-- Código das SubAbas Final  -->
+
+
+<!-- Código das SubSubAbas - Inicio -->
+
+  <tr>
+    <td valign="top" class="sub_abas_fundo">
+    <div id="sub_sub_abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr>
+                <td><img src="./files/subaba_onl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_on">Penhoras</td>
+                <td><img src="./files/subaba_onr.gif" title="" width="7" height="19" border="0"></td>
+                <td><img src="./files/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar(&#39;./listaPrecatorioAcaoJudicialInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Condenação</a></td>
+                <td><img src="./files/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+                <td><img src="./files/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar(&#39;./listaMemoriaCalculo.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link_L">Memória Cálculo</a></td>
+                <td><img src="./files/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+			</tr>
+        </tbody></table>
+    </div>
+      <img src="./files/nada.gif" width="1" height="1" title="">
+    </td>
+  </tr>
+
+
+<!-- Código das SubSubAbas Final  -->
+
+
+<!-- Código das subabas Final  -->
+
+  
+  
+  <!-- Código das Abas Final  -->
+  <tr>
+    <td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <tbody><tr><td width="10"><img src="./files/nada.gif" title="" width="10" height="10" border="0"></td>
+     <td>
+
+<!--- inicio tabel&atilde;o do conte&uacute;do -->
+    
+<!-- inicio tabelao conteudo -->
+<form name="BemPenhoraForm" method="post" action="http://10.200.240.81/gpja-web/salvaBemPenhora.do"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="b972c2947c91c7f686207392de0ed37d">
+  <input type="hidden" name="vo.id" value="704">
+  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tbody><tr>
+      <td><img src="./files/nada.gif" width="10" height="10"></td>
+    </tr>
+    <tr>
+      <td class="titulo"><p><strong>Cadastro de Penhora</strong></p></td>
+    </tr>
+    <tr>
+      <td><img src="./files/nada.gif" width="10" height="10"></td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+          <tbody><tr>
+            <td class="texto_lista">
+                 
+					<strong>Nº do Processo:</strong> <span class="texto_lista_destaque">0618420-87.2017.8.26.0559     </span>
+					 - <strong>Ano:</strong> <span class="texto_lista_destaque">2017</span>
+					 - <strong>Nº no Sistema:</strong> <span class="texto_lista_destaque">26511</span>
+					<br>
+					<strong>Assunto:</strong> DIVERSOS<br>
+					<strong>Tipo de Ação:</strong> AÇÃO CIVEL PUBLICA MUTUARIOS<br>
+					<strong>Autor, Impetrante, Recorrente:</strong> <br>
+					<strong>Réu, Impetrado, Recorrido:</strong> <br>
+					<strong>Avaliação de Risco:</strong> Provável<br>
+					<strong>Último Andamento:</strong> 
+					02/01/2018 – OPERADOR_646
+					<br>
+					<div><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse"><tbody><tr><td width="35%"><strong>Área:</strong> CONTENCIOSO - LOREM LOREM</td><td width="65%"><strong>Por:</strong> Lorem Ipsum Dollor Sit Amed </td></tr></tbody></table></div>
+
+				</td>
+        </tr>
+        </tbody></table>
+        <br>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td><img src="./files/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+              <td>
+                <table cellspacing="0" cellpadding="0" border="0">
+                  <tbody><tr>
+                    <td nowrap="" class="rotulo">Penhora:</td>
+                    <td width="100%" background="./files/gbox_a2.gif"><img src="./files/nada.gif" title="" width="1" height="17" border="0"></td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td><img src="./files/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+          </tr>
+          <tr>
+            <td width="8" background="./files/gbox_b1.gif"><img src="./files/nada.gif" title="" width="8" height="8" border="0"></td>
+            <td class="celula_rotulo">
+              <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                <tbody><tr>
+                    <td width="20%" class="td_titulo">Data do Auto de Penhora:</td>
+                    <td width="1%" class="td_titulo_obrigatorio">&nbsp;</td>
+                    <td class="td_conteudo">20/03/2018</td>
+                </tr>
+                <tr>
+                  <td class="td_titulo">Anotações:</td>
+                  <td class="td_titulo_obrigatorio">&nbsp;</td>
+                  <td class="td_conteudo">Lorem ipsum anot</td>
+                </tr>
+                <tr>
+                  <td class="td_titulo">Bens de Propriedade:</td>
+                  <td class="td_titulo_obrigatorio">&nbsp;</td>
+                  <td class="td_conteudo">
+                         da CDHU
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_titulo">Nome do Proprietário:</td>
+                  <td class="td_titulo_obrigatorio">&nbsp;</td>
+                  <td class="td_conteudo">CDHU</td>
+                </tr>
+              </tbody></table>
+              <br>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td><img src="./files/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+                  <td>
+                    <table cellspacing="0" cellpadding="0" border="0">
+                      <tbody><tr>
+                        <td nowrap="" class="rotulo">Bem Penhorado: </td>
+                        <td width="100%" background="./files/gbox_a2.gif"><img src="./files/nada.gif" title="" width="1" height="17" border="0"></td>
+                      </tr>
+                    </tbody></table>
+                  </td>
+                  <td><img src="./files/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+                </tr>
+                <tr>
+					<td width="8" background="./files/gbox_b1.gif"><img src="./files/nada.gif" title="" width="8" height="8" border="0"></td>
+					<td class="celula_rotulo">
+                    <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+					<tbody>
+						<tr>
+							<td width="19%" class="td_titulo">Tipo: </td>
+							<td width="1%" class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<select name="vo.longAsString(idTipoBem)" class="campo"><option value="">Selecione...</option>
+									<option value="22" selected="selected">ATIVOS FINANCEIROS</option>
+									<option value="1">AUTOMOTORES(PEÇAS E ACESSORIOS)</option>
+									<option value="19">AUTOMÓVEIS</option>
+									<option value="26">AVIÃO</option>
+									<option value="20">BARCOS</option>
+									<option value="24">CAMINHÕES</option>
+									<option value="2">COMPUTADORES</option>
+									<option value="127">CONTA BANCÁRIA</option>
+									<option value="21">CRÉDITOS</option>
+									<option value="3">ELETRODOMESTICOS</option>
+									<option value="4">EQUIPAMENTO EM GERAL</option>
+									<option value="5">ESPORTE, LAZER, CAÇA, PESCA E JARDINAGEM</option>
+									<option value="6">GENEROS ALIMENTICIOS E BEBIDAS</option>
+									<option value="7">IMOVEIS</option>
+									<option value="8">INFORMATICA</option>
+									<option value="9">JOIAS E BIJUTERIAS</option>
+									<option value="10">MAQUINAS OPERATRIZES, MAQUINAS EM GERAL</option>
+									<option value="11">MATERIA PRIMA</option>
+									<option value="12">MATERIAL DE CONSTRUCAO</option>
+									<option value="13">MOBILIARIO, DECORACAO, ARTE E ACESSORIOS</option>
+									<option value="23">MOTOCICLETAS</option>
+									<option value="14">OUTROS</option>
+									<option value="15">PRODUTOS FARMACEUTICOS, COSMETICOS, HIGIENE, LIMPE</option>
+									<option value="16">TELEFONIA</option>
+									<option value="25">TRAILERS</option>
+									<option value="17">VESTUARIO, TECIDO, CONFECCAO, CALCADOS E OUTROS</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Situação:</td>
+							<td class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<select name="vo.longAsString(idSituacao)" class="campo"><option value="">Selecione...</option>
+									<option value="1" selected="selected">Ativo</option>
+									<option value="2">Inativo</option>
+									<option value="3">Substituído</option>
+									<option value="4">Arrematado</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Bem:</td>
+							<td class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<textarea name="vo.bem" cols="70" rows="4">Bem penhorado Lorem Ipsum</textarea>
+						</td>
+						</tr>
+						
+						<tr>
+							<td class="td_titulo">Valor Individual (R$):</td>
+							<td class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<input type="text" name="vo.currencyAsString(valorIndividual)" maxlength="20" size="20" value="2.000,00" onkeypress="return currencyFormat(this, &#39;.&#39;, &#39;,&#39;, event)" class="input_right">
+							</td>
+						</tr>
+						<tr>
+							<td width="20%" class="td_titulo">Data do Bloqueio:</td>
+							<td width="1%" class="td_titulo_obrigatorio"></td>
+							<td class="td_conteudo">
+							  <input type="text" name="vo.dateAsString(dtAuto)" maxlength="10" size="10" value="02/04/2018" onkeypress="return formatarDados(this,event,&#39;00/00/0000&#39;)">
+							  <input type="button" class="botao" onclick="popUpCalendar(document.forms[&#39;PenhoraForm&#39;][&#39;vo.dateAsString(dtAuto)&#39;], document.forms[&#39;PenhoraForm&#39;][&#39;vo.dateAsString(dtAuto)&#39;], &#39;dd/mm/yyyy&#39;);" value="v">
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Valor Bloqueado (R$):</td>
+							<td class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<input type="text" name="vo.currencyAsString(valorIndividual)" maxlength="20" size="20" value="2.000,00" onkeypress="return currencyFormat(this, &#39;.&#39;, &#39;,&#39;, event)" class="input_right">
+								<label>Verificado pelo Financeiro: <input type="checkbox" name="chk.ConfirmadoFinanceiro" disabled="true" checked="true"></label>
+							</td>	
+						</tr>
+						
+						<tr>
+							<td class="td_titulo">Conta:</td>
+							<td class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<select name="vo.longAsString(idSituacao)" class="campo"><option value="">Selecione...</option>
+									<option value="1" selected="selected">Banco do Brasil - 000000000-0</option>
+									<option value="2">Caixa - 000000000-0</option>
+									<option value="3">Santader - 000000000-0</option>
+									
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Valor da Liberação de Excesso (R$):</td>
+							<td class="td_titulo_obrigatorio"></td>
+							<td class="td_conteudo">
+								<input type="text" name="vo.currencyAsString(valorIndividual)" maxlength="20" size="20" value="0,00" onkeypress="return currencyFormat(this, &#39;.&#39;, &#39;,&#39;, event)" class="input_right">
+								<label>Verificado pelo Financeiro: <input type="checkbox" name="chk.ConfirmadoFinanceiro" disabled="true"></label>
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Valor Desbloqueado (R$):</td>
+							<td class="td_titulo_obrigatorio"></td>
+							<td class="td_conteudo">
+								<input type="text" name="vo.currencyAsString(valorIndividual)" maxlength="20" size="20" value="0,00" onkeypress="return currencyFormat(this, &#39;.&#39;, &#39;,&#39;, event)" class="input_right">
+								<label>Verificado pelo Financeiro: <input type="checkbox" name="chk.ConfirmadoFinanceiro" disabled="true"></label>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="td_titulo">Valor do Depósito (R$):</td>
+							<td class="td_titulo_obrigatorio"></td>
+							<td class="td_conteudo">
+								<input type="text" name="valorDesbloqueio" maxlength="20" size="20" value="0,00" onkeypress="return currencyFormat(this, &#39;.&#39;, &#39;,&#39;, event)" class="input_right" disabled="true">
+								<label>Verificado pelo Financeiro: <input type="checkbox" name="chk.ConfirmadoFinanceiro" disabled="true"></label>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="td_titulo">Tipo de Depósito:</td>
+							<td class="td_titulo_obrigatorio"></td>
+							<td class="td_conteudo">
+								<select name="vo.longAsString(idSituacao)" class="campo" disabled="true"><option value="">Selecione...</option>
+									<option value="1" selected="selected">Não houve depósito</option>
+									<option value="2">Em Garantia</option>
+									<option value="3">Definitivo</option>
+								</select>
+							</td>
+						</tr>				
+						<!--tr>
+							<td class="td_titulo">Quantidade:</td>
+							<td class="td_titulo_obrigatorio">*</td>
+							<td class="td_conteudo">
+								<input type="text" name="vo.longAsString(quantidade)" maxlength="10" size="10" value="1" onkeypress="return formatarDados(this,event,&#39;0000000000&#39;)">
+							</td>
+						</tr-->
+						<tr>
+							<td class="td_titulo">Situação do Excesso:</td>
+							<td class="td_titulo_obrigatorio">&nbsp;</td>
+							<td class="td_conteudo">
+								
+									Não foi identificado excesso.
+								
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Valor Total Penhorado(R$):</td>
+							<td class="td_titulo_obrigatorio">&nbsp;</td>
+							<td class="td_conteudo">
+								
+									2.000,00
+								
+							</td>
+						</tr>
+						<tr>
+							<td class="td_titulo">Valor Total Informado pelo Oficial (R$):</td>
+							<td class="td_titulo_obrigatorio">&nbsp;</td>
+							<td class="td_conteudo">
+								<input type="text" name="vo.currencyAsString(valorTotalInformado)" maxlength="20" size="20" value="2.000,00" onkeypress="return currencyFormat(this, &#39;.&#39;, &#39;,&#39;, event)" class="input_right">
+							</td>
+						</tr>
+                    </tbody></table>
+					</td>
+                  <td width="8" background="./files/gbox_b3.gif"><img src="./files/nada.gif" title="" width="8" height="8" border="0"></td>
+                </tr>
+                <tr>
+                  <td><img src="./files/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+                  <td background="./files/gbox_c2.gif"><img src="./files/nada.gif" title="" width="8" height="8" border="0"></td>
+                  <td><img src="./files/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+                </tr>
+              </tbody></table>
+            </td>
+            <td width="8" background="./files/gbox_b3.gif"><img src="./files/nada.gif" title="" width="8" height="8" border="0"></td>
+          </tr>
+          <tr>
+            <td><img src="./files/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+            <td background="./files/gbox_c2.gif"><img src="./files/nada.gif" title="" width="8" height="8" border="0"></td>
+            <td><img src="./files/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+          </tr>
+        </tbody></table>
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tbody><tr>
+            <td>
+              <input name="button22" type="button" class="botao" onclick="javascript:history.back();" value="Voltar">
+              <input name="buton11" type="button" class="botao" onclick="javascript:redirect('PenhoraDetalhe.html');" value="Salvar">
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+  
+  <input type="hidden" name="formularioAlterado" value="N">
+
+
+
+
+</form>
+<!-- fim tabelao do conteudo -->
+
+
+
+            <script>
+addEvent(window, "resize", centralizarLoading);
+addEvent(window, "scroll", centralizarLoading);
+</script>
+<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: rgb(205, 205, 205); opacity: 0.4; z-index: 1000; display: none;" onmousemove="segurarFoco();">
+   </div>
+   <div id="divAguarde" style="position: absolute; border: 2px solid rgb(192, 192, 192); height: 50px; width: 150px; cursor: wait; z-index: 1001; background-color: rgb(255, 255, 255); top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: none;">
+
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+           <tbody><tr>
+               <td width="50"><img src="./files/loading.gif"></td>
+               <td style="text-align: center;">
+                   <input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size="10" style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;">
+               </td>
+           </tr>
+       </tbody></table>
+
+</div>
+
+<!--- fim tabel&atilde;o do conte&uacute;do -->
+          </td>
+          <td width="10">
+            <img src="./files/nada.gif" title="" width="10" height="10" border="0">
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td class="footer_fundo">
+    
+
+
+
+
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+      <tbody><tr>
+        <td width="50%">
+          <span class="footer_texto">Usuário:</span>
+          Felipe
+
+          
+
+        </td>
+        <td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+        <td width="15%" align="right" class="footer_texto">
+           
+           
+           29/03/2018 16:42
+        </td>
+      </tr>
+</tbody></table>
+
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+<script type="text/javascript">
+  loading(false);
+</script>
+
+<script type="text/javascript">
+    alternateRowColors();
+</script>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+</body></html>

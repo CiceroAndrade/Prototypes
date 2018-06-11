@@ -1,0 +1,163 @@
+#menu{
+	list-style: none;
+	margin-top:0;
+}
+
+#menu a:hover{ /* Cor de Todos os Itens quando sobrepostos */
+    background-color:#B7D0EE; /* Cor da sobreposição */
+    color:#000000; /* Cor dos itens de menu */
+}
+
+#menu ul {
+    display:none;
+ 	position:relative;
+	list-style: none;
+	padding: 2;
+	margin:0;
+    z-index:51;
+/*    cursor:pointer; cursor:hand; */
+}
+
+#menu li { /* Menu Raiz */
+    position: relative;
+	display:block;
+    float:left;
+    background-color:#6996D1;
+    width: 6em; /* (a) Largura da aba de menu */
+	margin:0;
+	padding: 0;
+
+}
+
+#menu li a { /* Links do Menu Raiz */
+    text-decoration:none;
+    display:block;
+	font-family:verdana;
+	font-size:11px;
+	font-weight: bold;
+	color: #ffffff;
+	width: 11em; /* largura do link raiz */
+    height:16px;
+    padding: 2;
+    margin:0.2em 0 0.2em 0.1em;
+
+}
+
+.versao {
+    text-decoration:none;
+    display:block;
+	font-family:verdana;
+	font-size:11px;
+	font-weight: bold;
+	color: #ffffff;
+	width: 5em; /* largura do link raiz */
+    height:16px;
+    padding: 2;
+    margin:0.2em 0 0.2em 0.1em;
+}
+
+#menu li ul { /* listas de segundo nível */
+	position: absolute;
+	display: none;
+	z-index:52;
+	background-color:#6996D1;
+	width: 150px; /* largura da aba de segundo nível */
+	top: 21px;
+	left: 0em;
+	border: 1px solid #152F4A;
+}
+
+#menu li ul a { /* Links das listas de segundo nível */
+    text-decoration:none;
+    display:block;
+	font-family:verdana;
+	font-size:11px;
+	font-weight: bold;
+	color: #ffffff;
+	width: 150px; /* largura do link de segundo nível */
+    height:1em;
+    padding: 1;
+    margin:0.2em 0 0.2em 0.1em;
+
+}
+
+#menu li ul li ul { /* listas de terceiro nível */
+	display: none;
+	position: absolute;
+	z-index:52;
+	background-color:#ffffff;
+	width: 150px; /* largura da aba de terceiro nível */
+	top: 1.1em;
+	left: 45px; /* afastamento das abas 2 e 3 */
+	border: 1px solid #4483A0;
+
+}
+
+#menu li ul li ul a { /* Link das listas de terceiro nível */
+    text-decoration:none;
+    display:block;
+	font-family:verdana;
+		font-size:9pt;
+
+	color: #6793A7;
+	width: 150px; /* largura do link de terceiro nível */
+    height:1em;
+    padding: 1;
+    margin:0.2em 0 0.2em 0.1em;
+}
+
+#menu li ul li ul li ul { /* listas de quarto nível */
+	display: none;
+	position: absolute;
+	z-index:52;
+	background-color:#ffffff;
+	width: 100px; /* largura da aba de quarto nível */
+	top: 1.1em;
+	left: -11px; /* Afastamento entre a aba 4 e a aba 3 */
+	border: 1px solid #4483A0;
+}
+
+#menu li ul li ul li ul a { /* Links das listas de quarto nível */
+    text-decoration:none;
+    display:block;
+	font-family:verdana;
+	font-size:9pt;
+	color: #6793A7;
+	width: 95px; /* largura do link de quarto nível */
+    height:1em;
+    padding: 1;
+    margin:0.2em 0 0.2em 0.1em;
+}
+
+
+
+/* Todos os Navegadores vêem isto */
+#menu ul ul, #menu ul ul ul{
+    display:none;
+    position:absolute;
+    margin-top:-1.1em;
+    margin-left:8em;
+	width: 8em; /* Largura do terceiro nível */
+}
+
+/* O IE não vê isto */
+ #menu ul li>ul, #menu ul ul li>ul{
+    margin-top:-1.1em;
+ }
+
+#menu li:hover ul ul, #menu li:hover ul ul ul{
+    display:none;
+}
+
+#menu li:hover ul, #menu ul li:hover ul, #menu ul ul li:hover ul{
+    display:block;
+}
+
+li>ul {
+	top: auto;
+	left: auto;
+}
+.linha {
+	border: 1px solid #4483A0;
+}
+

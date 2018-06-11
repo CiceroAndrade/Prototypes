@@ -1,0 +1,1617 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+	<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+	<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/popupcalendar.js" type=""></script>
+</head>
+<body style="">
+	<div id="menuHoriz" style="position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3">
+		<!-- inicio Menu -->
+		<ul id="menu">
+		<li>&nbsp;</li>
+		</ul>
+		<!-- fim Menu -->
+	</div>
+	<div id="header">
+		<div id="header_logo"></div>
+	</div>	
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+			<td class="header_fundo">
+				<img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+			</td>
+			</tr>
+			<tr>
+				<td class="menu_fundo">&nbsp;</td>
+			</tr>
+			<!-- Código das Abas - Inicio -->
+			<tr>
+				<td valign="top" class="abas_fundo">
+					<div id="abas">
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+						<!-- Inicio aba ACAO CAP-->
+						<!-- TELA DE ENTRADA CAP -->
+						<!-- FIM DA TELA DE ENTRADA CAP -->
+						<!-- Fim aba ACAO CAP -->
+						<!--Inicio Alteração Ação Judicial-->
+							<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_off" nowrap="nowrap">
+								<a href="javascript:redirect('CadastroAcaoProcesso.html');" class="aba_link">Processo</a></td>
+							<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_off_L" nowrap="nowrap"><a href="javascript:enviar(&#39;./listaParteAcaoJudicialPoloAtivoInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link_L">Partes</a></td>
+							<td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_off_L" nowrap="nowrap">
+								<a href="javascript:enviar(&#39;./listaLembreteAcaoJudicialAssuntoInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link_L">Lembretes</a>
+							</td>
+							<td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							<td><img src="./imagens/aba_onl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_on" nowrap="nowrap">Acompanhamento</td>
+							<td><img src="./imagens/aba_onr.gif" title="" width="7" height="19" border="0"></td> 
+							
+							<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_off" nowrap="nowrap">
+								<a href="javascript:enviar(&#39;./listaCorrelatasAcaoJudicialInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Vinculadas/Correlatas</a>
+							</td>
+							<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_off" nowrap="nowrap">
+								<a href="javascript:enviar(&#39;./listaAssociadasAcaoJudicialAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Processo/Recursos Associados</a></td>
+							<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+							<!-- Bloqueio On-line -->	              
+							<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="aba_off" nowrap="nowrap">
+								<a href="javascript:enviar(&#39;./listaBloqueioParteAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Cadin</a></td>
+							<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+						<!--Fim Alteração Ação Judicial-->
+					</tr>
+					</tbody></table>
+				</div>
+				<img src="./imagens/nada.gif" width="1" height="1">
+				</td>
+			</tr>
+		<!-- Código das Abas Final  -->
+		<!-- Código das subabas - Inicio -->
+			<tr>
+				<td valign="top" class="sub_abas_fundo">
+					<div id="sub_abas">
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off_L"><a href="javascript:redirect('');" class="subaba_link_L">Andamentos</a></td>
+							<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off_L"><a href="javascript:redirect('ConsultaAgenda.html');" class="subaba_link_L">Agenda</a></td>
+							<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:enviar(&#39;./listaTramitacaoAssociada.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Tramitações</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+				
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:enviar(&#39;./listaPericiaAcaoJudicialInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Perícias/Contas</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:enviar(&#39;./listaDespesaJudicial.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Despesas/Custas Judiciais</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+								
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:redirect('ConsultaDepositoRecursal.html');" class="subaba_link">Depósito Recursal</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off_L"><a href="javascript:redirect('ConsultaDepositoJudicial.html');" class="subaba_link_L">Depósito Judicial</a></td>
+							<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:enviar(&#39;./listaDespesaCustasSAInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Despesas/Honorários do Escritório</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+						
+							<!--subabas Tela Entrada \ Compromissos [atuais/futuros|antigos] start -->
+							<!--sub abas - CAP -->  
+							<!--sub abas - Cap fim -->
+							<!--subabas Tela Entrada \ Compromissos end -->
+						</tr>
+						
+					</tbody>
+					</table>
+					</div>
+					<img src="./imagens/nada.gif" width="1" height="1" title="">
+				</td>
+			</tr>
+		<!-- Código das SubAbas Final  -->
+		
+		
+		<!-- Código das SubSubAbas - Inicio -->
+		
+			<tr>
+				<td valign="top" class="sub_abas_fundo">
+					<div id="sub_sub_abas">
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+						
+							<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off_L"><a href="javascript:redirect('Bloqueios.html');" class="subaba_link_L">Bloqueios</a></td>
+							<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_onl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_on">Penhoras</td>
+							<td><img src="./imagens/subaba_onr.gif" title="" width="7" height="19" border="0"></td>
+						
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:redirect('CadastroCondenacao.html');" class="subaba_link">Condenação</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off_L"><a href="javascript:redirect('');" class="subaba_link_L">Memória Cálculo</a></td>
+							<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:redirect('');" class="subaba_link">Pedidos e Anexos</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+						
+							<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off"><a href="javascript:enviar('');" class="subaba_link">Unidades Habitacionais</a></td>
+							<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+						
+							<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+							<td class="subaba_off_L"><a href="javascript:redirect('Leiloes.html');" class="subaba_link_L">Leilões</a></td>
+							<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+						</tr>
+					</tbody>
+					</table>
+					</div>
+				<img src="./imagens/nada.gif" width="1" height="1" title="">
+				</td>
+			</tr>
+			
+			
+			<!-- Código das SubSubAbas Final  -->
+			
+			
+			<!-- Código das subabas Final  -->
+			
+			
+			
+			<!-- Código das subabas Final  -->
+			
+			<div id='menuHoriz' style='position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3'>
+				<!-- inicio Menu -->
+			
+				<ul id="menu">
+				<li>&nbsp;</li>
+				</ul>
+			
+				<!-- fim Menu -->
+			</div>
+			<div id="header">
+				<div id="header_logo"></div>
+			</div>
+			
+			<!-- Código das Abas Final  -->
+			<tr>
+				<td valign="top">
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tr>
+							<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+							<td>
+
+								<div onclick="bShow=true" id="calendar" style="z-index:+999;position:absolute;visibility:hidden;"><table width="250" style="border-width:2;border-style:solid;font-family:arial; font-size:09px}" bgcolor="#ffffff"><tbody><tr bgcolor="#e1e1e1"><td><table width="248"><tbody><tr><td style="font-family:arial; font-size:09px;"><font color="#000000"><b><span id="caption"></span></b></font></td><td align="right"><a href="javascript:hideCalendar()"><img src="./imagens/close.gif" width="15" height="13" border="0" alt="Fechar Calendário."></a></td></tr></tbody></table></td></tr><tr><td bgcolor="#ffffff"><span id="content"></span></td></tr><tr bgcolor="#ffffff"><td style="padding:1px" align="center"><span id="lblToday"></span></td></tr></tbody></table></div><div id="selectMonth" style="z-index:+999;position:absolute;visibility:hidden;"></div><div id="selectYear" style="z-index:+999;position:absolute;visibility:hidden;"></div>
+								
+								<!-- inicio tabelao conteudo -->
+								<form name="PenhoraForm" method="post" action="http://10.200.240.81/gpja-web/salvaPenhoraAcaoJudicial.do"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="458d0a35ededf80584d29fbd6b9d603d">
+									<input type="hidden" name="act" value="novo">
+									<input type="hidden" name="vo.id" value="1003">
+								
+									<table cellspacing="0" cellpadding="0" border="0" width="100%">
+									<tbody>
+									<tr>
+										<td><img src="./imagens/nada.gif" width="10" height="10" title=""></td>
+									</tr>
+									<tr>
+										<td class="titulo"><p><strong>Cadastro de Penhora</strong></p></td>
+									</tr>
+									<tr>
+										<td><img src="./imagens/nada.gif" width="10" height="10" title=""></td>
+									</tr>
+									<tr>
+										<td>
+											<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+											<tbody>
+												<tr>
+													<td class="texto_lista">
+														<strong>Nº do Processo:</strong> <span class="texto_lista_destaque">0618420-87.2017.8.26.0559     </span>
+														- <strong>Ano:</strong> <span class="texto_lista_destaque">2017</span>
+														- <strong>Nº no Sistema:</strong> <span class="texto_lista_destaque">26511</span>
+														<br>
+														<strong>Assunto:</strong> DIVERSOS<br>
+														<strong>Tipo de Ação:</strong> AÇÃO CIVEL PUBLICA MUTUARIOS<br>
+														<strong>Autor, Impetrante, Recorrente:</strong> <br>
+														<strong>Réu, Impetrado, Recorrido:</strong> <br>
+														<strong>Avaliação de Risco:</strong> Provável<br>
+														<strong>Último Andamento:</strong> 
+														02/01/2018 – OPERADOR_646
+														<br>
+														<div><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse"><tbody><tr><td width="35%"><strong>Área:</strong> CONTENCIOSO - LOREM LOREM</td><td width="65%"><strong>Por:</strong> Lorem Ipsum Dollor Sit Amed </td></tr></tbody></table></div>
+													</td>
+												</tr>
+											</tbody>
+											</table>
+										<br>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+											<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+											<td>
+												<table cellspacing="0" cellpadding="0" border="0">
+												<tbody><tr>
+													<td nowrap="" class="rotulo">Penhora:</td>
+													<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+												</tr>
+												</tbody></table>
+											</td>
+											<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+											</tr>
+											<tr>
+											<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+											<td class="celula_rotulo">
+												<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+													<tbody>
+														<tr>
+															<td width="20%" class="td_titulo">Data do Auto de Penhora:</td>
+															<td width="1%" class="td_titulo_obrigatorio">*</td>
+															<td class="td_conteudo">
+															<input type="text" name="vo.dateAsString(dtAuto)" maxlength="10" size="10" value="20/03/2018" onkeypress="return formatarDados(this,event,&#39;00/00/0000&#39;)">
+															<input type="button" class="botao" onclick="popUpCalendar(document.forms[&#39;PenhoraForm&#39;][&#39;vo.dateAsString(dtAuto)&#39;], document.forms[&#39;PenhoraForm&#39;][&#39;vo.dateAsString(dtAuto)&#39;], &#39;dd/mm/yyyy&#39;);" value="v">
+															</td>
+														</tr>
+														
+														<tr>
+															<td class="td_titulo">Parte Devedora:</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo">
+															<select name="vo.longAsString(idPessoa)" class="campo"><option value="">Selecione...</option>
+																<option value="7223">LOREM IPSUM DOLLOR SIT AMED</option>
+																<option value="905" selected="selected">Secretaria de Habitação</option></select>
+															</td>
+														</tr>
+										
+														<tr>
+															<td class="td_titulo">Anotações:</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo">
+															<textarea name="vo.anotacao" cols="88" rows="6">Lorem ipsum anot</textarea>
+															</td>
+														</tr>
+														
+														<tr>
+															<td class="td_titulo">Parte Devedora:</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo">
+															<select name="vo.longAsString(idPessoa)" class="campo"><option value="">Selecione...</option>
+																<option value="7223">LOREM IPSUM DOLLOR SIT AMED</option>
+																<option value="905" selected="selected">Secretaria de Habitação</option></select>
+															</td>
+														</tr>
+										
+														<tr>
+															<td class="td_titulo">Bens de Propriedade:</td>
+															<td class="td_titulo_obrigatorio">*</td>
+															<td class="td_conteudo">
+															<input type="radio" name="vo.bensPropriedade" value="1" class="input_radio">&nbsp;do devedor &nbsp;&nbsp;
+															<input type="radio" name="vo.bensPropriedade" value="2" class="input_radio">&nbsp;de sócios &nbsp;&nbsp;
+															<input type="radio" name="vo.bensPropriedade" value="3" class="input_radio">&nbsp;de co-responsável &nbsp;&nbsp;
+															<input type="radio" name="vo.bensPropriedade" value="4" checked="checked" class="input_radio">&nbsp;da CDHU &nbsp;&nbsp;
+															</td>
+														</tr>
+														
+														<tr>
+															<td class="td_titulo">Nome do Proprietário:</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo">
+															<input type="text" name="vo.nomeProprietario" maxlength="60" size="60" value="CDHU">
+															</td>
+														</tr>
+														
+														<tr>
+															<!--
+															<td class="td_titulo">Bloqueio On-line:</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo">
+															<input type="checkbox" name="chk.vo.bloqueioOnline" value="1" checked="checked" onclick="if (this.checked) { this.form[&#39;vo.bloqueioOnline&#39;].value=&#39;1&#39; } else { this.form[&#39;vo.bloqueioOnline&#39;].value=&#39;0&#39; }; null" class="noborder"><input type="hidden" name="vo.bloqueioOnline" value="1">
+															
+															</td>
+															-->
+															<td colspan='3'>
+																<label>RETIRADA A FLAG BLOQUEIO ON LINE, OS BLOQUEIOS DEVEM SER CADASTRADOS NA ABA BLOQUEIOS</label>
+															</td>
+														</tr>
+														
+													</tbody>
+												</table>
+												<br>
+												<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tbody>
+													<tr>
+														<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+														<td>
+														<table cellspacing="0" cellpadding="0" border="0">
+															<tbody><tr>
+															<td nowrap="" class="rotulo">Depositário: </td>
+															<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+															</tr>
+														</tbody></table>
+														</td>
+														<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+													</tr>
+													<tr>
+														<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+														<td class="celula_rotulo">
+														<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+															<tbody>
+																<tr>
+																	<td width="19%" class="td_titulo">Nome: </td>
+																	<td width="1%" class="td_titulo_obrigatorio">*</td>
+																	<td class="td_conteudo">
+																		<input type="text" name="vo.nomeDepositario" maxlength="60" size="60" value="NOME LOREM">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">CPF:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																		<input type="text" name="vo.CpfAsString(cpf)" maxlength="14" size="14" value="" onkeypress="return formatarDados(this,event,&#39;000.000.000-00&#39;)" onblur="javascript:validaCampoCpf(this);">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">RG:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																		<input type="text" name="vo.rg" maxlength="20" size="20" value="">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">Telefone: </td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																		<input type="text" name="vo.ddd" maxlength="2" size="2" value="" onkeypress="return formatarDados(this,event,&#39;00&#39;)">
+																		-
+																		<input type="text" name="vo.telefone" maxlength="9" size="9" value="" onkeypress="return telefoneFormat(this, &#39;-&#39;, event)">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														</td>
+														<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+													</tr>
+													<tr>
+														<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+														<td class="celula_rotulo">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+															<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+															<td>
+																<table cellspacing="0" cellpadding="0" border="0">
+																<tbody><tr>
+																	<td nowrap="" class="rotulo">Endereço:</td>
+																	<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+																</tr>
+																</tbody></table>
+															</td>
+															<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+															</tr>
+															
+															<tr>
+															<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+															<td class="celula_rotulo">
+																<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+																<tbody><tr>
+																	<td width="18%" class="td_titulo">Cep:</td>
+																	<td width="1%" class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																	<input type="text" name="vo.CEPAsString(cep)" maxlength="9" size="10" value="07726-555" onkeypress="return formatarDados(this,event,&#39;00000-000&#39;)">
+																	<input type="button" name="submit11" value="Buscar Endereço" onclick="javascript:buscaCombo(this, &#39;selCep&#39;);" class="botao">
+																	<input type="button" name="submit22" value="Buscar CEP" onclick="javascript:pesquisaCep();" class="botao">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">UF:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																	<select name="vo.longAsString(idUf)" onchange="javascript:buscaCombo(this, &#39;selUf&#39;);" class="campo"><option value="">Selecione...</option>
+																		<option value="1">ACRE</option>
+																			<option value="2">ALAGOAS</option>
+																			<option value="3">AMAPA</option>
+																			<option value="4">AMAZONAS</option>
+																			<option value="5">BAHIA</option>
+																			<option value="6">CEARA</option>
+																			<option value="7">DISTRITO FEDERAL</option>
+																			<option value="8">ESPIRITO SANTO</option>
+																			<option value="9">GOIAS</option>
+																			<option value="10">MARANHAO</option>
+																			<option value="11">MATO GROSSO</option>
+																			<option value="12">MATO GROSSO DO SUL</option>
+																			<option value="13">MINAS GERAIS</option>
+																			<option value="14">PARA</option>
+																			<option value="15">PARAIBA</option>
+																			<option value="16">PARANA</option>
+																			<option value="17">PERNAMBUCO</option>
+																			<option value="18">PIAUI</option>
+																			<option value="19">RIO DE JANEIRO</option>
+																			<option value="20">RIO GRANDE DO NORTE</option>
+																			<option value="21">RIO GRANDE DO SUL</option>
+																			<option value="22">RONDONIA</option>
+																			<option value="23">RORAIMA</option>
+																			<option value="24">SANTA CATARINA</option>
+																			<option value="25" selected="selected">SAO PAULO</option>
+																			<option value="26">SERGIPE</option>
+																			<option value="27">TOCANTINS</option></select>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">Localidade:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																	<select name="vo.longAsString(idLocalidade)" onchange="javascript:buscaCombo(this, &#39;selLocalidade&#39;);" class="campo"><option value="">Selecione...</option>
+																		<option value="8874">ADAMANTINA</option>
+																		<option value="8875">ADOLFO</option>
+																		<option value="8876">AGISSE</option>
+																		<option value="8877">AGUA VERMELHA</option>
+																		<option value="8878">AGUAI</option>
+																		<option value="8879">AGUAS DA PRATA               </option>
+																		<option value="8880">AGUAS DE LINDOIA             </option>
+																		<option value="8881">AGUAS DE SANTA BARBARA       </option>
+																		<option value="8882">AGUAS DE SAO PEDRO           </option>
+																		<option value="8883">AGUDOS                       </option>
+																		<option value="8884">AGULHA                       </option>
+																		<option value="8885">AJAPI                        </option>
+																		<option value="8886">ALAMBARI                     </option>
+																		<option value="8887">ALBERTO MOREIRA              </option>
+																		<option value="8888">ALDEIA                       </option>
+																		<option value="8889">ALDEIA DE CARAPICUIBA        </option>
+																		<option value="8890">ALFREDO GUEDES               </option>
+																		<option value="8891">ALFREDO MARCONDES            </option>
+																		<option value="8892">ALTAIR                       </option>
+																		<option value="8893">ALTINOPOLIS                  </option>
+																		<option value="8894">ALTO ALEGRE                  </option>
+																		<option value="8895">ALTO PORA                    </option>
+																		<option value="8896">ALUMINIO                     </option>
+																		<option value="8897">ALVARES FLORENCE             </option>
+																		<option value="8898">ALVARES MACHADO              </option>
+																		<option value="8899">ALVARO DE CARVALHO           </option>
+																		<option value="8900">ALVINLANDIA                  </option>
+																		<option value="8901">AMADEU AMARAL                </option>
+																		<option value="8902">AMANDABA                     </option>
+																		<option value="8903">AMELIOPOLIS                  </option>
+																		<option value="8904">AMERICANA                    </option>
+																		<option value="8905">AMERICO BRASILIENSE          </option>
+																		<option value="8906">AMERICO DE CAMPOS            </option>
+																		<option value="8907">AMPARO                       </option>
+																		<option value="8908">ANA DIAS                     </option>
+																		<option value="8909">ANALANDIA                    </option>
+																		<option value="8910">ANAPOLIS                     </option>
+																		<option value="8911">ANDES                        </option>
+																		<option value="8912">ANDRADINA                    </option>
+																		<option value="8913">ANGATUBA                     </option>
+																		<option value="8914">ANHEMBI                      </option>
+																		<option value="8916">ANHUMAS</option>
+																		<option value="8915">ANHUMAS                      </option>
+																		<option value="8917">APARECIDA                    </option>
+																		<option value="8921">APARECIDA D'OESTE            </option>
+																		<option value="8918">APARECIDA DE MONTE ALTO      </option>
+																		<option value="8919">APARECIDA DE SAO MANUEL      </option>
+																		<option value="8920">APARECIDA DO BONITO          </option>
+																		<option value="8922">APIAI                        </option>
+																		<option value="8923">APIAI-MIRIM                  </option>
+																		<option value="10074">ARABA                        </option>
+																		<option value="8924">ARABELA                      </option>
+																		<option value="8925">ARACACU                      </option>
+																		<option value="8926">ARACAIBA                     </option>
+																		<option value="8927">ARACARIGUAMA                 </option>
+																		<option value="8928">ARACATUBA                    </option>
+																		<option value="8929">ARACOIABA DA SERRA           </option>
+																		<option value="8930">ARAMINA                      </option>
+																		<option value="8931">ARANDU                       </option>
+																		<option value="8932">ARAPEI                       </option>
+																		<option value="8933">ARARAQUARA                   </option>
+																		<option value="8934">ARARAS                       </option>
+																		<option value="8935">ARAXAS                       </option>
+																		<option value="8936">ARCADAS                      </option>
+																		<option value="8937">ARCO-IRIS                    </option>
+																		<option value="8938">AREALVA                      </option>
+																		<option value="8939">AREIAS                       </option>
+																		<option value="8940">AREIOPOLIS                   </option>
+																		<option value="8941">ARIRANHA                     </option>
+																		<option value="8942">ARIRI                        </option>
+																		<option value="8943">ARTEMIS                      </option>
+																		<option value="8944">ARTUR NOGUEIRA               </option>
+																		<option value="8945">ARUJA                        </option>
+																		<option value="8946">ASPASIA                      </option>
+																		<option value="8947">ASSIS                        </option>
+																		<option value="8948">ASSISTENCIA                  </option>
+																		<option value="8949">ATIBAIA                      </option>
+																		<option value="8950">ATLANTIDA                    </option>
+																		<option value="8951">AURIFLAMA                    </option>
+																		<option value="8952">AVAI                         </option>
+																		<option value="8953">AVANHANDAVA                  </option>
+																		<option value="8954">AVARE                        </option>
+																		<option value="8955">AVENCAS                      </option>
+																		<option value="8956">BACAETAVA                    </option>
+																		<option value="8957">BACURITI                     </option>
+																		<option value="8958">BADY BASSITT                 </option>
+																		<option value="8959">BAGUACU                      </option>
+																		<option value="8960">BAIRRO ALTO                  </option>
+																		<option value="8961">BALBINOS                     </option>
+																		<option value="8962">BALSAMO                      </option>
+																		<option value="8963">BANANAL                      </option>
+																		<option value="8964">BANDEIRANTES D'OESTE         </option>
+																		<option value="8965">BARAO ATALIBA NOGUEIRA       </option>
+																		<option value="8966">BARAO DE ANTONINA            </option>
+																		<option value="8967">BARAO DE GERALDO             </option>
+																		<option value="8968">BARBOSA                      </option>
+																		<option value="8969">BARIRI                       </option>
+																		<option value="8970">BARRA BONITA                 </option>
+																		<option value="8971">BARRA DO CHAPEU              </option>
+																		<option value="8972">BARRA DO TURVO               </option>
+																		<option value="8973">BARRA DOURADA                </option>
+																		<option value="8974">BARRANIA                     </option>
+																		<option value="8975">BARRETOS                     </option>
+																		<option value="8976">BARRINHA                     </option>
+																		<option value="8977">BARUERI                      </option>
+																		<option value="8978">BASTOS                       </option>
+																		<option value="8979">BATATAIS                     </option>
+																		<option value="8980">BATATUBA                     </option>
+																		<option value="8981">BATISTA BOTELHO              </option>
+																		<option value="8982">BAURU                        </option>
+																		<option value="8983">BEBEDOURO                    </option>
+																		<option value="8984">BELA FLORESTA                </option>
+																		<option value="8985">BELA VISTA SAO-CARLENSE      </option>
+																		<option value="8986">BENTO DE ABREU               </option>
+																		<option value="8987">BERNARDINO DE CAMPOS         </option>
+																		<option value="8988">BERTIOGA                     </option>
+																		<option value="8989">BILAC                        </option>
+																		<option value="8990">BIRIGUI                      </option>
+																		<option value="8991">BIRITIBA-MIRIM               </option>
+																		<option value="8992">BIRITIBA-USSU                </option>
+																		<option value="8993">BOA ESPERANCA DO SUL         </option>
+																		<option value="8994">BOA VISTA DOS ANDRADAS       </option>
+																		<option value="8995">BOA VISTA PAULISTA           </option>
+																		<option value="8996">BOCAINA                      </option>
+																		<option value="8997">BOFETE                       </option>
+																		<option value="8998">BOITUVA                      </option>
+																		<option value="8999">BOM FIM DO BOM JESUS         </option>
+																		<option value="9000">BOM JESUS DOS PERDOES        </option>
+																		<option value="9001">BOM RETIRO DA ESPERANCA      </option>
+																		<option value="9002">BOM SUCESSO DE ITARARE       </option>
+																		<option value="9003">BONFIM PAULISTA              </option>
+																		<option value="9004">BORA                         </option>
+																		<option value="9005">BORACEIA                     </option>
+																		<option value="9006">BORBOREMA                    </option>
+																		<option value="9007">BOREBI                       </option>
+																		<option value="9008">BOTAFOGO                     </option>
+																		<option value="9009">BOTELHO                      </option>
+																		<option value="9010">BOTUCATU                     </option>
+																		<option value="9011">BOTUJURU                     </option>
+																		<option value="9012">BRACO                        </option>
+																		<option value="9013">BRAGANCA PAULISTA            </option>
+																		<option value="9014">BRAS CUBAS                   </option>
+																		<option value="9015">BRASITANIA                   </option>
+																		<option value="9016">BRAUNA                       </option>
+																		<option value="9017">BREJO ALEGRE                 </option>
+																		<option value="9018">BRODOWSKI                    </option>
+																		<option value="9019">BROTAS                       </option>
+																		<option value="9020">BUENO DE ANDRADA             </option>
+																		<option value="9021">BURI                         </option>
+																		<option value="9022">BURITAMA                     </option>
+																		<option value="9023">BURITIZAL                    </option>
+																		<option value="9024">CABRALIA PAULISTA            </option>
+																		<option value="9025">CABREUVA                     </option>
+																		<option value="9026">CACAPAVA                     </option>
+																		<option value="9027">CACHOEIRA DE EMAS            </option>
+																		<option value="9028">CACHOEIRA PAULISTA           </option>
+																		<option value="9029">CACONDE                      </option>
+																		<option value="9030">CAFELANDIA                   </option>
+																		<option value="9031">CAFESOPOLIS                  </option>
+																		<option value="9032">CAIABU                       </option>
+																		<option value="9033">CAIBURA                      </option>
+																		<option value="9034" selected="selected">CAIEIRAS                     </option>
+																		<option value="9035">CAIUA                        </option>
+																		<option value="9036">CAJAMAR                      </option>
+																		<option value="9037">CAJATI                       </option>
+																		<option value="9038">CAJOBI                       </option>
+																		<option value="9039">CAJURU                       </option>
+																		<option value="9040">CAMBAQUARA                   </option>
+																		<option value="9041">CAMBARATIBA                  </option>
+																		<option value="9042">CAMPESTRINHO                 </option>
+																		<option value="9043">CAMPINA DE FORA              </option>
+																		<option value="9044">CAMPINA DO MONTE ALEGRE      </option>
+																		<option value="9045">CAMPINAL                     </option>
+																		<option value="9046">CAMPINAS                     </option>
+																		<option value="9047">CAMPO LIMPO PAULISTA         </option>
+																		<option value="9048">CAMPOS DE CUNHA              </option>
+																		<option value="9049">CAMPOS DO JORDAO             </option>
+																		<option value="9050">CAMPOS NOVOS PAULISTA        </option>
+																		<option value="9051">CANANEIA                     </option>
+																		<option value="9052">CANAS                        </option>
+																		<option value="9053">CANDIA                       </option>
+																		<option value="9054">CANDIDO MOTA                 </option>
+																		<option value="9055">CANDIDO RODRIGUES            </option>
+																		<option value="9056">CANGUERA                     </option>
+																		<option value="9057">CANITAR                      </option>
+																		<option value="9058">CAPAO BONITO                 </option>
+																		<option value="9059">CAPELA DO ALTO               </option>
+																		<option value="9060">CAPIVARI                     </option>
+																		<option value="9061">CAPIVARI DA MATA             </option>
+																		<option value="9062">CAPORANGA                    </option>
+																		<option value="9063">CAPUAVA                      </option>
+																		<option value="9064">CARAGUATATUBA                </option>
+																		<option value="9065">CARAPICUIBA                  </option>
+																		<option value="9066">CARDEAL                      </option>
+																		<option value="9067">CARDOSO                      </option>
+																		<option value="9068">CARDOSO                      </option>
+																		<option value="9069">CARUARA                      </option>
+																		<option value="9070">CASA BRANCA                  </option>
+																		<option value="9071">CASSIA DOS COQUEIROS         </option>
+																		<option value="9072">CASTILHO                     </option>
+																		<option value="9073">CATANDUVA                    </option>
+																		<option value="9074">CATIGUA                      </option>
+																		<option value="9075">CATUCABA                     </option>
+																		<option value="9076">CAUCAIA DO ALTO              </option>
+																		<option value="9077">CEDRAL                       </option>
+																		<option value="9078">CERQUEIRA CESAR              </option>
+																		<option value="9079">CERQUILHO                    </option>
+																		<option value="9080">CESARIO LANGE                </option>
+																		<option value="9081">CEZAR DE SOUZA               </option>
+																		<option value="9082">CHARQUEADA                   </option>
+																		<option value="9083">CHAVANTES                    </option>
+																		<option value="9084">CIPO-GUACU                   </option>
+																		<option value="9085">CLARINIA                     </option>
+																		<option value="9086">CLEMENTINA                   </option>
+																		<option value="9087">COCAES                       </option>
+																		<option value="9088">COLINA                       </option>
+																		<option value="9089">COLOMBIA                     </option>
+																		<option value="9090">CONCEICAO DE MONTE ALEGRE    </option>
+																		<option value="9091">CONCHAL                      </option>
+																		<option value="9092">CONCHAS                      </option>
+																		<option value="9093">CORDEIROPOLIS                </option>
+																		<option value="9094">COROADOS                     </option>
+																		<option value="9095">CORONEL GOULART              </option>
+																		<option value="9096">CORONEL MACEDO               </option>
+																		<option value="9097">CORREDEIRA                   </option>
+																		<option value="9098">CORREGO RICO                 </option>
+																		<option value="9099">CORUMBATAI                   </option>
+																		<option value="9100">COSMOPOLIS                   </option>
+																		<option value="9101">COSMORAMA                    </option>
+																		<option value="9102">COSTA MACHADO                </option>
+																		<option value="9103">COTIA                        </option>
+																		<option value="9104">CRAVINHOS                    </option>
+																		<option value="9105">CRISTAIS PAULISTA            </option>
+																		<option value="9106">CRUZ DAS POSSES              </option>
+																		<option value="9107">CRUZALIA                     </option>
+																		<option value="9108">CRUZEIRO                     </option>
+																		<option value="9109">CUBATAO                      </option>
+																		<option value="9110">CUIABA PAULISTA              </option>
+																		<option value="9111">CUNHA                        </option>
+																		<option value="9112">CURUPA                       </option>
+																		<option value="9113">DALAS                        </option>
+																		<option value="9114">DESCALVADO                   </option>
+																		<option value="9115">DIADEMA                      </option>
+																		<option value="9116">DIRCE REIS                   </option>
+																		<option value="9117">DIRCEU                       </option>
+																		<option value="9118">DIVINOLANDIA                 </option>
+																		<option value="9119">DOBRADA                      </option>
+																		<option value="9120">DOIS CORREGOS                </option>
+																		<option value="9121">DOLCINOPOLIS                 </option>
+																		<option value="9122">DOMELIA                      </option>
+																		<option value="9123">DOURADO                      </option>
+																		<option value="9124">DRACENA                      </option>
+																		<option value="9125">DUARTINA                     </option>
+																		<option value="9126">DUMONT                       </option>
+																		<option value="9127">DUPLO CEU                    </option>
+																		<option value="9128">ECHAPORA                     </option>
+																		<option value="9129">ELDORADO                     </option>
+																		<option value="9130">ELEUTERIO                    </option>
+																		<option value="9131">ELIAS FAUSTO                 </option>
+																		<option value="9132">ELISIARIO                    </option>
+																		<option value="9133">EMBAUBA                      </option>
+																		<option value="9134">EMBU                         </option>
+																		<option value="9135">EMBU-GUACU                   </option>
+																		<option value="9136">EMILIANOPOLIS                </option>
+																		<option value="9137">ENEIDA                       </option>
+																		<option value="9138">ENGENHEIRO BALDUINO          </option>
+																		<option value="9139">ENGENHEIRO COELHO            </option>
+																		<option value="9140">ENGENHEIRO MAIA              </option>
+																		<option value="9141">ENGENHEIRO SCHMIDT           </option>
+																		<option value="9142">ESMERALDA                    </option>
+																		<option value="9143">ESPERANCA D'OESTE            </option>
+																		<option value="9144">ESPIGAO                      </option>
+																		<option value="9145">ESPIRITO SANTO DO PINHAL     </option>
+																		<option value="9146">ESPIRITO SANTO DO TURVO      </option>
+																		<option value="9147">ESTIVA GERBI                 </option>
+																		<option value="9149">ESTRELA D'OESTE              </option>
+																		<option value="9148">ESTRELA DO NORTE             </option>
+																		<option value="9150">EUCLIDES DA CUNHA PAULISTA   </option>
+																		<option value="9151">EUGENIO DE MELO              </option>
+																		<option value="9152">FARTURA                      </option>
+																		<option value="9153">FATIMA                       </option>
+																		<option value="9154">FATIMA PAULISTA              </option>
+																		<option value="9155">FAZENDA VELHA                </option>
+																		<option value="9156">FERNANDO PRESTES             </option>
+																		<option value="9157">FERNANDOPOLIS                </option>
+																		<option value="9158">FERNAO                       </option>
+																		<option value="9159">FERRAZ DE VASCONCELOS        </option>
+																		<option value="9160">FLORA RICA                   </option>
+																		<option value="9161">FLOREAL                      </option>
+																		<option value="9162">FLORESTA DO SUL              </option>
+																		<option value="9163">FLORIDA PAULISTA             </option>
+																		<option value="9164">FLORINIA                     </option>
+																		<option value="9165">FRANCA                       </option>
+																		<option value="9166">FRANCISCO MORATO             </option>
+																		<option value="9167">FRANCO DA ROCHA              </option>
+																		<option value="9168">FRUTAL DO CAMPO              </option>
+																		<option value="9169">GABRIEL MONTEIRO             </option>
+																		<option value="9170">GALIA                        </option>
+																		<option value="9171">GARCA                        </option>
+																		<option value="9172">GARDENIA                     </option>
+																		<option value="9173">GASTAO VIDIGAL               </option>
+																		<option value="9174">GAVIAO PEIXOTO               </option>
+																		<option value="9175">GENERAL SALGADO              </option>
+																		<option value="9176">GETULINA                     </option>
+																		<option value="9177">GLICERIO                     </option>
+																		<option value="9178">GRAMADINHO                   </option>
+																		<option value="9179">GUACHOS                      </option>
+																		<option value="9180">GUAIANAS                     </option>
+																		<option value="9181">GUAICARA                     </option>
+																		<option value="9182">GUAIMBE                      </option>
+																		<option value="9183">GUAIRA                       </option>
+																		<option value="9184">GUAMIUM                      </option>
+																		<option value="9185">GUAPIACU                     </option>
+																		<option value="9186">GUAPIARA                     </option>
+																		<option value="9187">GUAPIRANGA                   </option>
+																		<option value="9188">GUARA                        </option>
+																		<option value="9189">GUARACAI                     </option>
+																		<option value="9190">GUARACI                      </option>
+																		<option value="9191">GUARACIABA D'OESTE           </option>
+																		<option value="9192">GUARANI D'OESTE              </option>
+																		<option value="9193">GUARANTA                     </option>
+																		<option value="9194">GUARAPIRANGA                 </option>
+																		<option value="9195">GUARAPUA                     </option>
+																		<option value="9196">GUARARAPES                   </option>
+																		<option value="9197">GUARAREMA                    </option>
+																		<option value="9198">GUARATINGUETA                </option>
+																		<option value="9199">GUAREI                       </option>
+																		<option value="9200">GUARIBA                      </option>
+																		<option value="9201">GUARIROBA                    </option>
+																		<option value="9202">GUARIZINHO                   </option>
+																		<option value="9203">GUARUJA                      </option>
+																		<option value="9204">GUARULHOS                    </option>
+																		<option value="9205">GUATAPARA                    </option>
+																		<option value="9206">GUZOLANDIA                   </option>
+																		<option value="9207">HERCULANDIA                  </option>
+																		<option value="9208">HOLAMBRA                     </option>
+																		<option value="9209">HOLAMBRA II                  </option>
+																		<option value="9210">HORTOLANDIA                  </option>
+																		<option value="9211">IACANGA                      </option>
+																		<option value="9212">IACRI                        </option>
+																		<option value="9213">IARAS                        </option>
+																		<option value="9214">IBATE                        </option>
+																		<option value="9215">IBIPORANGA                   </option>
+																		<option value="9216">IBIRA                        </option>
+																		<option value="9217">IBIRAREMA                    </option>
+																		<option value="9218">IBITINGA                     </option>
+																		<option value="9219">IBITIRUNA                    </option>
+																		<option value="9220">IBITIUVA                     </option>
+																		<option value="9221">IBITU                        </option>
+																		<option value="9222">IBIUNA                       </option>
+																		<option value="9223">ICEM                         </option>
+																		<option value="9224">IDA IOLANDA                  </option>
+																		<option value="9225">IEPE                         </option>
+																		<option value="9226">IGACABA                      </option>
+																		<option value="9227">IGARACU DO TIETE             </option>
+																		<option value="9228">IGARAI                       </option>
+																		<option value="9229">IGARAPAVA                    </option>
+																		<option value="9230">IGARATA                      </option>
+																		<option value="9231">IGUAPE                       </option>
+																		<option value="9232">ILHA COMPRIDA                </option>
+																		<option value="9233">ILHA DIANA                   </option>
+																		<option value="9234">ILHA SOLTEIRA                </option>
+																		<option value="9235">ILHABELA                     </option>
+																		<option value="9236">INDAIA DO AGUAPEI            </option>
+																		<option value="9237">INDAIATUBA                   </option>
+																		<option value="9238">INDIANA                      </option>
+																		<option value="9239">INDIAPORA                    </option>
+																		<option value="9240">INGAS                        </option>
+																		<option value="9241">INUBIA PAULISTA              </option>
+																		<option value="9242">IPAUSSU                      </option>
+																		<option value="9243">IPERO                        </option>
+																		<option value="9244">IPEUNA                       </option>
+																		<option value="9245">IPIGUA                       </option>
+																		<option value="9246">IPORANGA                     </option>
+																		<option value="9247">IPUA                         </option>
+																		<option value="9248">IRACEMAPOLIS                 </option>
+																		<option value="9249">IRAPE                        </option>
+																		<option value="9250">IRAPUA                       </option>
+																		<option value="9251">IRAPURU                      </option>
+																		<option value="9252">ITABERA                      </option>
+																		<option value="9253">ITABOA                       </option>
+																		<option value="9254">ITAI                         </option>
+																		<option value="9255">ITAIUBA                      </option>
+																		<option value="9256">ITAJOBI                      </option>
+																		<option value="9257">ITAJU                        </option>
+																		<option value="9258">ITANHAEM                     </option>
+																		<option value="9259">ITAOCA                       </option>
+																		<option value="9260">ITAPECERICA DA SERRA         </option>
+																		<option value="9261">ITAPETININGA                 </option>
+																		<option value="9262">ITAPEUNA                     </option>
+																		<option value="9263">ITAPEVA                      </option>
+																		<option value="9264">ITAPEVI                      </option>
+																		<option value="9265">ITAPIRA                      </option>
+																		<option value="9266">ITAPIRAPUA PAULISTA          </option>
+																		<option value="9267">ITAPOLIS                     </option>
+																		<option value="9268">ITAPORANGA                   </option>
+																		<option value="9269">ITAPUI                       </option>
+																		<option value="9270">ITAPURA                      </option>
+																		<option value="9271">ITAQUAQUECETUBA              </option>
+																		<option value="9272">ITAQUERI DA SERRA            </option>
+																		<option value="9273">ITARARE                      </option>
+																		<option value="9274">ITARIRI                      </option>
+																		<option value="9275">ITATIBA                      </option>
+																		<option value="9276">ITATINGA                     </option>
+																		<option value="9277">ITIRAPINA                    </option>
+																		<option value="9278">ITIRAPUA                     </option>
+																		<option value="9279">ITOBI                        </option>
+																		<option value="9280">ITORORO DO PARANAPANEMA      </option>
+																		<option value="9281">ITU                          </option>
+																		<option value="9282">ITUPEVA                      </option>
+																		<option value="9283">ITUVERAVA                    </option>
+																		<option value="9284">IUBATINGA                    </option>
+																		<option value="9285">JABORANDI                    </option>
+																		<option value="9286">JABOTICABAL                  </option>
+																		<option value="9287">JACARE                       </option>
+																		<option value="9288">JACAREI                      </option>
+																		<option value="9289">JACI                         </option>
+																		<option value="9290">JACIPORA                     </option>
+																		<option value="9291">JACUBA                       </option>
+																		<option value="9292">JACUPIRANGA                  </option>
+																		<option value="9293">JAFA                         </option>
+																		<option value="9294">JAGUARIUNA                   </option>
+																		<option value="9295">JALES                        </option>
+																		<option value="9296">JAMAICA                      </option>
+																		<option value="9297">JAMBEIRO                     </option>
+																		<option value="9298">JANDIRA                      </option>
+																		<option value="9299">JARDIM BELVAL                </option>
+																		<option value="9300">JARDIM PRESIDENTE DUTRA      </option>
+																		<option value="9301">JARDIM SANTA LUZIA           </option>
+																		<option value="9302">JARDIM SILVEIRA              </option>
+																		<option value="9303">JARDINOPOLIS                 </option>
+																		<option value="9304">JARINU                       </option>
+																		<option value="9305">JATOBA                       </option>
+																		<option value="9306">JAU                          </option>
+																		<option value="9307">JERIQUARA                    </option>
+																		<option value="9308">JOANOPOLIS                   </option>
+																		<option value="9309">JOAO RAMALHO                 </option>
+																		<option value="9310">JOAQUIM EGIDIO               </option>
+																		<option value="9311">JORDANESIA                   </option>
+																		<option value="9312">JOSE BONIFACIO               </option>
+																		<option value="9313">JULIANIA                     </option>
+																		<option value="9314">JULIO MESQUITA               </option>
+																		<option value="9315">JUMIRIM                      </option>
+																		<option value="9316">JUNDIAI                      </option>
+																		<option value="9317">JUNDIAPEBA                   </option>
+																		<option value="9318">JUNQUEIRA                    </option>
+																		<option value="9319">JUNQUEIROPOLIS               </option>
+																		<option value="9320">JUQUIA                       </option>
+																		<option value="9321">JUQUIRATIBA                  </option>
+																		<option value="9322">JUQUITIBA                    </option>
+																		<option value="9323">JURITIS                      </option>
+																		<option value="9324">JURUCE                       </option>
+																		<option value="9325">JURUPEBA                     </option>
+																		<option value="9326">JURUPEMA                     </option>
+																		<option value="9327">LACIO                        </option>
+																		<option value="9328">LAGOA AZUL                   </option>
+																		<option value="9329">LAGOA BRANCA                 </option>
+																		<option value="9330">LAGOINHA                     </option>
+																		<option value="9331">LARANJAL PAULISTA            </option>
+																		<option value="9332">LARAS                        </option>
+																		<option value="9333">LAURO PENTEADO               </option>
+																		<option value="9334">LAVINIA                      </option>
+																		<option value="9335">LAVRINHAS                    </option>
+																		<option value="9336">LEME                         </option>
+																		<option value="9337">LENCOIS PAULISTA             </option>
+																		<option value="9338">LIMEIRA                      </option>
+																		<option value="9339">LINDOIA                      </option>
+																		<option value="9340">LINS                         </option>
+																		<option value="9341">LOBO                         </option>
+																		<option value="9342">LORENA                       </option>
+																		<option value="9343">LOURDES                      </option>
+																		<option value="9344">LOUVEIRA                     </option>
+																		<option value="9345">LUCELIA                      </option>
+																		<option value="9346">LUCIANOPOLIS                 </option>
+																		<option value="9347">LUIS ANTONIO                 </option>
+																		<option value="9348">LUIZIANIA                    </option>
+																		<option value="9349">LUPERCIO                     </option>
+																		<option value="9350">LUSITANIA                    </option>
+																		<option value="9351">LUTECIA                      </option>
+																		<option value="9352">MACATUBA                     </option>
+																		<option value="9353">MACAUBAL                     </option>
+																		<option value="9354">MACEDONIA                    </option>
+																		<option value="9355">MACUCOS                      </option>
+																		<option value="9356">MAGDA                        </option>
+																		<option value="9357">MAILASQUI                    </option>
+																		<option value="9358">MAIRINQUE                    </option>
+																		<option value="9359">MAIRIPORA                    </option>
+																		<option value="9360">MAJOR PRADO                  </option>
+																		<option value="9361">MANDURI                      </option>
+																		<option value="9362">MANGARATU                    </option>
+																		<option value="9363">MARABA PAULISTA              </option>
+																		<option value="9364">MARACAI                      </option>
+																		<option value="9365">MARAPOAMA                    </option>
+																		<option value="9366">MARCONDESIA                  </option>
+																		<option value="9367">MARESIAS                     </option>
+																		<option value="9368">MARIAPOLIS                   </option>
+																		<option value="9369">MARILIA                      </option>
+																		<option value="9370">MARINOPOLIS                  </option>
+																		<option value="9371">MARISTELA                    </option>
+																		<option value="9372">MARTIM FRANCISCO             </option>
+																		<option value="9373">MARTINHO PRADO JUNIOR        </option>
+																		<option value="9374">MARTINOPOLIS                 </option>
+																		<option value="9375">MATAO                        </option>
+																		<option value="9376">MAUA                         </option>
+																		<option value="9377">MENDONCA                     </option>
+																		<option value="9378">MERIDIANO                    </option>
+																		<option value="9379">MESOPOLIS                    </option>
+																		<option value="9380">MIGUELOPOLIS                 </option>
+																		<option value="9381">MINEIROS DO TIETE            </option>
+																		<option value="9382">MIRA ESTRELA                 </option>
+																		<option value="9383">MIRACATU                     </option>
+																		<option value="9384">MIRALUZ                      </option>
+																		<option value="9385">MIRANDOPOLIS                 </option>
+																		<option value="9386">MIRANTE DO PARANAPANEMA      </option>
+																		<option value="9387">MIRASSOL                     </option>
+																		<option value="9388">MIRASSOLANDIA                </option>
+																		<option value="9389">MOCOCA                       </option>
+																		<option value="9390">MOGI DAS CRUZES              </option>
+																		<option value="9391">MOGI GUACU                   </option>
+																		<option value="9392">MOGI MIRIM                   </option>
+																		<option value="9393">MOMBUCA                      </option>
+																		<option value="9394">MONCOES                      </option>
+																		<option value="9395">MONGAGUA                     </option>
+																		<option value="9396">MONTALVAO                    </option>
+																		<option value="9397">MONTE ALEGRE DO SUL          </option>
+																		<option value="9398">MONTE ALTO                   </option>
+																		<option value="9399">MONTE APRAZIVEL              </option>
+																		<option value="9400">MONTE AZUL PAULISTA          </option>
+																		<option value="9401">MONTE CABRAO                 </option>
+																		<option value="9402">MONTE CASTELO                </option>
+																		<option value="9403">MONTE MOR                    </option>
+																		<option value="9404">MONTE VERDE PAULISTA         </option>
+																		<option value="9405">MONTEIRO LOBATO              </option>
+																		<option value="9406">MOREIRA CESAR                </option>
+																		<option value="9407">MORRO AGUDO                  </option>
+																		<option value="9408">MORRO DO ALTO                </option>
+																		<option value="9409">MORUNGABA                    </option>
+																		<option value="9410">MOSTARDAS                    </option>
+																		<option value="9411">MOTUCA                       </option>
+																		<option value="9412">MOURAO                       </option>
+																		<option value="9413">MURUTINGA DO SUL             </option>
+																		<option value="9414">NANTES                       </option>
+																		<option value="9415">NARANDIBA                    </option>
+																		<option value="9416">NATIVIDADE DA SERRA          </option>
+																		<option value="9417">NAZARE PAULISTA              </option>
+																		<option value="9418">NEVES PAULISTA               </option>
+																		<option value="9419">NHANDEARA                    </option>
+																		<option value="9420">NIPOA                        </option>
+																		<option value="9421">NOGUEIRA                     </option>
+																		<option value="9422">NOSSA SENHORA DO REMEDIO     </option>
+																		<option value="9423">NOVA ALEXANDRIA              </option>
+																		<option value="9424">NOVA ALIANCA                 </option>
+																		<option value="9425">NOVA AMERICA                 </option>
+																		<option value="9426">NOVA APARECIDA               </option>
+																		<option value="9427">NOVA CAMPINA                 </option>
+																		<option value="9428">NOVA CANAA PAULISTA          </option>
+																		<option value="9429">NOVA CASTILHO                </option>
+																		<option value="9430">NOVA EUROPA                  </option>
+																		<option value="9431">NOVA GRANADA                 </option>
+																		<option value="9432">NOVA GUATAPORANGA            </option>
+																		<option value="9433">NOVA INDEPENDENCIA           </option>
+																		<option value="9434">NOVA ITAPIREMA               </option>
+																		<option value="9435">NOVA LUZITANIA               </option>
+																		<option value="9436">NOVA ODESSA                  </option>
+																		<option value="9437">NOVA PATRIA                  </option>
+																		<option value="9438">NOVA VENEZA                  </option>
+																		<option value="9439">NOVAIS                       </option>
+																		<option value="9440">NOVO CRAVINHOS               </option>
+																		<option value="9441">NOVO HORIZONTE               </option>
+																		<option value="9442">NUPORANGA                    </option>
+																		<option value="9443">OASIS                        </option>
+																		<option value="9444">OCAUCU                       </option>
+																		<option value="9445">OLEO                         </option>
+																		<option value="9446">OLIMPIA                      </option>
+																		<option value="9447">OLIVEIRA BARROS              </option>
+																		<option value="9448">ONDA BRANCA                  </option>
+																		<option value="9449">ONDA VERDE                   </option>
+																		<option value="9450">ORIENTE                      </option>
+																		<option value="9451">ORINDIUVA                    </option>
+																		<option value="9452">ORLANDIA                     </option>
+																		<option value="9453">OSASCO                       </option>
+																		<option value="9454">OSCAR BRESSANE               </option>
+																		<option value="9455">OSVALDO CRUZ                 </option>
+																		<option value="9456">OURINHOS                     </option>
+																		<option value="9457">OURO FINO PAULISTA           </option>
+																		<option value="9458">OURO VERDE                   </option>
+																		<option value="9459">OUROESTE                     </option>
+																		<option value="9460">PACAEMBU                     </option>
+																		<option value="9461">PADRE NOBREGA                </option>
+																		<option value="9462">PALESTINA                    </option>
+																		<option value="9463">PALMARES PAULISTA            </option>
+																		<option value="9464">PALMEIRA D'OESTE             </option>
+																		<option value="9465">PALMEIRAS DE SAO PAULO       </option>
+																		<option value="9466">PALMITAL                     </option>
+																		<option value="9467">PANORAMA                     </option>
+																		<option value="9468">PARAGUACU PAULISTA           </option>
+																		<option value="9469">PARAIBUNA                    </option>
+																		<option value="9470">PARAISO                      </option>
+																		<option value="9471">PARAISOLANDIA                </option>
+																		<option value="9472">PARANABI                     </option>
+																		<option value="9473">PARANAPANEMA                 </option>
+																		<option value="9474">PARANAPIACABA                </option>
+																		<option value="9475">PARANAPUA                    </option>
+																		<option value="9476">PARAPUA                      </option>
+																		<option value="9477">PARDINHO                     </option>
+																		<option value="9478">PARIQUERA-ACU                </option>
+																		<option value="9479">PARISI                       </option>
+																		<option value="9480">PARNASO                      </option>
+																		<option value="9481">PARQUE MEIA LUA              </option>
+																		<option value="9482">PARURU                       </option>
+																		<option value="9483">PATROCINIO PAULISTA          </option>
+																		<option value="9484">PAULICEIA                    </option>
+																		<option value="9485">PAULINIA                     </option>
+																		<option value="9486">PAULISTANIA                  </option>
+																		<option value="9487">PAULO DE FARIA               </option>
+																		<option value="9488">PAULOPOLIS                   </option>
+																		<option value="9489">PEDERNEIRAS                  </option>
+																		<option value="9490">PEDRA BELA                   </option>
+																		<option value="9491">PEDRA BRANCA DE ITARARE      </option>
+																		<option value="9492">PEDRANOPOLIS                 </option>
+																		<option value="9493">PEDREGULHO                   </option>
+																		<option value="9494">PEDREIRA                     </option>
+																		<option value="9495">PEDRINHAS PAULISTA           </option>
+																		<option value="9496">PEDRO BARROS                 </option>
+																		<option value="9497">PEDRO DE TOLEDO              </option>
+																		<option value="9498">PENAPOLIS                    </option>
+																		<option value="9499">PEREIRA BARRETO              </option>
+																		<option value="9500">PEREIRAS                     </option>
+																		<option value="9501">PERUIBE                      </option>
+																		<option value="9502">PIACATU                      </option>
+																		<option value="9503">PICINGUABA                   </option>
+																		<option value="9504">PIEDADE                      </option>
+																		<option value="9505">PILAR DO SUL                 </option>
+																		<option value="9506">PINDAMONHANGABA              </option>
+																		<option value="9507">PINDORAMA                    </option>
+																		<option value="9508">PINHALZINHO                  </option>
+																		<option value="9509">PINHEIROS                    </option>
+																		<option value="9510">PIONEIROS                    </option>
+																		<option value="9511">PIQUEROBI                    </option>
+																		<option value="9512">PIQUETE                      </option>
+																		<option value="9513">PIRACAIA                     </option>
+																		<option value="9514">PIRACICABA                   </option>
+																		<option value="9515">PIRAJU                       </option>
+																		<option value="9516">PIRAJUI                      </option>
+																		<option value="9517">PIRAMBOIA                    </option>
+																		<option value="9518">PIRANGI                      </option>
+																		<option value="9519">PIRAPITINGUI                 </option>
+																		<option value="9520">PIRAPORA DO BOM JESUS        </option>
+																		<option value="9521">PIRAPOZINHO                  </option>
+																		<option value="9522">PIRASSUNUNGA                 </option>
+																		<option value="9523">PIRATININGA                  </option>
+																		<option value="9524">PITANGUEIRAS                 </option>
+																		<option value="9525">PLANALTO                     </option>
+																		<option value="9526">PLANALTO                     </option>
+																		<option value="9527">PLANALTO DO SUL              </option>
+																		<option value="9528">PLATINA                      </option>
+																		<option value="9529">POA                          </option>
+																		<option value="9530">POLONI                       </option>
+																		<option value="9531">POLVILHO                     </option>
+																		<option value="9532">POMPEIA                      </option>
+																		<option value="9533">PONGAI                       </option>
+																		<option value="9534">PONTAL                       </option>
+																		<option value="9535">PONTALINDA                   </option>
+																		<option value="9536">PONTES GESTAL                </option>
+																		<option value="9537">POPULINA                     </option>
+																		<option value="9538">PORANGABA                    </option>
+																		<option value="9539">PORTO FELIZ                  </option>
+																		<option value="9540">PORTO FERREIRA               </option>
+																		<option value="9541">PORTO NOVO                   </option>
+																		<option value="9542">POTIM                        </option>
+																		<option value="9543">POTIRENDABA                  </option>
+																		<option value="9544">POTUNDUVA                    </option>
+																		<option value="9545">PRACINHA                     </option>
+																		<option value="9546">PRADINIA                     </option>
+																		<option value="9547">PRADOPOLIS                   </option>
+																		<option value="9548">PRAIA GRANDE                 </option>
+																		<option value="9549">PRATANIA                     </option>
+																		<option value="9550">PRESIDENTE ALVES             </option>
+																		<option value="9551">PRESIDENTE BERNARDES         </option>
+																		<option value="9552">PRESIDENTE EPITACIO          </option>
+																		<option value="9553">PRESIDENTE PRUDENTE          </option>
+																		<option value="9554">PRESIDENTE VENCESLAU         </option>
+																		<option value="9555">PRIMAVERA                    </option>
+																		<option value="9556">PROMISSAO                    </option>
+																		<option value="9557">PRUDENCIO E MORAES           </option>
+																		<option value="9558">QUADRA                       </option>
+																		<option value="9559">QUATA                        </option>
+																		<option value="9560">QUEIROZ                      </option>
+																		<option value="9561">QUELUZ                       </option>
+																		<option value="9562">QUINTANA                     </option>
+																		<option value="9563">QUIRIRIM                     </option>
+																		<option value="9564">RAFARD                       </option>
+																		<option value="9565">RANCHARIA                    </option>
+																		<option value="9566">RECHAN                       </option>
+																		<option value="9567">REDENCAO DA SERRA            </option>
+																		<option value="9568">REGENTE FEIJO                </option>
+																		<option value="9569">REGINOPOLIS                  </option>
+																		<option value="9570">REGISTRO                     </option>
+																		<option value="9571">RESTINGA                     </option>
+																		<option value="9572">RIACHO GRANDE                </option>
+																		<option value="9573">RIBEIRA                      </option>
+																		<option value="9574">RIBEIRAO BONITO              </option>
+																		<option value="9575">RIBEIRAO BRANCO              </option>
+																		<option value="9576">RIBEIRAO CORRENTE            </option>
+																		<option value="9577">RIBEIRAO DO SUL              </option>
+																		<option value="9578">RIBEIRAO DOS INDIOS          </option>
+																		<option value="9579">RIBEIRAO GRANDE              </option>
+																		<option value="9580">RIBEIRAO PIRES               </option>
+																		<option value="9581">RIBEIRAO PRETO               </option>
+																		<option value="9582">RIBEIRO DO VALE              </option>
+																		<option value="9583">RIBEIRO DOS SANTOS           </option>
+																		<option value="9584">RIFAINA                      </option>
+																		<option value="9585">RINCAO                       </option>
+																		<option value="9586">RINOPOLIS                    </option>
+																		<option value="9587">RIO CLARO                    </option>
+																		<option value="9588">RIO DAS PEDRAS               </option>
+																		<option value="9589">RIO GRANDE DA SERRA          </option>
+																		<option value="9590">RIOLANDIA                    </option>
+																		<option value="9591">RIVERSUL                     </option>
+																		<option value="9592">ROBERTO                      </option>
+																		<option value="9593">ROSALIA                      </option>
+																		<option value="9594">ROSANA                       </option>
+																		<option value="9595">ROSEIRA                      </option>
+																		<option value="9596">RUBIACEA                     </option>
+																		<option value="9597">RUBIAO JUNIOR                </option>
+																		<option value="9598">RUBINEIA                     </option>
+																		<option value="9599">RUILANDIA                    </option>
+																		<option value="9600">SABAUNA                      </option>
+																		<option value="9601">SABINO                       </option>
+																		<option value="9602">SAGRES                       </option>
+																		<option value="9603">SALES                        </option>
+																		<option value="9604">SALES OLIVEIRA               </option>
+																		<option value="9605">SALESOPOLIS                  </option>
+																		<option value="9606">SALMOURAO                    </option>
+																		<option value="9607">SALTINHO                     </option>
+																		<option value="9608">SALTO                        </option>
+																		<option value="9609">SALTO DE PIRAPORA            </option>
+																		<option value="9610">SALTO DO AVANHANDAVA         </option>
+																		<option value="9611">SALTO GRANDE                 </option>
+																		<option value="9612">SANDOVALINA                  </option>
+																		<option value="9613">SANTA ADELIA                 </option>
+																		<option value="9614">SANTA ALBERTINA              </option>
+																		<option value="9615">SANTA AMERICA                </option>
+																		<option value="9616">SANTA BARBARA D'OESTE        </option>
+																		<option value="9617">SANTA BRANCA                 </option>
+																		<option value="9618">SANTA CLARA D'OESTE          </option>
+																		<option value="9619">SANTA CRUZ DA CONCEICAO      </option>
+																		<option value="9620">SANTA CRUZ DA ESPERANCA      </option>
+																		<option value="9621">SANTA CRUZ DA ESTRELA        </option>
+																		<option value="9622">SANTA CRUZ DAS PALMEIRAS     </option>
+																		<option value="9623">SANTA CRUZ DO RIO PARDO      </option>
+																		<option value="9624">SANTA CRUZ DOS LOPES         </option>
+																		<option value="9625">SANTA ERNESTINA              </option>
+																		<option value="9626">SANTA EUDOXIA                </option>
+																		<option value="9627">SANTA FE DO SUL              </option>
+																		<option value="9628">SANTA GERTRUDES              </option>
+																		<option value="9629">SANTA ISABEL                 </option>
+																		<option value="9630">SANTA ISABEL DO MARINHEIRO   </option>
+																		<option value="9631">SANTA LUCIA                  </option>
+																		<option value="9632">SANTA MARGARIDA PAULISTA     </option>
+																		<option value="9633">SANTA MARIA DA SERRA         </option>
+																		<option value="9634">SANTA MARIA DO GURUPA        </option>
+																		<option value="9635">SANTA MERCEDES               </option>
+																		<option value="9638">SANTA RITA D'OESTE           </option>
+																		<option value="9636">SANTA RITA DO PASSA QUATRO   </option>
+																		<option value="9637">SANTA RITA DO RIBEIRA        </option>
+																		<option value="9639">SANTA ROSA DE VITERBO        </option>
+																		<option value="9640">SANTA SALETE                 </option>
+																		<option value="9641">SANTA TERESINHA DE PIRACICABA</option>
+																		<option value="9642">SANTANA DA PONTE PENSA       </option>
+																		<option value="9643">SANTANA DE PARNAIBA          </option>
+																		<option value="9644">SANTELMO                     </option>
+																		<option value="9645">SANTO ANASTACIO              </option>
+																		<option value="9646">SANTO ANDRE                  </option>
+																		<option value="9647">SANTO ANTONIO DA ALEGRIA     </option>
+																		<option value="9648">SANTO ANTONIO DA ESTIVA      </option>
+																		<option value="9649">SANTO ANTONIO DE POSSE       </option>
+																		<option value="9650">SANTO ANTONIO DO ARACANGUA   </option>
+																		<option value="9651">SANTO ANTONIO DO JARDIM      </option>
+																		<option value="9652">SANTO ANTONIO DO PARANAPANEMA</option>
+																		<option value="9653">SANTO ANTONIO DO PINHAL      </option>
+																		<option value="9654">SANTO ANTONIO PAULISTA       </option>
+																		<option value="9655">SANTO EXPEDITO               </option>
+																		<option value="9656">SANTOPOLIS DO AGUAPEI        </option>
+																		<option value="9657">SANTOS                       </option>
+																		<option value="9658">SAO BENEDITO DA CACHOEIRINHA </option>
+																		<option value="9659">SAO BENEDITO DAS AREIAS      </option>
+																		<option value="9660">SAO BENTO DO SAPUCAI         </option>
+																		<option value="9661">SAO BERNARDO DO CAMPO        </option>
+																		<option value="9662">SAO BERTO                    </option>
+																		<option value="9663">SAO CAETANO DO SUL           </option>
+																		<option value="9664">SAO CARLOS                   </option>
+																		<option value="9665">SAO FRANCISCO                </option>
+																		<option value="9666">SAO FRANCISCO DA PRAIA       </option>
+																		<option value="9667">SAO FRANCISCO XAVIER         </option>
+																		<option value="9668">SAO JOAO DA BOA VISTA        </option>
+																		<option value="9669">SAO JOAO DAS DUAS PONTES     </option>
+																		<option value="9670">SAO JOAO DE IRACEMA          </option>
+																		<option value="9671">SAO JOAO DE ITAGUACU         </option>
+																		<option value="9672">SAO JOAO DO MARINHEIRO       </option>
+																		<option value="9673">SAO JOAO DO PAU D'ALHO       </option>
+																		<option value="9674">SAO JOAO NOVO                </option>
+																		<option value="9675">SAO JOAQUIM DA BARRA         </option>
+																		<option value="9676">SAO JOSE DA BELA VISTA       </option>
+																		<option value="9677">SAO JOSE DAS LARANJEIRAS     </option>
+																		<option value="9678">SAO JOSE DO BARREIRO         </option>
+																		<option value="9679">SAO JOSE DO RIO PARDO        </option>
+																		<option value="9680">SAO JOSE DO RIO PRETO        </option>
+																		<option value="9681">SAO JOSE DOS CAMPOS          </option>
+																		<option value="9682">SAO LOURENCO DA SERRA        </option>
+																		<option value="9683">SAO LOURENCO DO TURVO        </option>
+																		<option value="9684">SAO LUIZ DO GUARICANGA       </option>
+																		<option value="9685">SAO LUIZ DO PARAITINGA       </option>
+																		<option value="9686">SAO MANUEL                   </option>
+																		<option value="9687">SAO MARTINHO D'OESTE         </option>
+																		<option value="9688">SAO MIGUEL ARCANJO           </option>
+																		<option value="9689">SAO PAULO                    </option>
+																		<option value="9690">SAO PEDRO                    </option>
+																		<option value="9691">SAO PEDRO DO TURVO           </option>
+																		<option value="9692">SAO ROQUE                    </option>
+																		<option value="9693">SAO ROQUE DA FARTURA         </option>
+																		<option value="9694">SAO SEBASTIAO                </option>
+																		<option value="9695">SAO SEBASTIAO DA GRAMA       </option>
+																		<option value="9696">SAO SEBASTIAO DA SERRA       </option>
+																		<option value="9697">SAO SILVESTRE DE JACAREI     </option>
+																		<option value="9698">SAO SIMAO                    </option>
+																		<option value="9699">SAO VICENTE                  </option>
+																		<option value="9700">SAPEZAL                      </option>
+																		<option value="9701">SARAPUI                      </option>
+																		<option value="9702">SARUTAIA                     </option>
+																		<option value="9703">SEBASTIANOPOLIS DO SUL       </option>
+																		<option value="9704">SERRA AZUL                   </option>
+																		<option value="9705">SERRA NEGRA                  </option>
+																		<option value="9706">SERRANA                      </option>
+																		<option value="9707">SERTAOZINHO                  </option>
+																		<option value="9708">SETE BARRAS                  </option>
+																		<option value="9709">SEVERINIA                    </option>
+																		<option value="9710">SILVANIA                     </option>
+																		<option value="9711">SILVEIRAS                    </option>
+																		<option value="9712">SIMOES                       </option>
+																		<option value="9713">SIMONSEN                     </option>
+																		<option value="9714">SOCORRO                      </option>
+																		<option value="9715">SODRELIA                     </option>
+																		<option value="9716">SOLEMAR                      </option>
+																		<option value="9717">SOROCABA                     </option>
+																		<option value="9718">SOUSAS                       </option>
+																		<option value="9719">SUD MENNUCCI                 </option>
+																		<option value="9720">SUINANA                      </option>
+																		<option value="9721">SUMARE                       </option>
+																		<option value="9722">SUSSUI                       </option>
+																		<option value="9723">SUZANAPOLIS                  </option>
+																		<option value="9724">SUZANO                       </option>
+																		<option value="9725">TABAJARA                     </option>
+																		<option value="9726">TABAPUA                      </option>
+																		<option value="9727">TABATINGA                    </option>
+																		<option value="9728">TABOAO DA SERRA              </option>
+																		<option value="9729">TACIBA                       </option>
+																		<option value="9730">TAGUAI                       </option>
+																		<option value="9731">TAIACU                       </option>
+																		<option value="9732">TAIACUPEBA                   </option>
+																		<option value="9733">TAIUVA                       </option>
+																		<option value="9734">TALHADO                      </option>
+																		<option value="9735">TAMBAU                       </option>
+																		<option value="9736">TANABI                       </option>
+																		<option value="9737">TAPINAS                      </option>
+																		<option value="9738">TAPIRAI                      </option>
+																		<option value="9739">TAPIRATIBA                   </option>
+																		<option value="9740">TAQUARAL                     </option>
+																		<option value="9741">TAQUARITINGA                 </option>
+																		<option value="9742">TAQUARITUBA                  </option>
+																		<option value="9743">TAQUARIVAI                   </option>
+																		<option value="9744">TARABAI                      </option>
+																		<option value="9745">TARUMA                       </option>
+																		<option value="9746">TATUI                        </option>
+																		<option value="9747">TAUBATE                      </option>
+																		<option value="9748">TECAINDA                     </option>
+																		<option value="9749">TEJUPA                       </option>
+																		<option value="9750">TEODORO SAMPAIO              </option>
+																		<option value="9751">TERMAS DE IBIRA              </option>
+																		<option value="9752">TERRA NOVA D'OESTE           </option>
+																		<option value="9753">TERRA ROXA                   </option>
+																		<option value="9754">TIBIRICA                     </option>
+																		<option value="9755">TIBIRICA DO PARANAPANEMA     </option>
+																		<option value="9756">TIETE                        </option>
+																		<option value="9757">TIMBURI                      </option>
+																		<option value="9758">TOLEDO                       </option>
+																		<option value="9759">TORRE DE PEDRA               </option>
+																		<option value="9760">TORRINHA                     </option>
+																		<option value="9761">TRABIJU                      </option>
+																		<option value="9762">TREMEMBE                     </option>
+																		<option value="9763">TRES ALIANCAS                </option>
+																		<option value="9764">TRES FRONTEIRAS              </option>
+																		<option value="9765">TRES PONTES                  </option>
+																		<option value="9766">TRES VENDAS                  </option>
+																		<option value="9767">TUIUTI                       </option>
+																		<option value="9768">TUJUGUABA                    </option>
+																		<option value="9769">TUPA                         </option>
+																		<option value="9770">TUPI                         </option>
+																		<option value="9771">TUPI PAULISTA                </option>
+																		<option value="9772">TURIBA DO SUL                </option>
+																		<option value="9773">TURIUBA                      </option>
+																		<option value="9774">TURMALINA                    </option>
+																		<option value="9775">TURVINIA                     </option>
+																		<option value="9776">UBARANA                      </option>
+																		<option value="9777">UBATUBA                      </option>
+																		<option value="9778">UBIRAJARA                    </option>
+																		<option value="9779">UCHOA                        </option>
+																		<option value="9780">UNIAO PAULISTA               </option>
+																		<option value="9781">UNIVERSO                     </option>
+																		<option value="9782">URANIA                       </option>
+																		<option value="9783">URU                          </option>
+																		<option value="9784">URUPES                       </option>
+																		<option value="9785">URURAI                       </option>
+																		<option value="9786">UTINGA                       </option>
+																		<option value="9787">VALE FORMOSO                 </option>
+																		<option value="9788">VALENTIM GENTIL              </option>
+																		<option value="9789">VALINHOS                     </option>
+																		<option value="9790">VALPARAISO                   </option>
+																		<option value="9791">VANGLORIA                    </option>
+																		<option value="9792">VARGEM                       </option>
+																		<option value="9793">VARGEM GRANDE DO SUL         </option>
+																		<option value="9794">VARGEM GRANDE PAULISTA       </option>
+																		<option value="9795">VARPA                        </option>
+																		<option value="9796">VARZEA PAULISTA              </option>
+																		<option value="9797">VENDA BRANCA                 </option>
+																		<option value="9798">VERA CRUZ                    </option>
+																		<option value="9799">VICENTE DE CARVALHO          </option>
+																		<option value="9800">VICENTINOPOLIS               </option>
+																		<option value="9801">VILA DIRCE                   </option>
+																		<option value="9802">VILA NERY                    </option>
+																		<option value="9803">VILA XAVIER                  </option>
+																		<option value="9804">VINHEDO                      </option>
+																		<option value="9805">VIRADOURO                    </option>
+																		<option value="9806">VISTA ALEGRE DO ALTO         </option>
+																		<option value="9807">VITORIA BRASIL               </option>
+																		<option value="9808">VITORIANA                    </option>
+																		<option value="9809">VOTORANTIM                   </option>
+																		<option value="9810">VOTUPORANGA                  </option>
+																		<option value="9811">ZACARIAS                     </option></select>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">Bairro:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																	<select name="vo.longAsString(idBairro)" class="campo"><option value="" selected="selected">Selecione...</option></select>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">Logradouro:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo">
+																	<select name="vo.longAsString(idTipoLogradouro)" class="campo"><option value="" selected="selected">Selecione...</option></select>
+																	<input type="text" name="vo.logradouro" maxlength="100" size="60" value="">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">Número:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo"><input type="text" name="vo.numero" maxlength="20" size="20" value="" onkeypress="return formatarDados(this,event,&#39;00000000000000000000&#39;)"></td>
+																</tr>
+																<tr>
+																	<td class="td_titulo">Complemento:</td>
+																	<td class="td_titulo_obrigatorio">&nbsp;</td>
+																	<td class="td_conteudo"><input type="text" name="vo.complemento" maxlength="50" size="60" value=""></td>
+																</tr>
+																</tbody></table>
+															</td>
+															<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+															</tr>
+															<tr>
+															<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+															<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+															<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+															</tr>
+														</tbody></table>
+														</td>
+														<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+													</tr>
+													<tr>
+														<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+														<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+														<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+													</tr>
+												</tbody></table>
+												<br>
+												<table width="100%" border="0" cellpadding="0" cellspacing="0">
+													<tbody><tr>
+														<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+														<td>
+														<table cellspacing="0" cellpadding="0" border="0">
+															<tbody><tr>
+															<td nowrap="" class="rotulo">Bens Penhorados: </td>
+															<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+															</tr>
+														</tbody></table>
+														</td>
+														<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+													</tr>
+													<tr>
+														<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+														<td class="celula_rotulo">
+														<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+															<tbody><tr class="tit_lista">
+															<td width="20%"><strong>Tipo</strong></td>
+															<td width="10%"><strong>Situação</strong></td>
+															<td width="10%"><strong>Valor Individual (R$)</strong></td>
+															<td width="8%"><strong>Quantidade</strong></td>
+															<td width="10%"><strong>Valor Total (R$)</strong></td>
+															<td width="10%"><strong>Informado Pelo Oficial (R$)</strong></td>
+															<td width="2%">&nbsp;</td>
+															<td width="2%">&nbsp;</td>
+															</tr>
+									
+														
+															<tr class="texto_lista">
+															<td>ATIVOS FINANCEIROS</td>
+															<td>Ativo</td>
+															<td>2.000,00</td>
+															<td>1</td>
+															<td>2.000,00</td>
+															<td>2.000,00</td>
+															<td><a href="./CadastroPenhora.html" onclick="javascript:alterarRegistro(&#39;704&#39;);"><img src="./imagens/btn_editar.gif" width="18" height="20" border="0" title="Alterar"></a></td>
+															<td><a href="http://10.200.240.81/gpja-web/montaAlteracaoPenhoraAcaoJudicial.do#" onclick="javascript:excluirRegistro(&#39;704&#39;);"><img src="./imagens/btn_excluir.gif" width="18" height="20" border="0" title="Excluir"></a></td>
+															</tr>
+														
+															<tr>
+															<td colspan="8" class="td_botao">
+																<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																<tbody><tr>
+																	<td width="49%" align="left">
+																	<label>
+																		
+																		<input type="button" class="botao" onclick="javascript:redirect('CadastroPenhora.html');" value="Adicionar">
+																		
+																	</label>
+																	</td>
+																	<td width="51%" align="right">
+																	&nbsp;
+																	</td>
+																</tr>
+																</tbody></table>
+															</td>
+															</tr>
+														</tbody></table>
+														</td>
+														<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+													</tr>
+													<tr>
+														<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+														<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+														<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+													</tr>
+												</tbody></table>
+											</td>
+											<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+											</tr>
+											<tr>
+											<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+											<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+											<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+											</tr>
+										</tbody></table>
+										<table width="100%" border="0" cellspacing="2" cellpadding="2">
+											<tbody><tr>
+											<td>
+												<input name="button22" type="button" class="botao" onclick="javascript:voltar();" value="Voltar">
+												<input name="Submit22" type="submit" class="botao" value="Salvar">
+											</td>
+											</tr>
+										</tbody></table>
+										</td>
+									</tr>
+									</tbody>
+									</table>
+								<input type="hidden" name="formularioAlterado" value="N">
+								</form>
+								<!-- fim tabelao do conteudo -->
+								<script>
+								addEvent(window, "resize", centralizarLoading);
+								addEvent(window, "scroll", centralizarLoading);
+								</script>
+								<!--div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: #CDCDCD;
+									filter:alpha(opacity=40); opacity: 0.4; -moz-opacity:0.4; z-index: 1000; display: block;" onmousemove="segurarFoco();">
+								</div>
+								<div id="divAguarde" style="position: absolute; border: #C0C0C0 2px solid; height: 50px; width: 150px; cursor: wait; z-index: 1001;
+									background-color: #FFFFFF; top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: block;">
+								
+									<table width="100%" cellpadding=0 cellspacing=0 border=0>
+										<tr>
+											<td width="50"><img src="./imagens/loading.gif"/></td>
+											<td style="text-align: center;">
+												<input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size=10
+													style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;"/>
+											</td>
+										</tr>
+									</table>
+								
+								</div-->
+								
+								<!--- fim tabel&atilde;o do conte&uacute;do -->
+							</td>
+							<td width="10">
+									<img src="./imagens/nada.gif" title="" width="10" height="10" border="0">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="footer_fundo">
+				
+					<table width="100%" border="0" cellspacing="1" cellpadding="1">
+						<tr>
+							<td width="50%">
+							<span class="footer_texto">Usu&aacute;rio:</span>
+							Felipe
+					
+							</td>
+							<td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+							<td width="15%" align="right" class="footer_texto">
+							
+							
+							04/04/2018 16:40
+							</td>
+						</tr>
+					</table>
+			
+				</td>
+			</tr>
+	</table>
+	</body>
+</html>
+
+<script type="text/javascript">
+  loading(false);
+</script>
+
+<script type="text/javascript">
+    alternateRowColors();
+</script>

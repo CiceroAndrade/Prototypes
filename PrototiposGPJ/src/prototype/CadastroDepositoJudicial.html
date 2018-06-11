@@ -1,0 +1,1019 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+
+
+
+<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+
+<script language="JavaScript" type="text/javascript">
+
+
+
+
+  
+    addmenu(
+    menu=["Movimentação",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Tela de Entrada", "./listaCompromisso.do ",,,1
+    
+      ,"Cadastro de Pessoas", "./pesquisaPessoa.do?act=init",,,1
+    
+      ,"Pesquisa de Ação", "./montaPesquisaSimplesAcaoJudicial.do",,,1
+    
+      ,"Pesquisa de Ação Avançada", "./montaPesquisaAcaoJudicial.do",,,1
+    
+      ,"Cadastro de Ação", "./montaInclusaoAcaoJudicial.do?act=init",,,1
+    
+      ,"Pesquisa de Processo - CAP", "./montaPesquisaAcaoCap.do",,,1
+    
+      ,"Novo Processo - CAP", "./cadastroAcaoCap.do?registroNovo=S",,,1
+    
+      ,"Pesquisa de Processo Administrativo", "./montaPesquisaProcessoAdmin.do",,,1
+    
+      ,"Cadastro de Processo Administrativo", "./montaInclusaoProcessoAdmin.do?act=init",,,1
+    
+      ,"Publicações", "./montaPesquisaPublicacao.do",,,1
+    
+      ,"Tramitações em Lote", "./montaDadosTramitacaoEmLote.do?act=novoLote",,,1
+    
+      ,"Atualiza Valor Ação", "./montaAtualizacaoValorAcaoJudicial.do",,,1
+    
+      ,"Andamentos em Lote", "./montaDadosAndamentoEmLote.do?act=init",,,1
+    
+      ,"Cadastro de Ação Simplificado", "./montaDadosAcaoJudicialSimplificada.do?act=init",,,1
+    
+      ,"Pesquisa de Ação Simplificada", "./montaPesquisaAcaoJudicialSimplificada.do?act=init",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Pagamentos",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Pesquisa de Solicitação Autônoma", "./pesquisaSolicitacaoAutonoma.do",,,1
+    
+      ,"Pesquisa Despesas e Honorários", "./pesquisaDespesasHonorarios.do",,,1
+    
+      ,"Pesquisa de Solicitações de Pagamento/Reembolso", "./pesquisaSolicitacaoPagamento.do",,,1
+    
+      ,"Pendências Para Conferência", "./listaDespesaCustasEntrada.do?tipoDespesa=despesascustas",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Manutenção",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"CAP Contratados", "./listaContratadosCap.do",,,1
+    
+      ,"Despesas/Honorários", "./despesaHonorarios.do",,,1
+    
+      ,"Escritório Contratado", "./pesquisaSociedadeCredenciada.do",,,1
+    
+      ,"Usuários de Escritório Contratado", "./pesquisaUsuarioSociedadeCredenciada.do",,,1
+    
+      ,"Parâmetros", "./listaParametro.do",,,1
+    
+      ,"Parâmetros de Memória de Cálculo", "./listaParametroMemoriaCalculo.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Grupo Contábil", "./listaGrupoContabil.do",,,1
+    
+      ,"Parâmetros de Integração TOTVS", "./parametroIntegracao.do?acao=init",,,1
+    
+      ,"Empreendimento", "./montaPesquisaEmpreendimento.do",,,1
+    
+      ,"Valor Índice", "./montaPesquisaValorIndice.do",,,1
+    
+      ,"Tipo de Andamento", "./montaPesquisaTipoAndamento.do",,,1
+    
+      ,"Classificação/Distribuição de Processos", "./montaClassificacaoDistribuicao.do",,,1
+    
+      ,"TESTE", "",,,1
+    
+      ,"Pedidos", "./pesquisaPedido.do",,,1
+    
+    ])
+  
+
+  
+
+  
+    addmenu(
+    menu=["Relatórios",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Empreendimento", "./prepareFiltroRelatorioEmpreendimento.do",,,1
+    
+      ,"Importar Planilha", "./importacaoPlanilha.do",,,1
+    
+      ,"Histórico de Importações", "./historicoImportacaoPlanilha.do",,,1
+    
+      ,"Geral de Provisionamento", "./relatorioProvisionamento.do?acao=init",,,1
+    
+      ,"Histórico de Provisões", "./relatorioProvisionamento.do?acao=initHistorico",,,1
+    
+      ,"Emissão de Relatórios Gerenciais", "./montaDadosRelatorioGerencial.do",,,1
+    
+      ,"Histórico de Planilha de Processos", "./montaRelatorioProcessosHistorico.do?acao=init",,,1
+    
+    ])
+  
+
+  
+    addmenu(
+    menu=["Segurança",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+    
+      ,"Altera Senha", "./novaTrocaSenha.do",,,1
+    
+    ])
+  
+
+
+    addmenu(
+    menu=["Versão",,,180,1,"",style1,,"",effect,,,,,,,,,,,,
+      ,"Info", "./showVersion.do",,,1
+    ])
+
+addmenu(menu=["mainmenu",90,0,120,1,"left",style1,1,"center",,,1,,,,,,,,,,
+
+  ,"Movimentação","show-menu=Movimentação",,"",1
+
+  ,"Pagamentos","show-menu=Pagamentos",,"",1
+
+  ,"Manutenção","show-menu=Manutenção",,"",1
+
+  ,"Estatísticas","show-menu=Estatísticas",,"",1
+
+  ,"Relatórios","show-menu=Relatórios",,"",1
+
+  ,"Segurança","show-menu=Segurança",,"",1
+
+  ,"Sair","sair.do",,"",1
+  
+  ,"Ajuda","paginas/helpNovo/HTML/index.html",,"",1
+  
+  ,"Versão","show-menu=Versão",,"",1
+])
+
+
+dumpmenus()
+
+
+
+
+
+</script>
+
+
+<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+
+<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+<script language="JavaScript" src="paginas/js/util.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript" >
+
+	 
+	 $('form').ready(function(){		 
+		 $( "input:text" ).each(function() {
+			 $(this).bind('blur', function (e) {
+				    if (e.which >= 97 && e.which <= 122) {
+				        var newKey = e.which - 32;
+				        // I have tried setting those
+				        e.keyCode = newKey;
+				        e.charCode = newKey;
+				    }
+
+				    $(this).val(($(this).val()).toUpperCase());
+				});
+		 });
+
+	});
+	 
+	$("a[href='paginas/help/index.html']").attr("target","_blank"); 
+	$("a[href='paginas/help/SC/index.html']").attr("target","_blank"); 
+	
+      function redirect(url){    	      	  
+        document.location='/gpja-web/'+url;
+      }
+      function alternateRowColors() {
+        styleTitTabla = "tit_lista";
+        styleAltRow   = "texto_lista";
+        styleRow      = "texto_lista_1";
+        styleButton   = "td_botao";
+        tableStyle    = "alternate";
+        tableStyleNew = "tabelas";
+        tables = document.getElementsByTagName("table");
+        for(var i=0;i<tables.length;i++) {
+          atable = tables.item(i);
+          if(atable.className==tableStyle){
+            rows = atable.rows;
+            for(var j=0;j<rows.length;j++) {
+              arow = rows.item(j);
+              if (j == 0){
+                arow.className = styleTitTabla;
+              }else if (j == rows.length-1) {
+                arow.className = styleButton;
+              }else if (j%2==0){
+                arow.className = styleRow;
+              }else {
+                arow.className = styleAltRow;
+              }
+            }
+            atable.className=tableStyleNew;
+          }
+        }
+      }
+
+   function MM_goToURL() {	   
+        var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+       for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+  }
+
+</script>
+
+<script type="text/javascript">
+var formularioAlteradoField;
+
+function verificaAlteracao() {
+  if(formularioAlteradoField) {
+    formularioAlteradoField.value = 'S';
+  }
+}
+
+for(i=0;i<document.forms.length;i++) {
+  var form = document.forms[i];
+  for(j=0;j<form.elements.length;j++) {
+    var field = form.elements[j];
+    if(field.type == 'hidden' && field.name == 'formularioAlterado') {
+      formularioAlteradoField = field;
+    }
+  }
+}
+
+if(formularioAlteradoField) {
+  for(i=0;i<document.forms.length;i++) {
+    var form = document.forms[i];
+    for(j=0;j<form.elements.length;j++) {
+      var field = form.elements[j];
+      if(field.type != 'hidden') {
+        if(field.onchange) {
+          var onchangeOriginal = field.onchange;
+          field.onchange = verificaAlteracao;
+          addListener(field, 'change', onchangeOriginal);
+        } else {
+          field.onchange = verificaAlteracao;
+        }
+      }
+    }
+  }
+}
+
+function addListener(element, event, listener, bubble) {
+  if(element.addEventListener) {
+    if(typeof(bubble) == "undefined") bubble = false;
+    element.addEventListener(event, listener, bubble);
+  } else if(this.attachEvent) {
+    element.attachEvent("on" + event, listener);
+  }
+}
+</script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="header_fundo">
+      <img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+    </td>
+  </tr>
+  <tr>
+    <td class="menu_fundo">&nbsp;</td>
+  </tr>
+<!-- Código das Abas - Inicio -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function enviar(action) {
+  if(formularioAlteradoField && formularioAlteradoField.value == 'S' && !confirm("Os dados alterados não foram salvos e serão perdidos, deseja continuar ?")) {
+    return;
+  }
+  location.href = action;
+}
+
+function construcao() {
+  alert("Em construção.");
+}
+</script>
+
+
+
+
+  
+
+  
+  <tr>
+    <td valign="top" class="abas_fundo">
+      
+        <div id="abas">
+      
+      
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            
+            
+            
+
+            <!-- Inicio aba ACAO CAP-->
+            
+
+             
+
+            
+
+            <!-- TELA DE ENTRADA CAP -->
+            
+            <!-- FIM DA TELA DE ENTRADA CAP -->
+
+            <!-- Fim aba ACAO CAP -->
+
+            <!--Inicio Alteração Ação Judicial-->
+            
+              
+              
+              
+              
+	              
+	          
+              
+                
+              
+              
+	              
+              
+              
+	              
+	              
+	              
+              
+
+              
+              
+                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+                  
+                  
+                    <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./montaAlteracaoAcaoJudicialAntigaAba.do?idAcaoJudicialAtual=37412');" class="aba_link">Processo</a></td>
+                  
+                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+
+              
+              
+                
+                <td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="aba_off_L" nowrap="nowrap"><a href="javascript:enviar('./listaParteAcaoJudicialPoloAtivoInicioAba.do?idAcaoJudicialAtual=37412');" class="aba_link_L">Partes</a></td>
+                <td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+	              
+	              
+	                
+	                <td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off_L" nowrap="nowrap">
+	                  <a href="javascript:enviar('./listaLembreteAcaoJudicialAssuntoInicioAba.do?idAcaoJudicialAtual=37412');" class="aba_link_L">Lembretes</a>
+	                </td>
+	                <td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+	              
+			  
+              
+                <td><img src="./imagens/aba_onl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="aba_on" nowrap="nowrap">Acompanhamento</td>
+                <td><img src="./imagens/aba_onr.gif" title="" width="7" height="19" border="0"></td>
+              
+              
+   	          
+			   
+	              
+	              
+	                
+	                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./listaCorrelatasAcaoJudicialInicioAba.do?idAcaoJudicialAtual=37412');" class="aba_link">
+	                   
+	                       Vinculadas/Correlatas
+	                   
+	                  </a>
+	                </td>
+	                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	              
+	
+	           
+	              
+	              
+	                
+	                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./listaAssociadasAcaoJudicialAba.do?idAcaoJudicialAtual=37412');" class="aba_link">Processo/Recursos Associados</a></td>
+	                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	              
+	
+	
+	
+	              <!-- Bloqueio On-line -->
+	              
+	
+	              
+	                
+	                <td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+	                <td class="aba_off" nowrap="nowrap"><a href="javascript:enviar('./listaBloqueioParteAba.do?idAcaoJudicialAtual=37412');" class="aba_link">Cadin</a></td>
+	                <td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+	              
+	
+	
+	
+	
+	           
+	        
+            
+            <!--Fim Alteração Ação Judicial-->
+
+            
+
+            
+
+            
+
+            
+
+
+            
+          </tr>
+        </table>
+      </div>
+      <img src="./imagens/nada.gif" width="1" height="1">
+    </td>
+  </tr>
+
+
+<!-- Código das Abas Final  -->
+
+<!-- Código das subabas - Inicio -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function enviar(action) {
+  if(formularioAlteradoField && formularioAlteradoField.value == 'S' && !confirm("Os dados alterados não foram salvos e serão perdidos, deseja continuar ?")) {
+    return;
+  }
+  location.href = action;
+}
+
+function construcao() {
+  alert("Em construção.");
+}
+</script>
+
+
+
+
+
+
+
+
+ 
+ 
+
+  <tr>
+    <td valign="top" class="sub_abas_fundo">
+      <div id="sub_abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            
+
+              
+
+			  
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar('./listaAndamentoAssociado.do?idAcaoJudicialAtual=37412');" class="subaba_link_L">Andamentos</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="./ConsultaAgenda.html" class="subaba_link_L">Agenda</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+              
+              
+                
+                <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar('./listaTramitacaoAssociada.do?idAcaoJudicialAtual=37412');" class="subaba_link">Tramita&ccedil;&otilde;es</a></td>
+                <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+
+
+
+<!--
+           < %  if (acaoJudicialVO != null &&  acaoJudicialVO.getIdPapelFazenda() !=  null && !acaoJudicialVO.getIdPapelFazenda().equals(ConstantsGPJ.ID_PAPEL_FAZENDA_PROCESSO_ADMINISTRATIVO) ) { %>
+              
+              
+                < %posFixoAba = AbasAcompanhamentoAcaoJudicialUtil.getPosFixoDestaque(session, "abas.alteracaoAcaoJudicial.Acompanhamentos.RequisicoesAutos");%>
+                <td><img src="./imagens/subaba_offl< %=posFixoAba%>.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off< %=posFixoAba%>"><a href="javascript:enviar('./listaRequisicaoAuto.do?idAcaoJudicialAtual=< %=acaoJudicialVO.getId()%>');" class="subaba_link< %=posFixoAba%>">Requisi&ccedil;&otilde;es de Autos</a></td>
+                <td><img src="./imagens/subaba_offr< %=posFixoAba%>.gif" title="" width="7" height="19" border="0"></td>
+              
+            < % } %>
+-->
+
+              
+              
+                
+                <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="javascript:enviar('./listaPericiaAcaoJudicialInicio.do?idAcaoJudicialAtual=37412');" class="subaba_link">
+               
+                  Per&iacute;cias/Contas
+               
+                 </a></td>
+                <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+
+             
+             
+             
+             
+               
+               <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                 <td class="subaba_off"><a href="javascript:enviar('./listaDespesaJudicial.do?idAcaoJudicialAtual=37412');" class="subaba_link">Despesas/Custas Judiciais</a></td>
+                 <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+             
+            
+            
+             
+             
+             
+               
+               <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                 <td class="subaba_off_L"><a href="./ConsultaDepositoRecursal.html" class="subaba_link_L">Deposito Recursal</a></td>
+                 <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+             
+             
+             
+            
+              
+                <td><img src="./imagens/subaba_onl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_on">Depósito Judicial</td>
+                <td><img src="./imagens/subaba_onr.gif" title="" width="7" height="19" border="0"></td>
+              
+              
+             
+             
+            
+             
+             
+               
+               <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                 <td class="subaba_off"><a href="javascript:enviar('./listaDespesaCustasSAInicio.do?idAcaoJudicialAtual=37412');" class="subaba_link">Despesas/Honorários do Escritório</a></td>
+                 <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+             
+                          
+             
+             
+             
+             
+             
+            
+           
+<!-- subabas Tela Entrada \ Compromissos [atuais/futuros|antigos] start -->
+
+<!-- sub abas - CAP -->
+
+               
+<!-- sub abas - Cap fim -->
+
+
+            
+             
+            
+			
+            
+            
+            
+            
+            
+
+<!-- subabas Tela Entrada \ Compromissos end -->
+
+          </tr>
+        </table>
+      </div>
+      <img src="./imagens/nada.gif" width="1" height="1" title="">
+    </td>
+  </tr>
+<!-- Código das SubAbas Final  -->
+
+
+<!-- Código das SubSubAbas - Inicio -->
+
+  <tr>
+    <td valign="top" class="sub_abas_fundo">
+      <div id="sub_sub_abas">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            
+
+
+			 
+              
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="./Penhora.html" class="subaba_link_L">Penhoras</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+			  
+
+
+
+
+
+
+              
+              
+                
+                <td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off"><a href="./ConsultaCondenacao.html" class="subaba_link">Condena&ccedil;&atilde;o</a></td>
+                <td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+              
+              
+			  
+              
+              
+                
+                <td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+                <td class="subaba_off_L"><a href="javascript:enviar('./listaMemoriaCalculo.do?idAcaoJudicialAtual=37412');" class="subaba_link_L">Memória Cálculo</a></td>
+                <td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+              
+              
+			  
+          	  
+            
+          </tr>
+        </table>
+      </div>
+      <img src="./imagens/nada.gif" width="1" height="1" title="">
+    </td>
+  </tr>
+
+
+<!-- Código das SubSubAbas Final  -->
+
+
+<!-- Código das subabas Final  -->
+
+  <div id='menuHoriz' style='position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3'>
+    <!-- inicio Menu -->
+
+    <ul id="menu">
+      <li>&nbsp;</li>
+    </ul>
+
+    <!-- fim Menu -->
+  </div>
+  <div id="header">
+    <div id="header_logo"></div>
+  </div>
+  <!-- Código das Abas Final  -->
+  <tr>
+    <td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+     <td>
+
+<!--- inicio tabel&atilde;o do conte&uacute;do -->
+         
+<script language="javascript1.2" src="paginas/js/popcalendar.js" type=""></script>
+
+<script type="text/javascript">
+
+function voltar() {
+  location.href="./ConsultaDepositoJudicial.html"
+}
+
+function textCounter( field, maxlimit ) { // maxlength textarea
+  if ( field.value.length > maxlimit )
+  {
+    field.value = field.value.substring( 0, maxlimit );
+    alert( 'O campo Textarea só pode conter '+maxlimit+' caracteres.' );
+    return false;
+  }
+}
+
+
+function buscaCombo(nameField, opcao) {
+  var form = document.forms[0];
+  form.action = './montaDadosDepositoJudicial.do?act='+opcao;
+  saveScrollPosition(form);
+  form.submit();
+}
+
+</script>
+
+<!-- inicio tabelao conteudo -->
+<form name="DepositoJudicialForm" method="post" action="/gpja-web/incluiDepositoJudicial.do"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="777804f2fda4094a8c48e36260994455">
+  <input type="hidden" name="act" value="">
+     <table cellspacing="0" cellpadding="0" border="0" width="100%">
+       <tr>
+         <td><img src="./imagens/nada.gif" width="10" height="10"></td>
+       </tr>
+       <tr>
+         <td class="titulo"><p><strong>Cadastro de Dep&oacute;sito Judicial</strong></p></td>
+       </tr>
+       <tr>
+         <td><img src="./imagens/nada.gif" width="10" height="10"></td>
+       </tr>
+       <tr>
+         <td>
+           <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+             <tr>
+               <td class="texto_lista"><strong>Nº Antigo do Processo:</strong> <span class='texto_lista_destaque'>12345                         </span>
+ - <strong>Nº no Sistema:</strong> <span class='texto_lista_destaque'>37412</span>
+<br>
+<strong>Assunto:</strong> <br>
+<strong>Tipo de A&ccedil;&atilde;o:</strong> AÇÃO CIVEL PUBLICA<br>
+<strong>Autor, Impetrante, Recorrente:</strong> LOREM IPSUM DOLLOR SIT AMED<br>
+<strong>Réu, Impetrado, Recorrido:</strong> Secretaria de Habitação<br>
+<strong>Avaliação de Risco:</strong> <br>
+<strong>&Uacute;ltimo Andamento:</strong> 
+19/03/2018 &ndash; Felipe
+<br>
+<div><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse" ><tr><td width="35%" ><strong>Área:</strong> CONTENCIOSO - JOAO ANTONIO</td><td width="65%" ><strong>Por:</strong> Felipe </td></tr></table></div>
+</td>
+             </tr>
+           </table>
+           <br>
+           <table width="100%" border="0" cellpadding="0" cellspacing="0">
+             <tr>
+               <td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+               <td>
+                 <table cellspacing="0" cellpadding="0" border="0">
+                   <tr>
+                     <td nowrap class="rotulo">Dep&oacute;sito Judicial:</td>
+                     <td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+                   </tr>
+                 </table>
+               </td>
+               <td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+             </tr>
+             <tr>
+               <td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+               <td class="celula_rotulo">
+                 <table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+                   <tr>
+                     <td width="10%" class="td_titulo">Data:</td>
+                     <td width="1%"  class="td_titulo_obrigatorio">*</td>
+                     <td class="td_conteudo"  width="10%">
+                        <input type="text" name="vo.dateAsString(dtDeposito)" maxlength="10" size="10" value="28/03/2018" onkeypress="return formatarDados(this,event,'00/00/0000')">
+                        <input name="button3" type="button" class="botao" onClick="popUpCalendar(document.forms['DepositoJudicialForm']['vo.dateAsString(dtDeposito)'], document.forms['DepositoJudicialForm']['vo.dateAsString(dtDeposito)'], 'dd/mm/yyyy');" value="v">
+                     </td>
+                     <td class="td_conteudo" width="80%">
+                     	<input type="checkbox" name="chk.vo.abaterMemoriaCalculo" value="1" checked="checked" onclick="if (this.checked) { this.form['vo.abaterMemoriaCalculo'].value='1' } else { this.form['vo.abaterMemoriaCalculo'].value='0' }; null" class="noborder"><input type="hidden" name="vo.abaterMemoriaCalculo" value="1">
+                     	&nbsp;Deduzir na Memória de Cálculo
+                     </td>
+                   </tr>
+                   <tr>
+                     <td class="td_titulo">Banco:</td>
+                     <td class="td_titulo_obrigatorio"></td>
+                     <td class="td_conteudo" colspan="2">
+                        <select name="vo.longAsString(idBanco)" class="campo"><option value="">Selecione...</option>
+                          <option value="206"></option>
+<option value="208">BANCO DA FAMILIA</option>
+<option value="1" selected="selected">BANCO DO BRASIL S.A.</option>
+<option value="207">BANCO DO BRASIL S.A.2</option>
+<option value="3">BANCO ITAÚ S.A.</option>
+<option value="2">BANCO NOSSA CAIXA S.A.</option>
+<option value="101">CAIXA ECONOMICA FEDERAL</option></select>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td class="td_titulo">Agência:</td>
+                     <td class="td_titulo_obrigatorio"></td>
+                     <td class="td_conteudo" colspan="2">
+                       <input type="text" name="vo.agencia" maxlength="10" size="10" value="321321" onkeypress="return formatarDados(this,event,'0000000000')">
+                       -
+                       <input type="text" name="vo.dvAgencia" maxlength="5" size="5" value="12" onkeypress="return formatarDados(this,event,'00000')"></td>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td class="td_titulo">Conta:</td>
+                     <td class="td_titulo_obrigatorio"></td>
+                     <td class="td_conteudo" colspan="2">
+                       <input type="text" name="vo.conta" maxlength="10" size="10" value="321321" onkeypress="return formatarDados(this,event,'0000000000')">
+                       -
+                       <input type="text" name="vo.dvConta" maxlength="5" size="5" value="11" onkeypress="return formatarDados(this,event,'00000')"></td>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td class="td_titulo">Valor:</td>
+                     <td class="td_titulo_obrigatorio">*</td>
+                     <td class="td_conteudo" colspan="2">
+                       <input type="text" name="vo.currencyAsString(valor)" maxlength="20" size="20" value="2.000,00" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right">
+                     </td>
+                   </tr>
+                   <tr>
+                     <td class="td_titulo">Observa&ccedil;&atilde;o:</td>
+                     <td class="td_titulo_obrigatorio">&nbsp;</td>
+                     <td class="td_conteudo" colspan="2">
+                       <input type="text" name="vo.observacao" maxlength="100" size="100" value="LOREM IPSUM DOLLOR SIT AMED" class="input_right">
+                     </td>
+                   </tr>
+
+                   <tr>
+                     <td class="td_titulo">Finalidade</td>
+                     <td class="td_titulo_obrigatorio">&nbsp;</td>
+                     <td class="td_conteudo" colspan="2">
+
+                        <select name="vo.longAsString(idFinalidade)" onchange="javascript:buscaCombo('', 'selFinalidadeDepositoJ');"><option value="">Selecione...</option>
+                          <option value="7">CITAÇÃO/INTIMAÇÃO POSTAL</option>
+<option value="4" selected="selected">CONDENAÇÃO/PAGAMENTO</option>
+<option value="5">EDITAL</option>
+<option value="10">FINALIDADE NAO DEFINIDA</option>
+<option value="6">GARANTIA DO JUÍZO</option>
+<option value="2">HONORÁRIOS PERICIAIS</option>
+<option value="1">OUTROS</option>
+<option value="3">VERBAS SUCUMBENCIAIS</option></select> <br />
+
+                        
+                          
+                        
+                     </td>
+                   </tr>
+
+                   <tr>
+                     <td class="td_titulo">Depositante</td>
+                     <td class="td_titulo_obrigatorio">&nbsp;</td>
+                     <td class="td_conteudo" colspan="2">
+                        <select name="vo.longAsString(idDepositante)" class="campo"><option value="">Selecione...</option>
+                          <option value="7223">LOREM IPSUM DOLLOR SIT AMED</option>
+<option value="905" selected="selected">Secretaria de Habitação</option></select>
+                     </td>
+                   </tr>
+
+                   <tr>
+                     <td class="td_titulo">Levantamento</td>
+                     <td class="td_titulo_obrigatorio">&nbsp;</td>
+                     <td class="td_conteudo" colspan="2">
+                       <input type="checkbox" name="chk.vo.levantamento" value="1" onclick="if (this.checked) { this.form['vo.levantamento'].value='1' } else { this.form['vo.levantamento'].value='0' }; null" class="noborder"><input type="hidden" name="vo.levantamento" value="0">
+                     </td>
+                   </tr>
+
+                   <tr><!--Valor retirado da aba de condenação-->
+                     <td class="td_titulo">Valor Levantado:</td>
+                     <td class="td_titulo_obrigatorio">*</td>
+                     <td class="td_conteudo" colspan="2">
+                       <input type="text" name="valorLevando" maxlength="20" size="20" value="1.000,00" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right">
+                     </td>
+                   </tr>
+				   
+                 </table>
+               </td>
+               <td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+             </tr>
+             <tr>
+               <td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+               <td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+               <td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+             </tr>
+           </table>
+           <table width="100%" border="0" cellspacing="2" cellpadding="2">
+             <tr>
+               <td>
+                 
+                   <input name="Button1" type="button" class="botao" onClick="javascript:voltar()" value="Voltar">
+                 
+                 
+
+                 <input name="Submit22" type="submit" class="botao" value="Gravar">
+               </td>
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+
+
+
+  
+  <input type="hidden" name="formularioAlterado" value="N"/>
+
+
+
+</form>
+<!-- fim tabelao conteudo -->
+
+
+
+            <script>
+addEvent(window, "resize", centralizarLoading);
+addEvent(window, "scroll", centralizarLoading);
+</script>
+<!--div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: #CDCDCD;
+       filter:alpha(opacity=40); opacity: 0.4; -moz-opacity:0.4; z-index: 1000; display: block;" onmousemove="segurarFoco();">
+   </div>
+   <div id="divAguarde" style="position: absolute; border: #C0C0C0 2px solid; height: 50px; width: 150px; cursor: wait; z-index: 1001;
+       background-color: #FFFFFF; top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: block;">
+
+       <table width="100%" cellpadding=0 cellspacing=0 border=0>
+           <tr>
+               <td width="50"><img src="./imagens/loading.gif"/></td>
+               <td style="text-align: center;">
+                   <input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size=10
+                       style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;"/>
+               </td>
+           </tr>
+       </table>
+
+</div-->
+
+<!--- fim tabel&atilde;o do conte&uacute;do -->
+          </td>
+          <td width="10">
+            <img src="./imagens/nada.gif" title="" width="10" height="10" border="0">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="footer_fundo">
+    
+
+
+
+
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+      <tr>
+        <td width="50%">
+          <span class="footer_texto">Usu&aacute;rio:</span>
+          Felipe
+
+          
+
+        </td>
+        <td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+        <td width="15%" align="right" class="footer_texto">
+           
+           
+           04/04/2018 16:47
+        </td>
+      </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<script type="text/javascript">
+  loading(false);
+</script>
+
+<script type="text/javascript">
+    alternateRowColors();
+</script>
+
+
+
+
+
+
+
+
+   
+
+
+
+

@@ -1,0 +1,323 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}.header_fundo {
+	background-image: url(../imagens/header_direito.jpg);
+	background-repeat: repeat;
+	height: 85px;
+}
+.menu_fundo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #152F4A;
+	height: 23px;
+	background-color:  rgba(158, 158, 158, 1);
+
+}
+.footer_fundo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #152F4A;
+	height: 23px;
+	background-color: #B7D0EE;
+	border-top-width: 1px;
+	border-top-color: #152F4A;
+	border-top-style: solid;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+.titulo {
+	font-family:Verdana;
+	font-size:11px;
+	border: 1px solid #152F4A;
+	text-align:left;
+	color:#000000;
+	margin:10px;
+	padding:2px;
+	background-color: #B7D0EE;
+}
+/* Inicio - CSS Abas */
+#abas {
+position: absolute;
+top: 112px;
+left:10px;
+height: 19px;
+z-index: 1;
+overflow: hidden;
+}
+
+#sub_abas {
+position: absolute;
+top: 138px;
+left:10px;
+width: 900px;
+height: 19px;
+z-index: 1;
+overflow: hidden;
+}
+
+#sub_sub_abas {
+position: absolute;
+top: 160px;
+left:10px;
+width: 900px;
+height: 19px;
+z-index: 1;
+overflow: hidden;
+}
+
+#abas_popup {
+position: absolute;
+top: 4px;
+left: 0px;
+width: 780px;
+height: 19px;
+z-index: 1;
+overflow: hidden;
+}
+
+.tabelas {
+	border: 1px solid #152F4A;
+}
+
+.aba_on {
+background: url(../imagens/aba_bgon.gif);
+color: #000000;
+font-family: verdana;
+font-size: 11px;
+font-weight: bold;
+text-decoration: none;
+}
+.aba_dis {
+background: url(../imagens/aba_bgdis.gif);
+color: #BFC0BD;
+font-family: verdana;
+font-size: 11px;
+font-weight: bold;
+text-decoration: none;
+}
+a.aba_link {
+color: #000000;
+font-family: verdana;
+font-size: 11px;
+font-weight: bold;
+text-decoration: none;
+}
+a.aba_link:hover {
+color: #FFFFFF;
+font-family: verdana;
+font-size: 11px;
+font-weight: bold;
+text-decoration: underline;
+}
+a.aba_link_L {
+color: #FFFFFF;
+font-family: verdana;
+font-size: 11px;
+font-weight: bold;
+text-decoration: none;
+}
+a.aba_link_L:hover {
+color: #000000;
+font-family: verdana;
+font-size: 11px;
+font-weight: bold;
+text-decoration: underline;
+}
+.subaba_on {
+background: url(../imagens/subaba_bgon.gif);
+color: #000040;
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+text-decoration: none;
+}
+.subaba_dis {
+background: url(../imagens/subaba_bgdis.gif);
+color: #BFC0BD;
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+text-decoration: none;
+}
+a.subaba_link {
+color: #000040;
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+text-decoration: none;
+}
+a.subaba_link:hover {
+color: #0080FF;
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+text-decoration: underline;
+}
+
+a.subaba_link_L {
+color: #FFFFFF;
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+text-decoration: none;
+}
+a.subaba_link_L:hover {
+color: #000000;
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+text-decoration: underline;
+}
+
+.aba_off {
+background: url(../imagens/aba_bgoff.gif);
+}
+.subaba_off {
+background: url(../imagens/subaba_bgoff.gif);
+}
+.rotulo {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #152F4A;
+	font-weight: bold;
+}
+.footer_texto {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.td_titulo {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #EFF0F2;
+}
+
+.celula_rotulo {
+	padding: 2px;
+}
+.celula_rotulo1 {
+	padding: 9px;
+}
+
+/* Fim - CSS Abas */
+.abas_fundo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #152F4A;
+	height: 23px;
+	background-color: #6996D1;
+}
+.sub_abas_fundo {
+	height: 23px;
+	background-color: #f9ffff;
+}
+.td_conteudo {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #f9ffff;
+}
+input {
+	font-family: Verdana;
+	font-size: 11px;
+	border: 1px solid #152F4A;
+	color: #000000;
+}
+.input_radio {
+	font-family: Verdana;
+	font-size: 11px;
+	border: 0px;
+	color: #000000;
+        vertical-align: middle;
+}
+td { font-size: 11px; font-family: Verdana; }
+form {display: inline;}
+select, textarea { font-size: 11px; font-family: Verdana; }
+.td_botao {
+	background-color: #FFFFFF;
+}
+
+input.noborder, .noborder input{border: 0px}
+.botao  {
+	BORDER-RIGHT: #9d9da1 1px solid;
+			BORDER-TOP: #f4f3f5 1px solid;
+			BORDER-LEFT: #f4f3f5 1px solid;
+			BORDER-BOTTOM: #9d9da1 1px solid;
+			BACKGROUND-COLOR: #e0e0e0;
+font-family: tahoma;
+font-size: 11px;
+			}
+			
+.botao:disabled { 
+	color: gray; 
+} 
+
+.tit_lista {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #152F4A;
+	background-color: #EFF0F2;
+}
+.texto_lista {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #f9ffff;
+	height: 20px;
+}
+.texto_lista_1 {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #EFF0F2;
+}
+.td_titulo120 {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #EFF0F2;
+	width: 120px;
+}
+.texto_lista_destaque {
+
+	font-family: Verdana;
+	font-size: 11px;
+	color: #990000;
+}
+
+.aba_off_L {
+	background-image: url(../imagens/aba_bgoff_L.gif);
+}
+
+.subaba_off_L {
+	background-image: url(../imagens/subaba_bgoff_L.gif);
+}
+
+.td_titulo_obrigatorio {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #DC0000;
+	background-color: #EFF0F2;
+}
+
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}

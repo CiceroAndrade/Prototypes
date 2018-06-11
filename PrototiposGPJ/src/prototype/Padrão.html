@@ -1,0 +1,403 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+	<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css">
+	<link href="./css/gpj.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/popcalendar.js" type=""></script>
+</head>
+<body style="">
+	<div id="menuHoriz" style="position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3">
+		<!-- inicio Menu -->
+
+		<ul id="menu">
+		  <li>&nbsp;</li>
+		</ul>
+
+		<!-- fim Menu -->
+	</div>
+	<div id="header">
+		<div id="header_logo"></div>
+	</div>	
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+		<tr>
+		<td class="header_fundo">
+			<img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+		</td>
+		</tr>
+		<tr>
+			<td class="menu_fundo">&nbsp;</td>
+		</tr>
+<!-- Código das Abas - Inicio -->
+	<tr>
+		<td valign="top" class="abas_fundo">
+			<div id="abas">
+			<table cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+				<tr>
+				<!-- Inicio aba ACAO CAP-->
+				<!-- TELA DE ENTRADA CAP -->
+				<!-- FIM DA TELA DE ENTRADA CAP -->
+				<!-- Fim aba ACAO CAP -->
+				<!--Inicio Alteração Ação Judicial-->
+					<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_off" nowrap="nowrap">
+						<a href="javascript:redirect('CadastroAcaoProcesso.html');" class="aba_link">Processo</a></td>
+					<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+					
+					<td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_off_L" nowrap="nowrap"><a href="javascript:enviar(&#39;./listaParteAcaoJudicialPoloAtivoInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link_L">Partes</a></td>
+					<td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+					
+					<td><img src="./imagens/aba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_off_L" nowrap="nowrap">
+						<a href="javascript:enviar(&#39;./listaLembreteAcaoJudicialAssuntoInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link_L">Lembretes</a>
+					</td>
+					<td><img src="./imagens/aba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+					<td><img src="./imagens/aba_onl.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_on" nowrap="nowrap">Acompanhamento</td>
+					<td><img src="./imagens/aba_onr.gif" title="" width="7" height="19" border="0"></td> 
+					
+					<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_off" nowrap="nowrap">
+						<a href="javascript:enviar(&#39;./listaCorrelatasAcaoJudicialInicioAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Vinculadas/Correlatas</a>
+					</td>
+					<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+					
+					<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_off" nowrap="nowrap">
+						<a href="javascript:enviar(&#39;./listaAssociadasAcaoJudicialAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Processo/Recursos Associados</a></td>
+					<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+					
+					<!-- Bloqueio On-line -->	              
+					<td><img src="./imagens/aba_offl.gif" title="" width="5" height="19" border="0"></td>
+					<td class="aba_off" nowrap="nowrap">
+						<a href="javascript:enviar(&#39;./listaBloqueioParteAba.do?idAcaoJudicialAtual=37412&#39;);" class="aba_link">Cadin</a></td>
+					<td><img src="./imagens/aba_offr.gif" title="" width="7" height="19" border="0"></td>
+					
+				<!--Fim Alteração Ação Judicial-->
+			</tr>
+			</tbody></table>
+		</div>
+		<img src="./imagens/nada.gif" width="1" height="1">
+		</td>
+	</tr>
+<!-- Código das Abas Final  -->
+<!-- Código das subabas - Inicio -->
+				<tr>
+					<td valign="top" class="sub_abas_fundo">
+						<div id="sub_abas">
+						<table cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off_L"><a href="javascript:redirect('');" class="subaba_link_L">Andamentos</a></td>
+								<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off_L"><a href="javascript:redirect('ConsultaAgenda.html');" class="subaba_link_L">Agenda</a></td>
+								<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:enviar(&#39;./listaTramitacaoAssociada.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Tramitações</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+					
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:enviar(&#39;./listaPericiaAcaoJudicialInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Perícias/Contas</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:enviar(&#39;./listaDespesaJudicial.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Despesas/Custas Judiciais</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+									
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:redirect('ConsultaDepositoRecursal.html');" class="subaba_link">Deposito Recursal</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off_L"><a href="javascript:redirect('ConsultaDepositoJudicial.html');" class="subaba_link_L">Depósito Judicial</a></td>
+								<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:enviar(&#39;./listaDespesaCustasSAInicio.do?idAcaoJudicialAtual=37412&#39;);" class="subaba_link">Despesas/Honorários do Escritório</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+								<!--subabas Tela Entrada \ Compromissos [atuais/futuros|antigos] start -->
+								<!--sub abas - CAP -->  
+								<!--sub abas - Cap fim -->
+								<!--subabas Tela Entrada \ Compromissos end -->
+							</tr>
+							
+						</tbody>
+						</table>
+						</div>
+						<img src="./imagens/nada.gif" width="1" height="1" title="">
+					</td>
+				</tr>
+			<!-- Código das SubAbas Final  -->
+			
+			
+			<!-- Código das SubSubAbas - Inicio -->
+			
+				<tr>
+					<td valign="top" class="sub_abas_fundo">
+						<div id="sub_sub_abas">
+						<table cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+							
+								<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off_L"><a href="javascript:redirect('Bloqueios.html');" class="subaba_link_L">Bloqueios</a></td>
+								<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off_L"><a href="javascript:redirect('Penhora.html');" class="subaba_link_L">Penhoras</a></td>
+								<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+							
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:redirect('CadastroCondenacao.html');" class="subaba_link">Condenação</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl_L.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off_L"><a href="javascript:redirect('');" class="subaba_link_L">Memória Cálculo</a></td>
+								<td><img src="./imagens/subaba_offr_L.gif" title="" width="7" height="19" border="0"></td>
+								
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:redirect('');" class="subaba_link">Pedidos e Anexos</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+								<td><img src="./imagens/subaba_offl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_off"><a href="javascript:enviar('');" class="subaba_link">Unidades Habitacionais</a></td>
+								<td><img src="./imagens/subaba_offr.gif" title="" width="7" height="19" border="0"></td>
+							
+								<td><img src="./imagens/subaba_onl.gif" title="" width="5" height="19" border="0"></td>
+								<td class="subaba_on">Leilões</td>
+								<td><img src="./imagens/subaba_onr.gif" title="" width="7" height="19" border="0"></td>
+								
+							</tr>
+						</tbody>
+						</table>
+						</div>
+					<img src="./imagens/nada.gif" width="1" height="1" title="">
+					</td>
+				</tr>
+
+
+<!-- Código das SubSubAbas Final  -->
+
+
+<!-- Código das subabas Final  -->
+
+  
+  
+  <!-- Código das Abas Final  -->
+	<tr>
+    <td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+	<td>
+
+		<!--- inicio tabel&atilde;o do conte&uacute;do -->
+
+		<!-- inicio tabelao conteudo -->
+		<form name="LeiloesForm" method="post" action="/gpja-web/montaCadastroLeilao.do"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="39c7517ecfaf15ea08d87d67104aedb6">
+
+		<!-- inicio tabel&atilde;o do conte&uacute;do -->
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><img src="./imagens/nada.gif" width="10" height="10" title=""></td>
+			</tr>
+			<tr>
+				<td class="titulo"><p><strong>TÍTULO ABA</strong></p></td>
+			</tr>
+			<tr>
+				<td><img src="./imagens/nada.gif" width="10" height="10" title=""></td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+						<tr>
+							<td class="texto_lista"><strong>N&ordm; do Processo:</strong> <span class='texto_lista_destaque'>02012018-01                   </span>
+							- <strong>Ano:</strong> <span class='texto_lista_destaque'>2017</span>
+							- <strong>Nº no Sistema:</strong> <span class='texto_lista_destaque'>34912</span>
+							<br>
+							<strong>Assunto:</strong> DIVERSOS<br>
+							<strong>Tipo de A&ccedil;&atilde;o:</strong> AÇÃO COMINATÓRIA (QUITAÇÃO) C.C. PEDIDO LIMINAR DE TUTELA ANTECIPADA MUTUARIOS<br>
+							<strong>Autor, Impetrante, Recorrente:</strong> CADASTRO TESTE ELI e Outros<br>
+							<strong>Réu, Impetrado, Recorrido:</strong> <br>
+							<strong>Avaliação de Risco:</strong> Provável<br>
+							<strong>&Uacute;ltimo Andamento:</strong> 
+							19/04/2018 &ndash; LOREM iPSUM
+							<br>
+							<div><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse" ><tr><td width="35%" ><strong>Área:</strong> CONTENCIOSO - CAROLINA ANDRADE</td><td width="65%" ><strong>Por:</strong> ADMIN_543 </td></tr></table></div>
+							</td>
+						</tr>
+					</table>
+				
+				<br>
+							
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+								<td>
+									<table cellspacing="0" cellpadding="0" border="0">
+										<tbody>
+											<tr>
+												<td nowrap="" class="rotulo">Leilão:</td>
+												<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+							</tr>
+							<tr>
+								<td width="8" background="./imagens/gbox_b1.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+								<td class="celula_rotulo">
+									<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+										<tbody>
+											<tr>
+												<td width="10%" class="td_titulo">Data/Hora do Leilão:</td>
+												<td width="1%" class="td_titulo_obrigatorio"></td>
+												<td class="td_conteudo">
+													<input type="text" name="data" id="dataLeilao" size="10" maxlength="10" onkeypress="return formatarDados(this,event,'00/00/0000')" value="">
+													<input name="button3" type="button" class="botao" onclick="popUpCalendar(document.forms['LeiloesForm']['dataLeilao'], document.forms['LeiloesForm']['dataLeilao'], 'dd/mm/yyyy');" value="v">
+													<input type="text" name="hora" size="5" maxlength="5" id="horaLeilao" value="" onkeypress="return formatarDados(this,event,'00:00')">
+												</td>
+											</tr>
+											<tr>
+												<td width="10%" class="td_titulo">Local:</td>
+												<td width="1%" class="td_titulo_obrigatorio"></td>
+												<td class="td_conteudo">
+													<input type="text" name="vo.resultado" maxlength="100" size="50" value="">
+												</td>
+											</tr>
+											<tr>				
+													<td width="10%" class="td_titulo">Resultado:</td>
+													<td width="1%" class="td_titulo_obrigatorio"></td>
+													<td class="td_conteudo">
+														<input type="text" name="vo.resultado" maxlength="100" size="50" value="">
+													</td>
+											</tr>
+								
+											<tr>
+												<td width="10%" class="td_titulo">Situação:</td>
+												<td width="1%" class="td_titulo_obrigatorio"></td>
+												<td class="td_conteudo">
+													<select name="vo.idUnidadeHabitacional"><option value="">- Selecione -</option>
+													<option value="701">Vigente</option></select>
+												</td>
+											</tr>
+				
+										</tbody>
+									</table>
+								</td>				
+								<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+							</tr>
+							<tr>
+								<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+								<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+								<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+							</tr>
+						</tbody>
+					</table>
+				
+					<br>
+				
+				
+				
+				</td>
+			</tr>
+			
+			
+			
+		</table>
+		<input type="hidden" name="vo.id" />
+		</form>
+<!-- fim tabelao conteudo -->
+
+	<script>
+	addEvent(window, "resize", centralizarLoading);
+	addEvent(window, "scroll", centralizarLoading);
+	</script>
+	<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: #CDCDCD;
+		   filter:alpha(opacity=40); opacity: 0.4; -moz-opacity:0.4; z-index: 1000; display: block;" onmousemove="segurarFoco();">
+	</div>
+	<div id="divAguarde" style="position: absolute; border: #C0C0C0 2px solid; height: 50px; width: 150px; cursor: wait; z-index: 1001;
+       background-color: #FFFFFF; top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: block;">
+
+       <table width="100%" cellpadding=0 cellspacing=0 border=0>
+           <tr>
+               <td width="50"><img src="./imagens/loading.gif"/></td>
+               <td style="text-align: center;">
+                   <input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size=10
+                       style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;"/>
+               </td>
+           </tr>
+       </table>
+
+	</div>
+
+<!--- fim tabel&atilde;o do conte&uacute;do -->
+    </td>
+    <td width="10">
+            <img src="./imagens/nada.gif" title="" width="10" height="10" border="0">
+    </td>
+    </tr>
+      </table>
+    </td>
+	</tr>
+  <tr>
+    <td class="footer_fundo">
+		
+	<table width="100%" border="0" cellspacing="1" cellpadding="1">
+		  <tr>
+			<td width="50%">
+			  <span class="footer_texto">Usu&aacute;rio:</span>
+			  Felipe
+
+
+			</td>
+			<td width="35%" align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+			<td width="15%" align="right" class="footer_texto">
+			   
+			   
+			   20/04/2018 14:01
+			</td>
+		  </tr>
+	</table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<script type="text/javascript">
+  loading(false);
+</script>
+
+<script type="text/javascript">
+    alternateRowColors();
+</script>
+
+
+
+
+
+
+
+
+   
+
+
+
+

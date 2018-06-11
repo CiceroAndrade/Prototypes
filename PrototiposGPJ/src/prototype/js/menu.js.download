@@ -1,0 +1,39 @@
+activateMenu = function(nav) {
+    /* currentStyle restringe o JavaScript ao IE */
+	if (document.all && document.getElementById(nav).currentStyle) {  
+        var navroot = document.getElementById(nav);
+        /* Encontra os LI dentro do menu */
+        var lis=navroot.getElementsByTagName("LI");  
+        for (i=0; i<lis.length; i++) {
+           /* Caso o LI tiver outro nível */
+            if(lis[i].lastChild.tagName=="UL"){
+                /* Associa a função ao LI */
+             	lis[i].onmouseover=function() {	
+                   /* Mostra o menu mais interno */
+                   this.lastChild.style.display="block";
+				   dropdowns('hidden');
+                }
+                lis[i].onmouseout=function() {                       
+                   this.lastChild.style.display="none";
+				   dropdowns('visible');
+                }}}}}
+function dropdowns(){ 
+
+         var sel=document.getElementsByTagName("SELECT") 
+         if (arguments.length>0){
+         	for(i=0;i<sel.length;i++){ 
+			sel[i].style.visibility=arguments[0];
+			} 
+         }
+         else{
+		 	for(i=0;i<sel.length;i++){ 
+				if(sel[i].style.visibility!="hidden"){
+					sel[i].style.visibility="hidden";
+				}
+				else{
+					sel[i].style.visibility="visible";
+				}
+			} 
+         }
+}
+window.onload= function(){activateMenu('menu');}

@@ -1,0 +1,392 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>CDHU - São Paulo - Gestão de Processos Judiciais e Administrativos</title>
+	<link href="./css/multinivel_horizontal.css" rel="stylesheet" type="text/css"></link>
+	<link href="./css/gpj.css" rel="stylesheet" type="text/css"></link>
+	<script language="JavaScript" src="./js/validacaocadastrobloqueio.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/comportamento.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/gotourl.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/util.js" type="text/javascript"></script>
+
+
+	<script language="JavaScript" src="./js/menu_array.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/mmenu.js" type="text/javascript"></script>
+	<script language="JavaScript" src="./js/jquery.js" type="text/javascript"></script>
+	
+</head>
+<body style="">
+		
+	<!--Calendário>
+	<div onclick="bShow=true" id="calendar" style="z-index:+999;position:absolute;visibility:hidden;">
+		<table width="250" style="border-width:2;border-style:solid;font-family:arial; font-size:09px}" bgcolor="#ffffff">
+			<tbody>
+				<tr bgcolor="#e1e1e1">
+					<td>
+						<table width="248">
+						<tbody>
+							<tr>
+								<td style="font-family:arial; font-size:09px;">
+									<font color="#000000"><b>
+									<span id="caption">
+									<span id="spanLeft" style="border-style:solid;border-width:1;border-color:#e1e1e1;cursor:pointer" 
+										onmouseover="swapImage(&quot;changeLeft&quot;,&quot;left2.gif&quot;);
+											this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;
+											Clique aqui para ver o mês anterior. Precione o botão do mouse para agilizar a escolha.&quot;" 
+										onclick="javascript:decMonth()" 
+										onmouseout="clearInterval(intervalID1);
+											swapImage(&quot;changeLeft&quot;,&quot;left1.gif&quot;);
+											this.style.borderColor=&quot; #e1e1e1&quot;;window.status=&quot;&quot;"
+										onmousedown="clearTimeout(timeoutID1);timeoutID1=setTimeout(&quot;StartDecMonth()&quot;,500)" 
+										onmouseup="clearTimeout(timeoutID1);clearInterval(intervalID1)">&nbsp;
+										<img id="changeLeft" src="./imagens/icones/left1.gif" width="10" height="11" border="0">&nbsp;</span>&nbsp;
+										<span id="spanRight" style="border-style:solid;border-width:1;border-color:#e1e1e1;cursor:pointer" 
+										onmouseover="swapImage(&quot;changeRight&quot;,&quot;right2.gif&quot;);this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;Clique aqui para ver o próximo mês. Precione o botão do mouse para agilizar a escolha.&quot;" 
+										onmouseout="clearInterval(intervalID1);swapImage(&quot;changeRight&quot;,&quot;right1.gif&quot;);this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;&quot;" 
+										onclick="incMonth()" 
+										onmousedown="clearTimeout(timeoutID1);timeoutID1=setTimeout(&quot;StartIncMonth()&quot;,500)" 
+										onmouseup="clearTimeout(timeoutID1);clearInterval(intervalID1)">&nbsp;
+										<img id="changeRight" src="./imagens/icones/right1.gif" width="10" height="11" border="0">&nbsp;</span>&nbsp;
+										<span id="spanMonth" style="border-style:solid;border-width:1;border-color:#e1e1e1;cursor:pointer" 
+										onmouseover="swapImage(&quot;changeMonth&quot;,&quot;drop2.gif&quot;);this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;Clique aqui para selecionar um mês.&quot;" 
+										onmouseout="swapImage(&quot;changeMonth&quot;,&quot;drop1.gif&quot;);this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;&quot;" onclick="popUpMonth()"></span>&nbsp;
+										<span id="spanYear" style="border-style:solid;border-width:1;border-color:#e1e1e1;cursor:pointer" 
+										onmouseover="swapImage(&quot;changeYear&quot;,&quot;drop2.gif&quot;);this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;Clique aqui para selecionar um Ano.&quot;" 
+										onmouseout="swapImage(&quot;changeYear&quot;,&quot;drop1.gif&quot;);this.style.borderColor=&quot;#e1e1e1&quot;;window.status=&quot;&quot;" 
+										onclick="popUpYear()"></span>&nbsp;</span></b>
+									</font>
+									</td>
+									<td align="right">
+										<a href="javascript:hideCalendar()">
+										<img src="./imagens/icones/close.gif" width="15" height="13" border="0" alt="Fechar Calendário."></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			'	<tr>
+					<td bgcolor="#ffffff">
+						<span id="content"></span>
+					</td>
+				</tr>
+				<tr bgcolor="#ffffff">
+					<td style="padding:1px" align="center">
+					<span id="lblToday">Hoje é 
+						<a 	onmousemove="window.status=&quot;Mês Corrente&quot;" 
+							onmouseout="window.status=&quot;&quot;" title="Mês Corrente" style="text-decoration:none;color:black;" 
+							href="javascript:monthSelected=monthNow;yearSelected=yearNow;constructCalendar();">Seg, 23 Abr	2018</a></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+		
+	<--Fim Calendário-->
+
+		<div id="menuHoriz" style="position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3">
+		<!-- inicio Menu -->
+
+		<ul id="menu">
+		<li>&nbsp;</li>
+		</ul>
+
+		<!-- fim Menu -->
+		</div>
+		<div id="header">
+		<div id="header_logo"></div>
+		</div>	
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+			<td class="header_fundo">
+				<img src="./imagens/header_esquerdo.jpg" title="" width="100%" height="85">
+			</td>
+			</tr>
+			<tr>
+				<td class="menu_fundo">&nbsp;</td>
+			</tr>
+			<!-- Código das Abas - Inicio -->
+			
+			<!-- Código das Abas Final  -->
+			<!-- Código das subabas - Inicio -->
+			
+			
+			<div id='menuHoriz' style='position:absolute; left:1px; top:87px; width:700px; height:23px; z-index:3'>
+				<!-- inicio Menu -->
+			
+				<ul id="menu">
+				<li>&nbsp;</li>
+				</ul>
+			
+				<!-- fim Menu -->
+			</div>
+			<div id="header">
+				<div id="header_logo"></div>
+			</div>
+			
+			<!-- Código das Abas Final  -->
+			<tr>
+				<td valign="top">
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+					<td width="10"><img src="./imagens/nada.gif" title="" width="10" height="10" border="0"></td>
+					<td>
+						<!-- inicio tabelao conteudo -->
+						<form name="BloqueioJudicialForm" method="post" action="/gpja-web/incluiBloqueioJudicial.do">
+							<input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="777804f2fda4094a8c48e36260994455">
+							<input type="hidden" name="act" value="">
+							<table cellspacing="0" cellpadding="0" border="0" width="100%">
+								<tr>
+									<td><img src="./imagens/nada.gif" width="10" height="10"></td>
+								</tr>
+								<tr>
+									<td class="titulo"><p><strong>Cadastro de Bloqueio Judicial</strong></p></td>
+								</tr>
+								<tr>
+									<td><img src="./imagens/nada.gif" width="10" height="10"></td>
+								</tr>
+								<tr>
+									<td>
+										<!--table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+											<tr>
+												<td class="texto_lista">
+													<strong>Nº Antigo do Processo:</strong> 
+													<span class='texto_lista_destaque'>12345</span> - <strong>Nº no Sistema:</strong> 
+													<span class='texto_lista_destaque'>37412</span>
+													<br>
+													<strong>Assunto:</strong>
+													<br>
+													<strong>Tipo de A&ccedil;&atilde;o:</strong>AÇÃO CIVEL PUBLICA<br>
+													<strong>Autor, Impetrante, Recorrente:</strong> LOREM IPSUM DOLLOR SIT AMED<br>
+													<strong>Réu, Impetrado, Recorrido:</strong> Secretaria de Habitação<br>
+													<strong>Avaliação de Risco:</strong> <br>
+													<strong>&Uacute;ltimo Andamento:</strong> 
+													19/03/2018 &ndash; Felipe
+													<br>
+													<div>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse" >
+															<tr>
+																<td width="35%" >
+																	<strong>Área:</strong> CONTENCIOSO - JOAO ANTONIO</td>
+																<td width="65%" >
+																	<strong>Por:</strong> Felipe </td>
+															</tr>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</table-->
+									<br>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td><img src="./imagens/gbox_a1.gif" title="" width="8" height="17" border="0"></td>
+												<td>
+													<table cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td nowrap class="rotulo">Dados do Bloqueio Judicial:</td>
+															<td width="100%" background="./imagens/gbox_a2.gif"><img src="./imagens/nada.gif" title="" width="1" height="17" border="0"></td>
+														</tr>
+													</table>
+												</td>
+												<td><img src="./imagens/gbox_a3.gif" title="" width="8" height="17" border="0"></td>
+											</tr>
+											<tr>
+												<td width="8" background="./imagens/gbox_b1.gif">
+													<img src="./imagens/nada.gif" title="" width="8" height="8" border="0">
+												</td>
+												<td class="celula_rotulo">
+													<table width="100%" border="0" cellpadding="2" cellspacing="1" class="tabelas">
+														<tr>
+															<td width="20%" class="td_titulo">Data do Bloqueio:</td>
+															<td width="1%"  class="td_titulo_obrigatorio">*</td>
+															<td class="td_conteudo">
+																<input type="text" name="dtBloqueio" maxlength="10" size="10" value="28/03/2018" onkeypress="return formatarDados(this,event,'00/00/0000')">
+																<input name="button3" type="button" class="botao" onClick="popUpCalendar(dtBloqueio,'dtBloqueio','dd/mm/yyyy');" value="v">
+															</td>
+															<td class="td_conteudo"></td>
+														</tr>
+														
+														<tr>
+															<td class="td_titulo">Banco:</td>
+															<td class="td_titulo_obrigatorio"></td>
+															<td class="td_conteudo" colspan="2">
+																<select name="vo.longAsString(idBanco)" class="campo"><option value="">Selecione...</option>
+																<option value="206"></option>
+																<option value="208">BANCO DA FAMILIA</option>
+																<option value="1" selected="selected">BANCO DO BRASIL S.A.</option>
+																<option value="207">BANCO DO BRASIL S.A.2</option>
+																<option value="3">BANCO ITAÚ S.A.</option>
+																<option value="2">BANCO NOSSA CAIXA S.A.</option>
+																<option value="101">CAIXA ECONOMICA FEDERAL</option></select>
+															</td>
+														</tr>
+														<tr>
+															<td class="td_titulo">Agência:</td>
+															<td class="td_titulo_obrigatorio"></td>
+															<td class="td_conteudo" colspan="2">
+															<input type="text" name="vo.agencia" maxlength="10" size="10" value="321321" onkeypress="return formatarDados(this,event,'0000000000')">
+															-
+															<input type="text" name="vo.dvAgencia" maxlength="5" size="5" value="12" onkeypress="return formatarDados(this,event,'00000')"></td>
+															
+														</tr>
+														<tr>
+															<td class="td_titulo">Conta:</td>
+															<td class="td_titulo_obrigatorio"></td>
+															<td class="td_conteudo" colspan="2">
+															<input type="text" name="vo.conta" maxlength="10" size="10" value="321321" onkeypress="return formatarDados(this,event,'0000000000')">
+															-
+															<input type="text" name="vo.dvConta" maxlength="5" size="5" value="11" onkeypress="return formatarDados(this,event,'00000')"></td>
+															
+														</tr>
+														<tr>
+															<td class="td_titulo">Valor Bloqueado:</td>
+															<td class="td_titulo_obrigatorio">*</td>
+															<td class="td_conteudo" colspan="2">
+															<input type="text" id="inValorBloq" maxlength="20" size="20" value="2.000,00" onkeypress="return currencyFormat(this, '.', ',', event)" class="input_right">
+															</td>
+														</tr>
+														<tr>
+															<td class="td_titulo">Situação do Bloqueio</td>
+															<td class="td_titulo_obrigatorio">*</td>
+															<td class="td_conteudo" colspan="2">
+																<select name="vo.idPapelFazenda" onchange="javascript:buscaCombo('', 'chkEmpreendimento');">
+																	<option value="">- Selecione -</option>
+																	<option value="1">Bloqueado</option>
+																	<option value="4">Tranferido</option>
+																	<option value="3" selected="selected">Desbloqueado</option>
+															</td>
+														</tr>
+														<tr>
+															<td class="td_titulo">Número do Processo</td>
+															<td class="td_titulo_obrigatorio"></td>
+															<td class="td_conteudo" colspan="2">
+																407-456-2009-12345-6
+															</td>
+														</tr>
+														
+														<tr>
+															<td class="td_titulo">Advogado Responsável</td>
+																
+															<td class="td_titulo_obrigatorio"></td>
+															<td class="td_conteudo" colspan="2">
+																LOREM IPSUM DOLLOR SIT AMED
+															</td>
+														</tr>
+														
+														<tr>
+															<td class="td_titulo">Observa&ccedil;&atilde;o:</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo" colspan="2">
+																<input type="text" name="vo.observacao" maxlength="100" size="100%" value="Post Scriptum" class="input_right">
+															</td>
+														</tr>
+										
+														<!--tr>
+															<td class="td_titulo">Finalidade</td>
+															<td class="td_titulo_obrigatorio">&nbsp;</td>
+															<td class="td_conteudo" colspan="2">
+										
+																<select name="vo.longAsString(idFinalidade)" onchange="javascript:buscaCombo('', 'selFinalidadeDepositoJ');"><option value="">Selecione...</option>
+																	<option value="7">CITAÇÃO/INTIMAÇÃO POSTAL</option>
+																	<option value="4" selected="selected">CONDENAÇÃO/PAGAMENTO</option>
+																	<option value="5">EDITAL</option>
+																	<option value="10">FINALIDADE NAO DEFINIDA</option>
+																	<option value="6">GARANTIA DO JUÍZO</option>
+																	<option value="2">HONORÁRIOS PERICIAIS</option>
+																	<option value="1">OUTROS</option>
+																	<option value="3">VERBAS SUCUMBENCIAIS</option>
+																</select> <br />
+																
+															</td>
+														</tr-->
+														
+													</table>
+													</td>
+												<td width="8" background="./imagens/gbox_b3.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+											</tr>
+											<tr>
+												<td><img src="./imagens/gbox_c1.gif" title="" width="8" height="8" border="0"></td>
+												<td background="./imagens/gbox_c2.gif"><img src="./imagens/nada.gif" title="" width="8" height="8" border="0"></td>
+												<td><img src="./imagens/gbox_c3.gif" title="" width="8" height="8" border="0"></td>
+											</tr>
+										</table>
+										<table width="100%" border="0" cellspacing="2" cellpadding="2">
+											<tr>
+												<td>
+													<input name="Button1" type="button" class="botao" onClick="javascript:voltar()" value="Voltar">						 
+													<input name="Submit22" type="button" class="botao" value="Gravar" onClick="javascript:gravar();">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<input type="hidden" name="formularioAlterado" value="N"/>
+						</form>						
+						<!-- fim tabelao conteudo -->
+						<script>
+						addEvent(window, "resize", centralizarLoading);
+						addEvent(window, "scroll", centralizarLoading);
+						</script>
+						<div id="divTravaTela" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; cursor: wait; background-color: #CDCDCD;
+							filter:alpha(opacity=40); opacity: 0.4; -moz-opacity:0.4; z-index: 1000; display: block;" onmousemove="segurarFoco();">
+						</div>
+						<div id="divAguarde" style="position: absolute; border: #C0C0C0 2px solid; height: 50px; width: 150px; cursor: wait; z-index: 1001;
+							background-color: #FFFFFF; top: 50%; left: 50%; margin-top: -25px; margin-left: -75px; display: block;">
+						
+							<table width="100%" cellpadding=0 cellspacing=0 border=0>
+								<tr>
+									<td width="50"><img src="./imagens/loading.gif"/></td>
+									<td style="text-align: center;">
+										<input id="txtLoading" type="text" value="Aguarde..." readonly="readonly" size=10
+											style="font-weight: bold; color: #483D8B; text-transform: none; border: 0px;"/>
+									</td>
+								</tr>
+							</table>
+						
+						</div>
+						
+						<!--- fim tabel&atilde;o do conte&uacute;do -->
+					</td>
+					<td width="10">
+							<img src="./imagens/nada.gif" title="" width="10" height="10" border="0">
+					</td>
+					</tr>
+					
+					</table>
+					
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="footer_fundo">
+					<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tbody>
+						<tr>
+							<td >
+								<span class="footer_texto">Usuário:</span>
+									Felipe
+							</td>
+							<td align="center" class="footer_texto">Companhia de Desenvolvimento Habitacional - CDHU</td>
+							<td align="right" class="footer_texto">
+								04/04/2018 14:34
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			
+		</tbody>
+	</table>
+		
+	<script type="text/javascript">
+		loading(false);
+	</script>
+
+	<script type="text/javascript">
+		alternateRowColors();
+	</script>
+</body></html>
