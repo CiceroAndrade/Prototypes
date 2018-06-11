@@ -52,77 +52,76 @@
 							<tr>
 								<td width="10"><img src="./imagens/nada.gif" title=""
 									width="10" height="10" border="0"></td>
-								<td>
-								<script type="text/javascript">
+								<td><script type="text/javascript">
 
-									function validaCampos() {
-									
-										if (document.getElementById("numero").value == "") {
-											alert("Campo Número do Contrato Obrigatório.");
-											document.getElementById("numero").focus();
-											return false;
-										}
-									
-										if (document.getElementById("dtInicio").value == "") {
-											alert("Campo Início da Vigência Obrigatório.");
-											document.getElementById("dtInicio").focus();
-											return false;
-										}
-									
-										if (document.getElementById("dtFim").value == "") {
-											alert("Campo Término da Vigência Obrigatório.");
-											document.getElementById("dtFim").focus();
-											return false;
-										}
-									
-										if (document.getElementById("quantidade").value == "") {
-											alert("Campo Qtde. de Processos Obrigatório.");
-											document.getElementById("quantidade").focus();
-											return false;
-										}
-									
-										if (document.getElementById("quantidadeDiligencia").value == "") {
-											alert("Campo Qtde. de Diligências Obrigatório.");
-											document.getElementById("quantidadeDiligencia").focus();
-											return false;
-										}
-									
-										if (document.getElementById("quantidadeHorasApoio").value == "") {
-											alert("Campo Qtde. de Horas Apoio Regional Obrigatório.");
-											document.getElementById("quantidadeHorasApoio").focus();
-											return false;
-										}
-									
-										if (document.getElementById("valor").value == "") {
-											alert("Campo Valor do Contrato Obrigatório.");
-											document.getElementById("valor").focus();
-											return false;
-										}
-										
-									}
-									
-									function imprimirRelatorio(id) {
-										var form = document.forms[0];
-										form.target = '_blank';
-										form.action = './performRelatorioDistribuicao.do?id=' + id;
-									    form.submit();
-									    form.target = '_self';
-									}
-									
-									
-									function fechar() {
-										var form = document.forms['SociedadeCredenciadaForm'];
-										form.action = './redirecionaSociedadeCredenciada.do';
-										form.submit();
-									}
-									
-									function acompanhamento() {
-										var form = document.forms['SociedadeCredenciadaForm'];
-										form.action = './montaInclusaoContratoEscritorio.do?acao=acompanhamento';
-										form.submit();
-									}
-									
-									</script>
+function validaCampos() {
+
+	if (document.getElementById("numero").value == "") {
+		alert("Campo Número do Contrato Obrigatório.");
+		document.getElementById("numero").focus();
+		return false;
+	}
+
+	if (document.getElementById("dtInicio").value == "") {
+		alert("Campo Início da Vigência Obrigatório.");
+		document.getElementById("dtInicio").focus();
+		return false;
+	}
+
+	if (document.getElementById("dtFim").value == "") {
+		alert("Campo Término da Vigência Obrigatório.");
+		document.getElementById("dtFim").focus();
+		return false;
+	}
+
+	if (document.getElementById("quantidade").value == "") {
+		alert("Campo Qtde. de Processos Obrigatório.");
+		document.getElementById("quantidade").focus();
+		return false;
+	}
+
+	if (document.getElementById("quantidadeDiligencia").value == "") {
+		alert("Campo Qtde. de Diligências Obrigatório.");
+		document.getElementById("quantidadeDiligencia").focus();
+		return false;
+	}
+
+	if (document.getElementById("quantidadeHorasApoio").value == "") {
+		alert("Campo Qtde. de Horas Apoio Regional Obrigatório.");
+		document.getElementById("quantidadeHorasApoio").focus();
+		return false;
+	}
+
+	if (document.getElementById("valor").value == "") {
+		alert("Campo Valor do Contrato Obrigatório.");
+		document.getElementById("valor").focus();
+		return false;
+	}
+	
+}
+
+function imprimirRelatorio(id) {
+	var form = document.forms[0];
+	form.target = '_blank';
+	form.action = './performRelatorioDistribuicao.do?id=' + id;
+    form.submit();
+    form.target = '_self';
+}
+
+
+function fechar() {
+	var form = document.forms['SociedadeCredenciadaForm'];
+	form.action = './redirecionaSociedadeCredenciada.do';
+	form.submit();
+}
+
+function acompanhamento() {
+	var form = document.forms['SociedadeCredenciadaForm'];
+	form.action = './montaInclusaoContratoEscritorio.do?acao=acompanhamento';
+	form.submit();
+}
+
+</script>
 
 									<form name="SociedadeCredenciadaForm" method="post"
 										action="/gpja-web/salvaContratoEscritorio.do"
@@ -157,7 +156,8 @@
 
 																		<td nowrap class="rotulo">Dados do Contrato</td>
 
-																		<td width="100%" background="./imagens/gbox_a2.gif"><img
+																		<td width="100%"
+																			background="./imagens/gbox_a2.gif"><img
 																			src="./imagens/nada.gif" title="" width="1"
 																			height="17" border="0"></td>
 																	</tr>
@@ -168,8 +168,8 @@
 														</tr>
 														<tr>
 															<td width="8" background="./imagens/gbox_b1.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
 															<td class="celula_rotulo">
 																<table width="100%" border="0" cellpadding="2"
 																	cellspacing="1" class="tabelas">
@@ -216,7 +216,34 @@
 																			onkeypress="return formatarDados(this,event,'00/00/0000')"
 																			disabled="disabled" id="dtFim"></td>
 																	</tr>
-																	
+																	<tr>
+																		<td class="td_titulo120">Qtde. de Processos:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="50"><input
+																			type="text" name="contrato.quantidade" maxlength="8"
+																			size="20" value="820"
+																			onkeypress="return formatarDados(this,event,'00000000')"
+																			disabled="disabled" id="quantidade"></td>
+																		<td class="td_titulo120">Qtde. de Diligências:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="35"><input
+																			type="text" name="contrato.quantidadeDiligencia"
+																			maxlength="8" size="20" value=""
+																			onkeypress="return formatarDados(this,event,'00000000')"
+																			disabled="disabled" id="quantidadeDiligencia">
+
+																		</td>
+																		<td class="td_titulo120">Qtde. de Horas Apoio
+																			Regional:</td>
+																		<td class="td_titulo_obrigatorio" width="1">*</td>
+																		<td class="td_conteudo" width="35"><input
+																			type="text" name="contrato.quantidadeHorasApoio"
+																			maxlength="8" size="20" value=""
+																			onkeypress="return formatarDados(this,event,'00000000')"
+																			disabled="disabled" id="quantidadeHorasApoio">
+
+																		</td>
+																	</tr>
 																	<tr>
 																		<td class="td_titulo120">Valor do Contrato:</td>
 																		<td class="td_titulo_obrigatorio" width="1">*</td>
@@ -233,138 +260,25 @@
 
 															</td>
 															<td width="8" background="./imagens/gbox_b3.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
 														</tr>
 														<tr>
 															<td><img src="./imagens/gbox_c1.gif" title=""
 																width="8" height="8" border="0"></td>
 															<td background="./imagens/gbox_c2.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
 															<td><img src="./imagens/gbox_c3.gif" title=""
 																width="8" height="8" border="0"></td>
 														</tr>
 													</table> <br />
-													<table width="100%" border="0" cellpadding="0"
-														cellspacing="0">
-														<tr>
-															<td><img src="./imagens/gbox_a1.gif" title=""
-																width="8" height="17" border="0"></td>
-															<td>
-																<table cellspacing="0" cellpadding="0" border="0">
-																	<tr>
-
-
-																		<td nowrap class="rotulo">Recursos Utilizados</td>
-
-																		<td width="100%" background="./imagens/gbox_a2.gif"><img
-																			src="./imagens/nada.gif" title="" width="1"
-																			height="17" border="0"></td>
-																	</tr>
-																</table>
-															</td>
-															<td><img src="./imagens/gbox_a3.gif" title=""
-																width="8" height="17" border="0"></td>
-														</tr>
-														<tr>
-															<td width="8" background="./imagens/gbox_b1.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
-															<td class="celula_rotulo">
-																<table width="100%" border="0" cellpadding="2"
-																	cellspacing="1" class="tabelas">
-																	
-																	<tr>
-																		<td class="td_titulo120" >Qtde. Total de Processos Distribuídos:</td>
-																		<td class="td_titulo_obrigatorio" width="1"></td>
-																		<td class="td_conteudo" width="50"><input
-																			type="text" name="contrato.quantidade" maxlength="8"
-																			size="20" value="820"
-																			onkeypress="return formatarDados(this,event,'00000000')"
-																			disabled="disabled" id="quantidade"></td>
-																			
-																		<td class="td_titulo120">Qtde. Trabalhistas Distribídos:</td>
-																		<td class="td_titulo_obrigatorio" width="1"></td>
-																		<td class="td_conteudo" width="35"><input
-																			type="text" name="contrato.quantidadeDiligencia"
-																			maxlength="8" size="20" value="300"
-																			onkeypress="return formatarDados(this,event,'00000000')"
-																			disabled="disabled" id="quantidadeDiligencia">
-
-																		</td>
-																		<td class="td_titulo120">Qtde. Mutuários Distribídos:</td>
-																		<td class="td_titulo_obrigatorio" width="1"></td>
-																		<td class="td_conteudo" width="35"><input
-																			type="text" name="contrato.quantidadeDiligencia"
-																			maxlength="8" size="20" value="300"
-																			onkeypress="return formatarDados(this,event,'00000000')"
-																			disabled="disabled" id="quantidadeDiligencia">
-
-																		</td>									
-																		<td class="td_titulo120">Qtde. Trabalhistas Distribídos:</td>
-																		<td class="td_titulo_obrigatorio" width="1"></td>
-																		<td class="td_conteudo" width="35"><input
-																			type="text" name="contrato.quantidadeDiligencia"
-																			maxlength="8" size="20" value="220"
-																			onkeypress="return formatarDados(this,event,'00000000')"
-																			disabled="disabled" id="quantidadeDiligencia">
-
-																		</td>
-																											
-																	</tr>
-																	<tr>
-																		<td class="td_titulo120">Qtde. de Diligências Solicitadas:</td>
-																		<td class="td_titulo_obrigatorio" width="1"></td>
-																		<td class="td_conteudo" width="35"><input
-																			type="text" name="contrato.quantidadeDiligencia"
-																			maxlength="8" size="20" value="30"
-																			onkeypress="return formatarDados(this,event,'00000000')"
-																			disabled="disabled" id="quantidadeDiligencia">
-
-																		</td>
-																	</tr>
-																	<tr>
-																		<td class="td_titulo120">Horas Apoio
-																			Regional Solicitadas:</td>
-																		<td class="td_titulo_obrigatorio" width="1"></td>
-																		<td class="td_conteudo" width="35"><input
-																			type="text" name="contrato.quantidadeHorasApoio"
-																			maxlength="8" size="20" value="150"
-																			onkeypress="return formatarDados(this,event,'00000000')"
-																			disabled="disabled" id="quantidadeHorasApoio">
-
-																		</td>
-																	</tr>
-																</table>
-
-															</td>
-															<td width="8" background="./imagens/gbox_b3.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
-														</tr>
-														<tr>
-															<td><img src="./imagens/gbox_c1.gif" title=""
-																width="8" height="8" border="0"></td>
-															<td background="./imagens/gbox_c2.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
-															<td><img src="./imagens/gbox_c3.gif" title=""
-																width="8" height="8" border="0"></td>
-														</tr>
-													</table> <br />
-													
-													
-													
-													
-													
-													
 													<table width="100%" border="0" cellspacing="2"
 														cellpadding="2">
 														<tr>
 															<td align="right"><input name="Button1"
 																type="button" class="botao" value="Acompanhamento"
-																onClick="JavaScript:redirect('PesquisaEscritorioContratadoCadastroDeContratoAcompanhamento.html');"></td>
+																onClick="JavaScript:acompanhamento();"></td>
 														</tr>
 													</table> <br />
 													<table width="100%" border="0" cellpadding="0"
@@ -376,7 +290,8 @@
 																<table cellspacing="0" cellpadding="0" border="0">
 																	<tr>
 																		<td nowrap class="rotulo">Distribuições</td>
-																		<td width="100%" background="./imagens/gbox_a2.gif"><img
+																		<td width="100%"
+																			background="./imagens/gbox_a2.gif"><img
 																			src="./imagens/nada.gif" title="" width="1"
 																			height="17" border="0"></td>
 																	</tr>
@@ -387,8 +302,8 @@
 														</tr>
 														<tr>
 															<td width="8" background="./imagens/gbox_b1.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
 															<td class="celula_rotulo">
 																<table width="100%" border="0" cellpadding="2"
 																	cellspacing="1" class="tabelas">
@@ -411,8 +326,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('2')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -424,8 +339,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('747')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -437,8 +352,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('750')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -450,8 +365,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('751')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -463,8 +378,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('752')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -476,8 +391,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('753')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -489,8 +404,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('754')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -502,8 +417,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('755')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -515,8 +430,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('756')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -528,8 +443,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('761')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -541,8 +456,8 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('762')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
 
@@ -554,54 +469,22 @@
 																		<td align="center">0,00</td>
 																		<td align="center"><a href="#"
 																			onclick="imprimirRelatorio('763')"><img
-																				src="./imagens/btn_view.gif" width="18" height="20"
-																				border="0" title="Visualizar"></a></td>
+																				src="./imagens/btn_view.gif" width="18"
+																				height="20" border="0" title="Visualizar"></a></td>
 																	</tr>
 
-																	<tr>
-																		<td colspan="7" class="td_botao">
-																			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																			<tbody>
-																				<tr>
-																					<td></td>
-																					<td align="right">
-																						<table border="0" cellspacing="0" cellpadding="0" width="86">
-																						<tbody>
-																							<tr align="center" valign="middle">
-																								<td align="right" width="16">&nbsp;</td>
-																								<td width="54">
-																									<select onchange="location=&#39;./listaCompromissoPassadoAcaoJudicial.do?pageNumber=&#39;+this.value;">
-																										<option value="1" selected="">1-3</option>
-																										<option value="2">4</option>
-																									</select>
-																								</td>
-																								<td align="left" width="16">
-																									<a href="http://10.200.240.81/gpja-web/listaCompromissoPassadoAcaoJudicial.do?pageNumber=2"><img src="./imagens/seta_avancar.gif" width="11" height="11" border="0" teclaatalho="PageDown" id="avancar" alt="Próxima"></a>
-																								</td>
-																							</tr>
-																						</tbody>
-																						</table>
-																					</td>
-																				</tr>
-																			</tbody></table>
-																		</td>
-																	</tr>
 																</table>
-																
 															</td>
 															<td width="8" background="./imagens/gbox_b3.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
-															
-																
-																
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
 														</tr>
 														<tr>
 															<td><img src="./imagens/gbox_c1.gif" title=""
 																width="8" height="8" border="0"></td>
 															<td background="./imagens/gbox_c2.gif"><img
-																src="./imagens/nada.gif" title="" width="8" height="8"
-																border="0"></td>
+																src="./imagens/nada.gif" title="" width="8"
+																height="8" border="0"></td>
 															<td><img src="./imagens/gbox_c3.gif" title=""
 																width="8" height="8" border="0"></td>
 														</tr>
